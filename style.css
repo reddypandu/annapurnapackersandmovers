@@ -218,6 +218,72 @@ footer {
   background: rgba(255, 255, 255, 0.1);
 }
 
+.services-nav-item {
+  position: relative;
+}
+
+.services-nav-heading {
+  display: flex;
+  align-items: center;
+}
+
+.services-nav-heading > a {
+  border-radius: 4px 0 0 4px !important;
+}
+
+.services-toggle {
+  min-height: 42px;
+  padding: 8px 9px;
+  border: 0;
+  border-left: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 0 4px 4px 0;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.services-toggle:hover,
+.services-toggle[aria-expanded="true"] {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffaa00;
+}
+
+.services-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  z-index: 1001;
+  display: none;
+  width: 250px;
+  padding: 8px;
+  border-top: 3px solid #ffaa00;
+  border-radius: 0 0 6px 6px;
+  background: #003366;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+.services-nav-item:hover .services-menu,
+.services-nav-item:focus-within .services-menu,
+.services-menu.is-open {
+  display: block;
+}
+
+.site-nav .services-menu a {
+  display: block;
+  width: auto;
+  min-height: 0;
+  padding: 9px 10px;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: normal;
+}
+
+.site-nav .services-menu a:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffaa00 !important;
+}
+
 .menu-toggle {
   display: none;
   width: 44px;
@@ -283,6 +349,41 @@ footer {
     width: 100%;
     justify-content: flex-start;
     padding: 11px 12px;
+  }
+
+  .services-nav-item {
+    width: 100%;
+  }
+
+  .services-nav-heading {
+    width: 100%;
+  }
+
+  .services-nav-heading > a {
+    flex: 1;
+  }
+
+  .services-toggle {
+    padding: 8px 14px;
+  }
+
+  .services-menu {
+    position: static;
+    width: auto;
+    padding: 4px 0 4px 14px;
+    border-top: 0;
+    border-left: 2px solid #ffaa00;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .services-nav-item:hover .services-menu,
+  .services-nav-item:focus-within .services-menu {
+    display: none;
+  }
+
+  .services-nav-item .services-menu.is-open {
+    display: block;
   }
 }
 

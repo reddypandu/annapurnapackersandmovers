@@ -11,7 +11,28 @@
         <div class="nav-links" id="site-menu">
             <a href="index.php" <?php echo $currentPage === 'index.php' ? ' class="active"' : ''; ?>>Home</a>
             <a href="aboutus.php" <?php echo $currentPage === 'aboutus.php' ? ' class="active"' : ''; ?>>About</a>
-            <a href="services.php" <?php echo $currentPage === 'services.php' ? ' class="active"' : ''; ?>>Services</a>
+            <div class="services-nav-item">
+                <div class="services-nav-heading">
+                    <a href="services.php" <?php echo $currentPage === 'services.php' ? ' class="active"' : ''; ?>>Services</a>
+                    <button class="services-toggle" type="button" aria-expanded="false" aria-controls="services-menu">
+                        <span class="sr-only">Toggle services menu</span>
+                        <span aria-hidden="true">&#9662;</span>
+                    </button>
+                </div>
+                <div class="services-menu" id="services-menu">
+                    <a href="services.php">Packing and Moving</a>
+                    <a href="services.php">Loading and Unloading</a>
+                    <a href="services.php">Residential Relocation</a>
+                    <a href="services.php">Home Relocation</a>
+                    <a href="services.php">Office Relocation</a>
+                    <a href="services.php">Car Transportation</a>
+                    <a href="services.php">Bike Transportation</a>
+                    <a href="services.php">International Transportation</a>
+                    <a href="services.php">Warehousing and Storage</a>
+                    <a href="services.php">Transport Insurance</a>
+                    <a href="services.php">Heavy Machinery and Shifting</a>
+                </div>
+            </div>
             <a href="blog.php" <?php echo $currentPage === 'blog.php' ? ' class="active"' : ''; ?>>Blog</a>
             <a href="gallery.php" <?php echo $currentPage === 'gallery.php' ? ' class="active"' : ''; ?>>Gallery</a>
             <a href="LocateUs.php" <?php echo $currentPage === 'LocateUs.php' ? ' class="active"' : ''; ?>>Locate Us</a>
@@ -25,5 +46,12 @@
         var expanded = this.getAttribute('aria-expanded') === 'true';
         this.setAttribute('aria-expanded', String(!expanded));
         menu.classList.toggle('is-open', !expanded);
+    });
+
+    document.querySelector('.services-toggle').addEventListener('click', function() {
+        var servicesMenu = document.getElementById('services-menu');
+        var expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', String(!expanded));
+        servicesMenu.classList.toggle('is-open', !expanded);
     });
 </script>
