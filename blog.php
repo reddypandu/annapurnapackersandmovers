@@ -8,6 +8,7 @@
 
     <!-- CSS Dependencies from your server -->
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
 

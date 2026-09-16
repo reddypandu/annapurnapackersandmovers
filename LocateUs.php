@@ -8,6 +8,7 @@
 
   <!-- Main Website Styling Link -->
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/favicon.png" type="image/x-icon">
 
   <style>
     /* Ultimate Premium Vertical Layout with Multi-Photos */

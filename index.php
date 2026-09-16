@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Packers and Movers In Visakhapatnam</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
     <style>
         * {
             margin: 0;
@@ -1754,13 +1755,13 @@
             </a>
 
             <!-- Facebook Icon -->
-            <a href="https://facebook.com" target="_blank" style="width: 48px; height: 48px; background-color: #0d3b66; border: 2px solid #ffffff; color: #ffffff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 22px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.3);" title="Facebook">f</a>
+            <a href="https://www.facebook.com/profile.php?id=61591811524024" target="_blank" style="width: 48px; height: 48px; background-color: #0d3b66; border: 2px solid #ffffff; color: #ffffff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 22px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.3);" title="Facebook">f</a>
 
             <!-- X (Twitter) Icon -->
-            <a href="https://x.com" target="_blank" style="width: 48px; height: 48px; background-color: #0d3b66; border: 2px solid #ffffff; color: #ffffff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: bold; font-family: sans-serif; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.3);" title="X (Twitter)">X</a>
+            <a href="https://x.com/annapurnavpc" target="_blank" style="width: 48px; height: 48px; background-color: #0d3b66; border: 2px solid #ffffff; color: #ffffff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: bold; font-family: sans-serif; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.3);" title="X (Twitter)">X</a>
 
             <!-- Instagram Icon -->
-            <a href="https://instagram.com" target="_blank" style="width: 48px; height: 48px; background-color: #0d3b66; border: 2px solid #ffffff; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(0,0,0,0.3);" title="Instagram">
+            <a href="https://www.instagram.com/annapurnapackersmovers/" target="_blank" style="width: 48px; height: 48px; background-color: #0d3b66; border: 2px solid #ffffff; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(0,0,0,0.3);" title="Instagram">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                     <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
@@ -1769,7 +1770,7 @@
             </a>
 
             <!-- LinkedIn Icon -->
-            <a href="https://linkedin.com" target="_blank" style="width: 48px; height: 48px; background-color: #0d3b66; border: 2px solid #ffffff; color: #ffffff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: bold; font-family: sans-serif; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.3);" title="LinkedIn">in</a>
+            <a href="https://www.linkedin.com/in/malleswara-rao-p-13ab87421/" target="_blank" style="width: 48px; height: 48px; background-color: #0d3b66; border: 2px solid #ffffff; color: #ffffff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: bold; font-family: sans-serif; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.3);" title="LinkedIn">in</a>
 
         </div>
         <!-- New Premium Floating Social Sidebar End -->

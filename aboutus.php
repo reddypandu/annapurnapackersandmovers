@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Annapurna Packers and Movers</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
     <!-- FontAwesome icons used in the hero and service sections -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
@@ -67,12 +68,12 @@
         /* --- IMAGE MATCHED HERO BANNER --- */
         .about-hero {
             background: linear-gradient(90deg, rgba(2, 28, 54, 0.92) 45%, rgba(2, 28, 54, 0.6) 100%),
-                url('img/truck-banner.jpg');
+                url('img/annapurna-logo.jpg');
             background-size: cover;
             background-position: center;
             padding: 80px 60px;
             color: #fff;
-            min-height: 420px;
+            min-height: 220px;
             display: flex;
             flex-direction: column;
             justify-content: center;
