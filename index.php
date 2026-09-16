@@ -1185,6 +1185,14 @@
                 }, 2000);
             });
 
+            function openQuotePopup(event) {
+                if (event) {
+                    event.preventDefault();
+                }
+                document.getElementById('callbackPopup').style.display = 'flex';
+                document.getElementById('pop_detailed_name').focus();
+            }
+
             function closePopup() {
                 document.getElementById('callbackPopup').style.display = 'none';
             }
@@ -1196,13 +1204,13 @@
                 var fromCity = document.getElementById('pop_detailed_from').value;
                 var toCity = document.getElementById('pop_detailed_to').value;
 
-                var message = "*Annapurna Packers - Popup Quote Request*%0A%0A" +
-                    "*Name:* " + name + "%0A" +
-                    "*Phone:* " + phone + "%0A" +
-                    "*From City:* " + fromCity + "%0A" +
+                var message = "*Annapurna Packers - Popup Quote Request*\n\n" +
+                    "*Name:* " + name + "\n" +
+                    "*Phone:* " + phone + "\n" +
+                    "*From City:* " + fromCity + "\n" +
                     "*To City:* " + toCity;
 
-                var whatsappUrl = "https://wa.me" + message;
+                var whatsappUrl = "https://wa.me/918333031259?text=" + encodeURIComponent(message);
                 window.open(whatsappUrl, '_blank');
                 closePopup();
             }
@@ -1322,7 +1330,7 @@
         <!-- Action Buttons -->
         <div style="display: flex; gap: 15px; justify-content: center; align-items: center; flex-wrap: wrap;">
             <!-- Button 1: Get Free Quote -->
-            <a href="#quote-form" style="background: linear-gradient(135deg, #ff6f00, #e65c00); color: #ffffff; padding: 11px 26px; font-size: 14.5px; font-weight: 700; text-decoration: none; border-radius: 50px; box-shadow: 0 4px 12px rgba(230, 92, 0, 0.2); display: inline-block;">
+            <a href="#callbackPopup" onclick="openQuotePopup(event)" style="background: linear-gradient(135deg, #ff6f00, #e65c00); color: #ffffff; padding: 11px 26px; font-size: 14.5px; font-weight: 700; text-decoration: none; border-radius: 50px; box-shadow: 0 4px 12px rgba(230, 92, 0, 0.2); display: inline-block;">
                 Get Free Quote
             </a>
 
