@@ -17,14 +17,33 @@
         }
 
         .contact-hero-banner {
-            background-color: #7a7a7a;
-            color: white;
-            text-align: center;
-            padding: 60px 20px;
-            font-size: 32px;
-            font-weight: bold;
+            background: linear-gradient(90deg, rgba(2, 28, 54, 0.92) 45%, rgba(2, 28, 54, 0.6) 100%),
+                url('img/pack10.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 80px 60px;
+            color: #fff;
+            min-height: 220px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 36px;
+        }
+
+        .hero-title {
+            font-size: 72px;
+            font-weight: 800;
+            margin-bottom: 5px;
+            color: #ffffff;
             letter-spacing: 1px;
-            text-transform: uppercase;
+        }
+
+        /* Orange line below 'About Us' */
+        .title-divider {
+            width: 120px;
+            height: 3px;
+            background-color: #ff6600;
+            margin-bottom: 25px;
         }
 
         .page-container {
@@ -127,7 +146,8 @@
 
     <!-- 1. Main Header Banner -->
     <div class="contact-hero-banner">
-        Contact Us
+        <h1 class="hero-title">Contact Us</h1>
+        <div class="title-divider"></div>
     </div>
 
     <div class="page-container">

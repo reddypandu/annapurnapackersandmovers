@@ -46,6 +46,36 @@
             padding: 0 20px;
         }
 
+        .services-hero {
+            background: linear-gradient(90deg, rgba(2, 28, 54, 0.92) 45%, rgba(2, 28, 54, 0.6) 100%),
+                url('img/services.jpeg');
+            background-size: cover;
+            background-position: center;
+            padding: 80px 60px;
+            color: #fff;
+            min-height: 220px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 36px;
+        }
+
+        .hero-title {
+            font-size: 72px;
+            font-weight: 800;
+            margin-bottom: 5px;
+            color: #ffffff;
+            letter-spacing: 1px;
+        }
+
+        /* Orange line below 'About Us' */
+        .title-divider {
+            width: 120px;
+            height: 3px;
+            background-color: #ff6600;
+            margin-bottom: 25px;
+        }
+
         .services-header {
             text-align: center;
             margin-bottom: 50px;
@@ -174,10 +204,13 @@
 <body>
 
     <?php include 'header.php'; ?>
+    <div class="services-hero">
+        <h1 class="hero-title">Our Services</h1>
+        <div class="title-divider"></div>
+    </div>
 
     <div class="services-container">
         <div class="services-header">
-            <h2>Our Services</h2>
             <p>Safe, Reliable, and Professional Logistics Solutions</p>
         </div>
 

@@ -38,6 +38,36 @@
       letter-spacing: 1px;
     }
 
+    .location-hero {
+      background: linear-gradient(90deg, rgba(2, 28, 54, 0.92) 45%, rgba(2, 28, 54, 0.6) 100%),
+        url('img/location.jpeg');
+      background-size: contain;
+      background-position: center;
+      padding: 80px 60px;
+      color: #fff;
+      min-height: 220px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 36px;
+    }
+
+    .hero-title {
+      font-size: 72px;
+      font-weight: 800;
+      margin-bottom: 5px;
+      color: #ffffff;
+      letter-spacing: 1px;
+    }
+
+    /* Orange line below 'About Us' */
+    .title-divider {
+      width: 120px;
+      height: 3px;
+      background-color: #ff6600;
+      margin-bottom: 25px;
+    }
+
     .locate-header p {
       font-size: 16px;
       color: #666;
@@ -143,12 +173,15 @@
 
   <?php include 'header.php'; ?>
 
+  <div class="location-hero">
+    <h1 class="hero-title">Our Network Cities</h1>
+    <div class="title-divider"></div>
+  </div>
   <!-- MAIN MULTI-PHOTO LIST CONTENT -->
   <section class="locate-page-section">
     <div class="locate-container">
 
       <div class="locate-header">
-        <h1>Our Network Cities</h1>
         <p>Professional Packing and Shifting Services Across Major Destinations</p>
       </div>
 
