@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Services - Annapurna Packers and Movers</title>
     <link rel="stylesheet" href="style.css">
-    <!-- FontAwesome Icons for High Quality Looks -->
-    <link rel="stylesheet" href="https://cloudflare.com">
+    <!-- FontAwesome Icons for service cards -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
         body {
             margin: 0;
@@ -68,6 +68,7 @@
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 25px;
+            align-items: stretch;
         }
 
         @media (max-width: 1024px) {
@@ -93,6 +94,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            min-height: 285px;
             transition: transform 0.3s ease;
         }
 
@@ -102,22 +104,35 @@
         }
 
         .icon-circle {
-            width: 60px;
-            height: 60px;
-            background-color: #f1f5f9;
+            width: 72px;
+            height: 72px;
+            flex: 0 0 72px;
+            background: linear-gradient(135deg, #003366, #0b5aa0);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 26px;
-            margin-bottom: 20px;
-            color: #003366;
+            margin: 0 auto 20px;
+            color: #ffffff;
+            font-size: 29px;
+            line-height: 1;
+            box-shadow: 0 8px 18px rgba(0, 51, 102, 0.2);
+        }
+
+        .icon-circle i {
+            display: block;
+            width: 1em;
+            text-align: center;
         }
 
         .service-card h3 {
             font-size: 18px;
             color: #003366;
-            margin: 0 0 12px 0;
+            min-height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 0 12px;
             font-weight: 700;
         }
 
@@ -126,6 +141,31 @@
             color: #666666;
             line-height: 1.5;
             margin: 0;
+            max-width: 240px;
+        }
+
+        @media (max-width: 600px) {
+            .services-container {
+                margin: 35px auto;
+                padding: 0 15px;
+            }
+
+            .services-header {
+                margin-bottom: 30px;
+            }
+
+            .services-header h2 {
+                font-size: 30px;
+            }
+
+            .service-card {
+                min-height: 0;
+                padding: 30px 20px;
+            }
+
+            .service-card h3 {
+                min-height: 0;
+            }
         }
     </style>
 </head>

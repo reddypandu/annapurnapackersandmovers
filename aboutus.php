@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Annapurna Packers and Movers</title>
     <link rel="stylesheet" href="style.css">
-    <!-- FontAwesome link for real icons -->
-    <link rel="stylesheet" href="https://cloudflare.com">
+    <!-- FontAwesome icons used in the hero and service sections -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
         * {
             margin: 0;

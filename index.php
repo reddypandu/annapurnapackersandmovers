@@ -1292,7 +1292,7 @@
 
                 <!-- Right Side: Team Image Box (40% Width) -->
                 <div style="flex: 1; min-width: 300px; flex-basis: 35%; text-align: center;">
-                    <img src="team.jpg" alt="Our Packers and Movers Team" style="width: 100%; max-width: 400px; height: auto; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.15); border: 3px solid #0d3b66;">
+                    <img src="teams.png" alt="Our Packers and Movers Team" style="width: 100%; max-width: 400px; height: auto; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.15); border: 3px solid #0d3b66;">
                 </div>
 
             </div>
@@ -1747,7 +1747,7 @@
             </a>
 
             <!-- WhatsApp Icon -->
-            <a href="https://wa.me" target="_blank" style="width: 48px; height: 48px; background-color: #0d3b66; border: 2px solid #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(0,0,0,0.3); transition: all 0.3s;" title="WhatsApp">
+            <a href="https://wa.me/918333031259" target="_blank" style="width: 48px; height: 48px; background-color: #0d3b66; border: 2px solid #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(0,0,0,0.3); transition: all 0.3s;" title="WhatsApp">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="#25d366">
                     <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.458L0 24zm6.59-4.846c1.6.95 3.498 1.452 5.418 1.453l.014-.002c5.382 0 9.762-4.38 9.764-9.766 0-2.609-1.015-5.059-2.86-6.904C17.078 2.08 14.623.82 12.013.82c-5.387 0-9.767 4.38-9.77 9.767-.002 1.912.497 3.784 1.448 5.389L2.662 20.93l4.985-1.31z" />
                 </svg>
