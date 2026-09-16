@@ -174,7 +174,7 @@
 
         <!-- 4. Bottom: Verified Google Map Section (Sabbavaram) -->
         <div class="google-map-box">
-            <iframe src="https://google.com" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps?q=Visakhapatnam%20India&output=embed" title="Annapurna Packers and Movers location" loading="lazy"></iframe>
         </div>
     </div>
 
