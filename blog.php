@@ -430,13 +430,46 @@
                 font-size: 18px;
             }
         }
+
+        .blog-hero {
+            background: linear-gradient(90deg, rgba(2, 28, 54, 0.92) 45%, rgba(2, 28, 54, 0.6) 100%),
+                url('img/blog.jpeg');
+            background-size: fill;
+            background-position: center;
+            padding: 80px 60px;
+            color: #fff;
+            min-height: 220px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 36px;
+        }
+
+        .hero-title {
+            font-size: 72px;
+            font-weight: 800;
+            margin-bottom: 5px;
+            color: #ffffff;
+            letter-spacing: 1px;
+        }
+
+        /* Orange line below 'About Us' */
+        .title-divider {
+            width: 120px;
+            height: 3px;
+            background-color: #ff6600;
+            margin-bottom: 25px;
+        }
     </style>
 </head>
 
 <body>
 
     <?php include 'header.php'; ?>
-
+    <div class="blog-hero">
+        <h1 class="hero-title">Our Blog</h1>
+        <div class="title-divider"></div>
+    </div>
     <div class="page-wrapper">
 
         <section class="harsha-layout-section">
@@ -444,7 +477,6 @@
 
                 <!-- Section Title (Harsha Style Layout) -->
                 <div class="harsha-layout-title">
-                    <span class="sub-heading">Our Blog</span>
                     <h2>Latest Moving & Packing Tips</h2>
                     <p>Explore useful packing tips, home shifting guides, domestic moving advice, and expert insights from Annapurna Packers and Movers.</p>
                 </div>
