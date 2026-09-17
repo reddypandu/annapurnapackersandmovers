@@ -434,7 +434,7 @@
         .blog-hero {
             background: linear-gradient(90deg, rgba(2, 28, 54, 0.92) 45%, rgba(2, 28, 54, 0.6) 100%),
                 url('img/blog.jpeg');
-            background-size: fill;
+            background-size: cover;
             background-position: center;
             padding: 80px 60px;
             color: #fff;
@@ -489,7 +489,7 @@
                         <div class="harsha-style-card">
                             <div class="harsha-card-image">
                                 <!-- Pulls Faster.jpg from your live server folder -->
-                                <img src="img/Faster.jpg" alt="Annapurna House Shifting Guide">
+                                <img src="img/stress-free.webp" alt="Annapurna House Shifting Guide">
                                 <div class="harsha-style-date">
                                     <span>27</span>
                                     <small>Aug</small>
@@ -508,7 +508,7 @@
                     <div class="harsha-card-col">
                         <div class="harsha-style-card">
                             <div class="harsha-card-image">
-                                <img src="img/Faster.jpg" alt="Annapurna Packing Tips">
+                                <img src="img/How-to-Move-Fragile.webp" alt="Annapurna Packing Tips">
                                 <div class="harsha-style-date">
                                     <span>20</span>
                                     <small>Aug</small>
@@ -527,7 +527,7 @@
                     <div class="harsha-card-col">
                         <div class="harsha-style-card">
                             <div class="harsha-card-image">
-                                <img src="img/Faster.jpg" alt="Annapurna Relocation Guide">
+                                <img src="img/dom.webp" alt="Annapurna Relocation Guide">
                                 <div class="harsha-style-date">
                                     <span>15</span>
                                     <small>Aug</small>
