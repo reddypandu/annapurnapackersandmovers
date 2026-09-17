@@ -7,8 +7,6 @@
     <title>Our Services - Annapurna Packers and Movers</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/favicon.png" type="image/x-icon">
-    <!-- FontAwesome Icons for service cards -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
         body {
             margin: 0;
@@ -118,14 +116,12 @@
             background: #ffffff;
             border: 2px solid #003366;
             border-radius: 12px;
-            padding: 35px 20px;
-            text-align: center;
+            overflow: hidden;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            min-height: 285px;
+            min-height: 305px;
             transition: transform 0.3s ease;
         }
 
@@ -134,26 +130,23 @@
             box-shadow: 0 6px 20px rgba(0, 51, 102, 0.15);
         }
 
-        .icon-circle {
-            width: 72px;
-            height: 72px;
-            flex: 0 0 72px;
-            background: linear-gradient(135deg, #003366, #0b5aa0);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 20px;
-            color: #ffffff;
-            font-size: 29px;
-            line-height: 1;
-            box-shadow: 0 8px 18px rgba(0, 51, 102, 0.2);
+        .service-image {
+            height: 180px;
+            width: 100%;
+            overflow: hidden;
+            background: #eff5fb;
         }
 
-        .icon-circle i {
+        .service-image img {
+            width: 100%;
+            height: 100%;
             display: block;
-            width: 1em;
-            text-align: center;
+            object-fit: cover;
+        }
+
+        .service-content {
+            padding: 20px 18px 22px;
+            text-align: left;
         }
 
         .service-card h3 {
@@ -162,7 +155,6 @@
             min-height: 44px;
             display: flex;
             align-items: center;
-            justify-content: center;
             margin: 0 0 12px;
             font-weight: 700;
         }
@@ -172,7 +164,6 @@
             color: #666666;
             line-height: 1.5;
             margin: 0;
-            max-width: 240px;
         }
 
         @media (max-width: 600px) {
@@ -222,60 +213,60 @@
 
     <!-- JavaScript Data Rendering Section -->
     <script>
-        // List of all 11 services matching your menu layout
+        // List of all 11 services matching your menu layout with local photo assets
         const servicesData = [{
                 title: "Packing and Moving",
-                icon: "fa-solid fa-box-open",
+                image: "img/packing-photo.jpg",
                 desc: "High-quality packing and safe moving solutions for all your valuable belongings."
             },
             {
                 title: "Loading and Unloading",
-                icon: "fa-solid fa-people-carrier",
+                image: "img/pack1.jpg",
                 desc: "Expert loading and unloading services handled by trained professionals with care."
             },
             {
                 title: "Residential Relocation",
-                icon: "fa-solid fa-building",
+                image: "img/annapurna-house-shifting-loading.jpg",
                 desc: "Hassle-free residential shifting services tailored to your specific relocation needs."
             },
             {
                 title: "Home Relocation",
-                icon: "fa-solid fa-house-chimney",
+                image: "img/annapurna-house-shifting-loading.jpg",
                 desc: "Complete end-to-end home shifting services to ensure a stress-free transition."
             },
             {
                 title: "Office Relocation",
-                icon: "fa-solid fa-briefcase",
+                image: "img/office.jpg",
                 desc: "Efficient shifting of office assets, files, and IT equipment with zero disruption."
             },
             {
                 title: "Car Transportation",
-                icon: "fa-solid fa-car",
+                image: "img/annapurna-car-shifting-loading.jpg",
                 desc: "Secure car carrier services to transport your vehicle scratch-free and safe."
             },
             {
                 title: "Bike Transportation",
-                icon: "fa-solid fa-motorcycle",
+                image: "img/annapurna-bike-shifting-loading.jpg",
                 desc: "Safe transport of two-wheelers using specialized packing and secure transit."
             },
             {
                 title: "International Transportation",
-                icon: "fa-solid fa-plane-departure",
+                image: "img/international-team.jpg",
                 desc: "Global cargo and international shipping setups for seamless long-distance freight."
             },
             {
                 title: "Warehousing and Storage",
-                icon: "fa-solid fa-warehouse",
+                image: "img/truck-banner.jpg",
                 desc: "Safe, clean, and 24/7 secure short-term and long-term storage facilities for your goods."
             },
             {
                 title: "Transport Insurance",
-                icon: "fa-solid fa-shield-halved",
+                image: "img/feature.jpg",
                 desc: "Comprehensive transit insurance coverage to safeguard your goods against unexpected damages."
             },
             {
                 title: "Heavy Machinery and Shifting",
-                icon: "fa-solid fa-gears",
+                image: "img/jcb-transport.jpg",
                 desc: "Specialized handling and secure relocation services for industrial heavy tools and plant machinery."
             }
         ];
@@ -285,11 +276,13 @@
         servicesData.forEach(service => {
             const cardHtml = `
                 <div class="service-card">
-                    <div class="icon-circle">
-                        <i class="${service.icon}"></i>
+                    <div class="service-image">
+                        <img src="${service.image}" alt="${service.title}">
                     </div>
-                    <h3>${service.title}</h3>
-                    <p>${service.desc}</p>
+                    <div class="service-content">
+                        <h3>${service.title}</h3>
+                        <p>${service.desc}</p>
+                    </div>
                 </div>
             `;
             gridElement.innerHTML += cardHtml;
