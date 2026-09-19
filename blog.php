@@ -489,7 +489,7 @@
                         <div class="harsha-style-card">
                             <div class="harsha-card-image">
                                 <!-- Pulls Faster.jpg from your live server folder -->
-                                <img src="img/stress-free.webp" alt="Annapurna House Shifting Guide">
+                                <img src="img/blog-1.png" alt="Annapurna House Shifting Guide">
                                 <div class="harsha-style-date">
                                     <span>27</span>
                                     <small>Aug</small>
@@ -508,7 +508,7 @@
                     <div class="harsha-card-col">
                         <div class="harsha-style-card">
                             <div class="harsha-card-image">
-                                <img src="img/How-to-Move-Fragile.webp" alt="Annapurna Packing Tips">
+                                <img src="img/blog-2.webp" alt="Annapurna Packing Tips">
                                 <div class="harsha-style-date">
                                     <span>20</span>
                                     <small>Aug</small>

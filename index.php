@@ -7,6 +7,7 @@
     <title>Best Packers and Movers In Visakhapatnam</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -602,7 +603,7 @@
             }
 
             .achievements-title-sub {
-                color: #ffaa00;
+                color: #b00018;
                 text-transform: uppercase;
                 letter-spacing: 2.5px;
                 margin: 0 0 15px 0;
@@ -639,7 +640,7 @@
 
             .achievement-card {
                 background-color: #0f2c7a;
-                border-top: 6px solid #ffaa00;
+                border-top: 6px solid #b00018;
                 border-radius: 14px;
                 padding: 50px 30px;
                 width: 260px;
@@ -983,7 +984,7 @@
             }
 
             .banner-owner-text h5 {
-                color: #ffaa00;
+                color: #b00018;
                 font-size: 10px;
                 text-transform: uppercase;
                 margin: 0 0 2px 0;
@@ -1295,6 +1296,10 @@
                             <span style="font-size: 24px;">🏗️</span>
                             <span style="font-size: 16px; font-weight: 600; color: #333;">Heavy Machinery Shifting</span>
                         </div>
+                        <div style="display: flex; align-items: center; gap: 12px; background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #28a745; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                            <span style="font-size: 24px;">🚛</span>
+                            <span style="font-size: 16px; font-weight: 600; color: #333;">Container Truck Services</span>
+                        </div>
 
                     </div>
                 </div>
@@ -1313,13 +1318,13 @@
     <div style="background: linear-gradient(rgba(12, 26, 64, 0.95), rgba(12, 26, 64, 0.98)); padding: 60px 20px; text-align: center; color: #ffffff; font-family: 'Segoe UI', Roboto, sans-serif; display: block; clear: both; box-sizing: border-box; width: 100%; margin-top: 30px; border-radius: 4px;">
 
         <!-- Small Orange Text -->
-        <p style="color: #ffaa00; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 12px;">
+        <p style="color: #b00018; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 12px;">
             🎯 TRUSTED INTERNATIONAL RELOCATION SERVICES WORLDWIDE
         </p>
 
         <!-- Main Big Heading -->
         <h1 style="font-size: 34px; font-weight: 800; margin: 0 auto 18px auto; max-width: 900px; line-height: 1.4; color: #ffffff;">
-            Best Professional <span style="color: #ffaa00;">Annapurna Packers & Movers</span> <br> for Global Moving & Relocation Services
+            Best Professional <span style="color: #b00018;">Annapurna Packers & Movers</span> <br> for Global Moving & Relocation Services
         </h1>
 
         <!-- Subtitle Paragraph -->
@@ -1387,10 +1392,10 @@
     </section>
     <!-- END OF OUR TEAM SECTION -->
     <!-- Achievements Section Start -->
-    <div style="background-color: #0c1a40; padding: 60px 20px; text-align: center; font-family: 'Segoe UI', Roboto, Arial, sans-serif; clear: both; width: 100%; display: block; box-sizing: border-box;">
+    <div style="background-color: #0c1a40; text-align: center; font-family: 'Segoe UI', Roboto, Arial, sans-serif; clear: both; width: 100%; display: block; box-sizing: border-box;">
 
         <!-- Main Headings -->
-        <h5 style="color: #ffaa00; text-transform: uppercase; letter-spacing: 2px; margin: 0 0 10px 0; font-size: 14px; font-weight: 600;">S</h5>
+        <h5 style="color: #b00018; text-transform: uppercase; letter-spacing: 2px; margin: 0 0 10px 0; font-size: 14px; font-weight: 600;">S</h5>
         <h2 style="color: #ffffff; margin: 0 0 15px 0; font-size: 34px; font-weight: 700; letter-spacing: 0.5px;">Numbers That Speak For Our Success</h2>
         <p style="color: #a0aec0; margin: 0 0 45px 0; font-size: 16px; max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.6;">Trusted by thousands of families and businesses across India for reliable relocation and logistics services.</p>
 
@@ -1399,7 +1404,7 @@
 
             <!-- Card 1: Deliveries -->
             <a href="aboutus.php" style="text-decoration: none; display: block; flex: 1; min-width: 220px; max-width: 250px; box-sizing: border-box;">
-                <div style="background-color: #0f2c7a; border-top: 5px solid #ffaa00; border-radius: 12px; padding: 40px 15px; width: 100%; color: white; box-shadow: 0 10px 25px rgba(0,0,0,0.3); box-sizing: border-box; text-align: center; cursor: pointer;">
+                <div style="background-color: #0f2c7a; border-top: 5px solid #b00018; border-radius: 12px; padding: 40px 15px; width: 100%; color: white; box-shadow: 0 10px 25px rgba(0,0,0,0.3); box-sizing: border-box; text-align: center; cursor: pointer;">
                     <h3 class="counter" data-target="2500" style="font-size: 38px; margin: 0 0 12px 0; font-weight: 700; color: #ffffff;">0</h3>
                     <p style="font-size: 15px; margin: 0; color: #e2e8f0; line-height: 1.5; font-weight: 500;">Worldwide<br>Deliveries</p>
                 </div>
@@ -1407,7 +1412,7 @@
 
             <!-- Card 2: Relocations -->
             <a href="aboutus.php" style="text-decoration: none; display: block; flex: 1; min-width: 220px; max-width: 250px; box-sizing: border-box;">
-                <div style="background-color: #0f2c7a; border-top: 5px solid #ffaa00; border-radius: 12px; padding: 40px 15px; width: 100%; color: white; box-shadow: 0 10px 25px rgba(0,0,0,0.3); box-sizing: border-box; text-align: center; cursor: pointer;">
+                <div style="background-color: #0f2c7a; border-top: 5px solid #b00018; border-radius: 12px; padding: 40px 15px; width: 100%; color: white; box-shadow: 0 10px 25px rgba(0,0,0,0.3); box-sizing: border-box; text-align: center; cursor: pointer;">
                     <h3 class="counter" data-target="1500" style="font-size: 38px; margin: 0 0 12px 0; font-weight: 700; color: #ffffff;">0</h3>
                     <p style="font-size: 15px; margin: 0; color: #e2e8f0; line-height: 1.5; font-weight: 500;">Successful<br>Relocations</p>
                 </div>
@@ -1415,7 +1420,7 @@
 
             <!-- Card 3: Corporate Clients -->
             <a href="aboutus.php" style="text-decoration: none; display: block; flex: 1; min-width: 220px; max-width: 250px; box-sizing: border-box;">
-                <div style="background-color: #0f2c7a; border-top: 5px solid #ffaa00; border-radius: 12px; padding: 40px 15px; width: 100%; color: white; box-shadow: 0 10px 25px rgba(0,0,0,0.3); box-sizing: border-box; text-align: center; cursor: pointer;">
+                <div style="background-color: #0f2c7a; border-top: 5px solid #b00018; border-radius: 12px; padding: 40px 15px; width: 100%; color: white; box-shadow: 0 10px 25px rgba(0,0,0,0.3); box-sizing: border-box; text-align: center; cursor: pointer;">
                     <h3 class="counter" data-target="1280" style="font-size: 38px; margin: 0 0 12px 0; font-weight: 700; color: #ffffff;">0</h3>
                     <p style="font-size: 15px; margin: 0; color: #e2e8f0; line-height: 1.5; font-weight: 500;">Corporate<br>Clients</p>
                 </div>
@@ -1423,7 +1428,7 @@
 
             <!-- Card 4: Happy Customers -->
             <a href="aboutus.php" style="text-decoration: none; display: block; flex: 1; min-width: 220px; max-width: 250px; box-sizing: border-box;">
-                <div style="background-color: #0f2c7a; border-top: 5px solid #ffaa00; border-radius: 12px; padding: 40px 15px; width: 100%; color: white; box-shadow: 0 10px 25px rgba(0,0,0,0.3); box-sizing: border-box; text-align: center; cursor: pointer;">
+                <div style="background-color: #0f2c7a; border-top: 5px solid #b00018; border-radius: 12px; padding: 40px 15px; width: 100%; color: white; box-shadow: 0 10px 25px rgba(0,0,0,0.3); box-sizing: border-box; text-align: center; cursor: pointer;">
                     <h3 class="counter" data-target="1000" style="font-size: 38px; margin: 0 0 12px 0; font-weight: 700; color: #ffffff;">0</h3>
                     <p style="font-size: 15px; margin: 0; color: #e2e8f0; line-height: 1.5; font-weight: 500;">Happy<br>Customers</p>
                 </div>
@@ -1479,8 +1484,8 @@
         </section>
         <section id="faq-section" style="padding: 60px 20px; font-family: 'Segoe UI', Roboto, sans-serif; background-color: #f8fafc; text-align: center; clear: both; position: relative; z-index: 10;">
 
-            <span style="color: #ffaa00; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 14px;">— FREQUENTLY ASKED QUESTIONS —</span>
-            <h2 style="color: #0c1c4e; font-size: 36px; font-weight: 700; margin: 15px 0 20px 0;">International Packers and Movers <span style="color: #ffaa00;">FAQs</span></h2>
+            <span style="color: #b00018; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 14px;">— FREQUENTLY ASKED QUESTIONS —</span>
+            <h2 style="color: #0c1c4e; font-size: 36px; font-weight: 700; margin: 15px 0 20px 0;">International Packers and Movers <span style="color: #b00018;">FAQs</span></h2>
             <p style="color: #64748b; max-width: 900px; margin: 0 auto 40px auto; font-size: 16px; line-height: 1.6; text-align: center;">
                 Find answers to the most frequently asked questions about international relocation services, overseas household moving, export packing, custom clearance, air and sea freight, and worldwide door-to-door moving solutions offered by Annapurna Packers and Movers.
             </p>
@@ -1491,8 +1496,8 @@
                 <!-- Question 1 -->
                 <div style="background: #ffffff; border-radius: 12px; margin-bottom: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); overflow: hidden;">
                     <button onclick="toggleFAQ(this)" style="width: 100%; display: flex; justify-content: space-between; align-items: center; background: none; border: none; padding: 22px 25px; cursor: pointer; text-align: left; outline: none;">
-                        <span style="color: #0c1c4e; font-size: 18px; font-weight: 700;">What international relocation services do you provide?</span>
-                        <span class="faq-icon" style="background: #ffaa00; color: #0c1c4e; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: bold; transition: 0.3s;">+</span>
+                        <span style=" font-size: 18px; font-weight: 700;">What international relocation services do you provide?</span>
+                        <span class="faq-icon" style="background: #b00018; color: #0c1c4e; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: bold; transition: 0.3s;">+</span>
                     </button>
                     <div class="faq-answer" style="max-height: 0; padding: 0 25px; overflow: hidden; transition: all 0.3s ease-out; color: #475569; font-size: 16px; line-height: 1.6;">
                         <div style="padding-bottom: 22px;">
@@ -1504,8 +1509,8 @@
                 <!-- Question 2 -->
                 <div style="background: #ffffff; border-radius: 12px; margin-bottom: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); overflow: hidden;">
                     <button onclick="toggleFAQ(this)" style="width: 100%; display: flex; justify-content: space-between; align-items: center; background: none; border: none; padding: 22px 25px; cursor: pointer; text-align: left; outline: none;">
-                        <span style="color: #0c1c4e; font-size: 18px; font-weight: 700;">Which countries do you provide international moving services to?</span>
-                        <span class="faq-icon" style="background: #ffaa00; color: #0c1c4e; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: bold; transition: 0.3s;">+</span>
+                        <span style="font-size: 18px; font-weight: 700;">Which countries do you provide international moving services to?</span>
+                        <span class="faq-icon" style="background: #b00018; color: #0c1c4e; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: bold; transition: 0.3s;">+</span>
                     </button>
                     <div class="faq-answer" style="max-height: 0; padding: 0 25px; overflow: hidden; transition: all 0.3s ease-out; color: #475569; font-size: 16px; line-height: 1.6;">
                         <div style="padding-bottom: 22px;">
@@ -1517,8 +1522,8 @@
                 <!-- Question 3 -->
                 <div style="background: #ffffff; border-radius: 12px; margin-bottom: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); overflow: hidden;">
                     <button onclick="toggleFAQ(this)" style="width: 100%; display: flex; justify-content: space-between; align-items: center; background: none; border: none; padding: 22px 25px; cursor: pointer; text-align: left; outline: none;">
-                        <span style="color: #0c1c4e; font-size: 18px; font-weight: 700;">Do you assist with customs clearance and documentation?</span>
-                        <span class="faq-icon" style="background: #ffaa00; color: #0c1c4e; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: bold; transition: 0.3s;">+</span>
+                        <span style="font-size: 18px; font-weight: 700;">Do you assist with customs clearance and documentation?</span>
+                        <span class="faq-icon" style="background: #b00018; color: #0c1c4e; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: bold; transition: 0.3s;">+</span>
                     </button>
                     <div class="faq-answer" style="max-height: 0; padding: 0 25px; overflow: hidden; transition: all 0.3s ease-out; color: #475569; font-size: 16px; line-height: 1.6;">
                         <div style="padding-bottom: 22px;">
@@ -1530,8 +1535,8 @@
                 <!-- Question 4 -->
                 <div style="background: #ffffff; border-radius: 12px; margin-bottom: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); overflow: hidden;">
                     <button onclick="toggleFAQ(this)" style="width: 100%; display: flex; justify-content: space-between; align-items: center; background: none; border: none; padding: 22px 25px; cursor: pointer; text-align: left; outline: none;">
-                        <span style="color: #0c1c4e; font-size: 18px; font-weight: 700;">How long does an international move take?</span>
-                        <span class="faq-icon" style="background: #ffaa00; color: #0c1c4e; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: bold; transition: 0.3s;">+</span>
+                        <span style="font-size: 18px; font-weight: 700;">How long does an international move take?</span>
+                        <span class="faq-icon" style="background: #b00018; color: #0c1c4e; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: bold; transition: 0.3s;">+</span>
                     </button>
                     <div class="faq-answer" style="max-height: 0; padding: 0 25px; overflow: hidden; transition: all 0.3s ease-out; color: #475569; font-size: 16px; line-height: 1.6;">
                         <div style="padding-bottom: 22px;">
@@ -1543,8 +1548,8 @@
                 <!-- Question 5 -->
                 <div style="background: #ffffff; border-radius: 12px; margin-bottom: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); overflow: hidden;">
                     <button onclick="toggleFAQ(this)" style="width: 100%; display: flex; justify-content: space-between; align-items: center; background: none; border: none; padding: 22px 25px; cursor: pointer; text-align: left; outline: none;">
-                        <span style="color: #0c1c4e; font-size: 18px; font-weight: 700;">Are my belongings insured during international transportation?</span>
-                        <span class="faq-icon" style="background: #ffaa00; color: #0c1c4e; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: bold; transition: 0.3s;">+</span>
+                        <span style="font-size: 18px; font-weight: 700;">Are my belongings insured during international transportation?</span>
+                        <span class="faq-icon" style="background: #b00018; color: #0c1c4e; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: bold; transition: 0.3s;">+</span>
                     </button>
                     <div class="faq-answer" style="max-height: 0; padding: 0 25px; overflow: hidden; transition: all 0.3s ease-out; color: #475569; font-size: 16px; line-height: 1.6;">
                         <div style="padding-bottom: 22px;">
@@ -1556,8 +1561,8 @@
                 <!-- Question 6 -->
                 <div style="background: #ffffff; border-radius: 12px; margin-bottom: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); overflow: hidden;">
                     <button onclick="toggleFAQ(this)" style="width: 100%; display: flex; justify-content: space-between; align-items: center; background: none; border: none; padding: 22px 25px; cursor: pointer; text-align: left; outline: none;">
-                        <span style="color: #0c1c4e; font-size: 18px; font-weight: 700;">Do you provide door-to-door international moving services?</span>
-                        <span class="faq-icon" style="background: #ffaa00; color: #0c1c4e; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: bold; transition: 0.3s;">+</span>
+                        <span style=" font-size: 18px; font-weight: 700;">Do you provide door-to-door international moving services?</span>
+                        <span class="faq-icon" style="background: #b00018; color: #0c1c4e; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: bold; transition: 0.3s;">+</span>
                     </button>
                     <div class="faq-answer" style="max-height: 0; padding: 0 25px; overflow: hidden; transition: all 0.3s ease-out; color: #475569; font-size: 16px; line-height: 1.6;">
                         <div style="padding-bottom: 22px;">
@@ -1565,17 +1570,21 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Question 7 -->
                 <div style="background: #ffffff; border-radius: 12px; margin-bottom: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); overflow: hidden;">
                     <button onclick="toggleFAQ(this)" style="width: 100%; display: flex; justify-content: space-between; align-items: center; background: none; border: none; padding: 22px 25px; cursor: pointer; text-align: left; outline: none;">
-                        <span style="color: #0c1c4e; font-size: 18px; font-weight: 700;">Why choose Annapurna Packers and Movers for international relocation?</span>
-                        <div class="faq-answer" style="max-height: 0; padding: 0 25px; overflow: hidden; transition: all 0.3s ease-out; color: #475569; font-size: 16px; line-height: 1.6;">
-                            <div style="padding-bottom: 22px;">
-                                We are known for our expert multi-layer packing, transparent pricing, hassle-free customs clearance handling, and a globally connected secure network. We ensure a safe and timely relocation experience.
-                            </div>
+                        <span style=" font-size: 18px; font-weight: 700;">Why choose Annapurna Packers and Movers for international relocation?</span>
+                        <span class="faq-icon" style="background: #b00018; color: #0c1c4e; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: bold; transition: 0.3s;">+</span>
+                    </button>
+                    <div class="faq-answer" style="max-height: 0; padding: 0 25px; overflow: hidden; transition: all 0.3s ease-out; color: #475569; font-size: 16px; line-height: 1.6;">
+                        <div style="padding-bottom: 22px;">
+                            We are known for our expert multi-layer packing, transparent pricing, hassle-free customs clearance handling, and a globally connected secure network. We ensure a safe and timely relocation experience.
                         </div>
+                    </div>
                 </div>
+
+
+
 
             </div> <!-- FAQ Accordion Container క్లోజింగ్ -->
         </section> <!-- FAQ Section మెయిన్ కంటైనర్ క్లోజింగ్ -->
@@ -1627,7 +1636,7 @@
             <!-- Column 1: Company Profile -->
             <div style="flex: 1 1 250px; max-width: 300px; box-sizing: border-box; margin-bottom: 20px;">
                 <div style="margin-bottom: 20px;">
-                    <h2 style="color: #ffaa00; font-size: 24px; font-weight: 700; margin: 0; display: flex; align-items: center; gap: 10px;">
+                    <h2 style="color: #b00018; font-size: 24px; font-weight: 700; margin: 0; display: flex; align-items: center; gap: 10px;">
                         <span style="background: red; color: white; padding: 5px 12px; border-radius: 5px; font-size: 16px; font-weight: bold;">A</span>
                         ANNAPURNA
                     </h2>
@@ -1640,7 +1649,7 @@
 
             <!-- Column 2: Useful Links -->
             <div style="flex: 1 1 150px; max-width: 200px; box-sizing: border-box; margin-bottom: 20px;">
-                <h4 style="color: #ffffff; font-size: 18px; font-weight: 700; margin: 0 0 20px 0; border-bottom: 2px solid #ffaa00; padding-bottom: 5px; display: inline-block;">Useful Links</h4>
+                <h4 style="color: #ffffff; font-size: 18px; font-weight: 700; margin: 0 0 20px 0; border-bottom: 2px solid #b00018; padding-bottom: 5px; display: inline-block;">Useful Links</h4>
                 <ul style="list-style: none; padding: 0; margin: 0; font-size: 14px; line-height: 2.2;">
                     <li><a href="index.php" style="color: #a0aec0; text-decoration: none;">Home</a></li>
                     <li><a href="aboutus.php" style="color: #a0aec0; text-decoration: none;">About Us</a></li>
@@ -1652,7 +1661,7 @@
 
             <!-- Column 3: Our Services -->
             <div style="flex: 1 1 200px; max-width: 250px; box-sizing: border-box; margin-bottom: 20px;">
-                <h4 style="color: #ffffff; font-size: 18px; font-weight: 700; margin: 0 0 20px 0; border-bottom: 2px solid #ffaa00; padding-bottom: 5px; display: inline-block;">Our Services</h4>
+                <h4 style="color: #ffffff; font-size: 18px; font-weight: 700; margin: 0 0 20px 0; border-bottom: 2px solid #b00018; padding-bottom: 5px; display: inline-block;">Our Services</h4>
                 <ul style="list-style: none; padding: 0; margin: 0; font-size: 14px; line-height: 2.2; color: #a0aec0;">
                     <li>Home Relocation</li>
                     <li>Office Relocation</li>
@@ -1668,11 +1677,11 @@
 
                 <!-- ఎడమ వైపు: బ్లూ కాంటాక్ట్ వివరాల బాక్స్ -->
                 <div style="flex: 1; min-width: 280px; background-color: #0c1c4e; padding: 25px; border-radius: 12px; font-family: 'Segoe UI', Roboto, sans-serif; color: #ffffff; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
-                    <span style="color: #ffaa00; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; font-size: 11px;">Contact Us</span>
-                    <h3 style="font-size: 22px; margin: 5px 0 20px 0; font-weight: 700; color: #ffffff; line-height: 1.3;">Get In Touch With <br><span style="color: #ffaa00;">Annapurna Packers</span></h3>
+                    <span style="color: #b00018; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; font-size: 11px;">Contact Us</span>
+                    <h3 style="font-size: 22px; margin: 5px 0 20px 0; font-weight: 700; color: #ffffff; line-height: 1.3;">Get In Touch With <br><span style="color: #b00018;">Annapurna Packers</span></h3>
 
                     <!-- అడ్రస్ బాక్స్ -->
-                    <div style="background-color: #ffaa00; border-radius: 8px; padding: 15px; display: flex; gap: 10px; margin-bottom: 15px; color: #0c1c4e;">
+                    <div style="background-color: #b00018; border-radius: 8px; padding: 15px; display: flex; gap: 10px; margin-bottom: 15px; color: #0c1c4e;">
                         <div style="flex-shrink: 0; font-size: 16px;">📍</div>
                         <div>
                             <h4 style="margin: 0 0 3px 0; font-size: 14px; font-weight: 700;">Office Address</h4>
@@ -1684,7 +1693,7 @@
                     <div style="background-color: rgba(255,255,255,0.05); border-radius: 8px; padding: 15px; display: flex; gap: 10px; margin-bottom: 15px;">
                         <div style="flex-shrink: 0; font-size: 16px;">✉️</div>
                         <div>
-                            <h4 style="margin: 0 0 3px 0; font-size: 14px; font-weight: 700; color: #ffaa00;">Email Us</h4>
+                            <h4 style="margin: 0 0 3px 0; font-size: 14px; font-weight: 700; color: #b00018;">Email Us</h4>
                             <p style="margin: 0; font-size: 13px;"><a href="mailto:annapurnapackersandmovers@gmail.com" style="color: #ffffff; text-decoration: none;">annapurnapackersandmovers@gmail.com</a></p>
                         </div>
                     </div>
@@ -1693,7 +1702,7 @@
                     <div style="background-color: rgba(255,255,255,0.05); border-radius: 8px; padding: 15px; display: flex; gap: 10px;">
                         <div style="flex-shrink: 0; font-size: 16px;">📞</div>
                         <div>
-                            <h4 style="margin: 0 0 3px 0; font-size: 14px; font-weight: 700; color: #ffaa00;">Call Us</h4>
+                            <h4 style="margin: 0 0 3px 0; font-size: 14px; font-weight: 700; color: #b00018;">Call Us</h4>
                             <p style="margin: 0; font-size: 13px; font-weight: 600; color: #ffffff;">+91 9848131259 / 8333021259</p>
                             <p style="margin: 2px 0 0 0; font-size: 13px; font-weight: 600; color: #ffffff;">+91 8333031259 / 8333041259</p>
                         </div>
@@ -1716,7 +1725,7 @@
         <!-- ANNAPURNA MAIN INTRODUCTION SECTION (BOTTOM) -->
         <!-- ========================================== -->
         <section style="padding: 40px 20px; font-family: 'Segoe UI', Roboto, sans-serif; background-color: #0c1524; text-align: center; clear: both; position: relative; z-index: 10; margin: 0; width: 100%; box-sizing: border-box;">
-            <div style="max-width: 1140px; margin: 0 auto; background: #ffffff; border: 3px solid #ffaa00; border-radius: 12px; padding: 40px 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); box-sizing: border-box; width: 100%;">
+            <div style="max-width: 1140px; margin: 0 auto; background: #ffffff; border: 3px solid #b00018; border-radius: 12px; padding: 40px 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); box-sizing: border-box; width: 100%;">
 
                 <!-- Truck Icon Container -->
                 <div style="margin-bottom: 15px; color: #0c1c4e; font-size: 40px; text-align: center;">🚚</div>
@@ -1734,7 +1743,7 @@
 
                     <!-- Cities Highlighted Blue Box -->
                     <div style="margin-bottom: 25px; background-color: #0c1524; color: #ffffff; padding: 20px; border-radius: 6px; width: 100%; box-sizing: border-box; font-weight: 500; font-size: 15px; line-height: 1.6; text-align: left; clear: both;">
-                        We proudly serve <span style="background-color: #0f2c7a; color: #ffffff; padding: 3px 8px; border-radius: 4px; font-weight: bold; border-bottom: 2px solid #ffaa00;">Visakhapatnam, Vijayawada, Guntur, Rajahmundry, Kakinada, Tirupati, Nellore, Hyderabad, Chennai, Bengaluru, Mumbai, Pune, Delhi, Kolkata and all major cities across India.</span>
+                        We proudly serve <span style="background-color: #0f2c7a; color: #ffffff; padding: 3px 8px; border-radius: 4px; font-weight: bold; border-bottom: 2px solid #b00018;">Visakhapatnam, Vijayawada, Guntur, Rajahmundry, Kakinada, Tirupati, Nellore, Hyderabad, Chennai, Bengaluru, Mumbai, Pune, Delhi, Kolkata and all major cities across India.</span>
                     </div>
 
                     <p style="margin: 25px 0 15px 0; text-align: justify; line-height: 1.6;">
@@ -1749,37 +1758,34 @@
         <div style="position: fixed; right: 20px; top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; gap: 12px; z-index: 99999;">
 
             <!-- Call Icon -->
-            <a href="tel:+918333031259" style="width: 48px; height: 48px; background-color: #0d3b66; border: 2px solid #28a745; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(0,0,0,0.3); transition: all 0.3s;" title="Call Us">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#28a745" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                </svg>
+            <a href="tel:+918333031259" style="width: 48px; height: 48px; background-color: #0d3b66; border: 2px solid #28a745; color: #28a745; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.3); transition: all 0.3s;" title="Call Us">
+                <i class="fa-solid fa-phone"></i>
             </a>
 
             <!-- WhatsApp Icon -->
-            <a href="https://wa.me/918333031259" target="_blank" style="width: 48px; height: 48px; background-color: #0d3b66; border: 2px solid #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(0,0,0,0.3); transition: all 0.3s;" title="WhatsApp">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="#25d366">
-                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.458L0 24zm6.59-4.846c1.6.95 3.498 1.452 5.418 1.453l.014-.002c5.382 0 9.762-4.38 9.764-9.766 0-2.609-1.015-5.059-2.86-6.904C17.078 2.08 14.623.82 12.013.82c-5.387 0-9.767 4.38-9.77 9.767-.002 1.912.497 3.784 1.448 5.389L2.662 20.93l4.985-1.31z" />
-                </svg>
+            <a href="https://wa.me/918333031259" target="_blank" rel="noopener" style="width: 48px; height: 48px; background-color: #0d3b66; border: 2px solid #25d366; color: #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.3); transition: all 0.3s;" title="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
             </a>
 
             <!-- Facebook Icon -->
-            <a href="https://www.facebook.com/profile.php?id=61591811524024" target="_blank" style="width: 48px; height: 48px; background-color: #0d3b66; border: 2px solid #ffffff; color: #ffffff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 22px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.3);" title="Facebook">f</a>
+            <a href="https://www.facebook.com/profile.php?id=61591811524024" target="_blank" rel="noopener" style="width: 48px; height: 48px; background-color: #0d3b66; border: 2px solid #ffffff; color: #ffffff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 22px; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.3);" title="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
 
             <!-- X (Twitter) Icon -->
-            <a href="https://x.com/annapurnavpc" target="_blank" style="width: 48px; height: 48px; background-color: #0d3b66; border: 2px solid #ffffff; color: #ffffff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: bold; font-family: sans-serif; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.3);" title="X (Twitter)">X</a>
+            <a href="https://x.com/annapurnavpc" target="_blank" rel="noopener" style="width: 48px; height: 48px; background-color: #0d3b66; border: 2px solid #ffffff; color: #ffffff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.3);" title="X (Twitter)">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
 
             <!-- Instagram Icon -->
-            <a href="https://www.instagram.com/annapurnapackersmovers/" target="_blank" style="width: 48px; height: 48px; background-color: #0d3b66; border: 2px solid #ffffff; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(0,0,0,0.3);" title="Instagram">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                </svg>
+            <a href="https://www.instagram.com/annapurnapackersmovers/" target="_blank" rel="noopener" style="width: 48px; height: 48px; background-color: #0d3b66; border: 2px solid #ffffff; color: #ffffff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 22px; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.3);" title="Instagram">
+                <i class="fa-brands fa-instagram"></i>
             </a>
 
             <!-- LinkedIn Icon -->
-            <a href="https://www.linkedin.com/in/malleswara-rao-p-13ab87421/" target="_blank" style="width: 48px; height: 48px; background-color: #0d3b66; border: 2px solid #ffffff; color: #ffffff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: bold; font-family: sans-serif; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.3);" title="LinkedIn">in</a>
-
+            <a href="https://www.linkedin.com/in/malleswara-rao-p-13ab87421/" target="_blank" rel="noopener" style="width: 48px; height: 48px; background-color: #0d3b66; border: 2px solid #ffffff; color: #ffffff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.3);" title="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
         </div>
         <!-- New Premium Floating Social Sidebar End -->
         <script>
@@ -1834,7 +1840,7 @@
                             btn.style.color = '#0c1c4e';
                             if (icn) {
                                 icn.innerText = '+';
-                                icn.style.backgroundColor = '#ffaa00';
+                                icn.style.backgroundColor = '#b00018';
                                 icn.style.color = '#0c1c4e';
                             }
                         }
@@ -1855,7 +1861,7 @@
                         button.style.color = '#0c1c4e';
                         if (icon) {
                             icon.innerText = '+';
-                            icon.style.backgroundColor = '#ffaa00';
+                            icon.style.backgroundColor = '#b00018';
                             icon.style.color = '#0c1c4e';
                         }
                     }

@@ -197,8 +197,8 @@
             </div>
 
             <!-- కొత్త హౌస్ షిఫ్టింగ్ ఫోటో -->
-            <div class="harsha-gallery-card" onclick="triggerPopup('img/annapurna house shifting.jpg')">
-                <img src="img/annapurna house shifting.jpg" alt="Annapurna House Shifting Services">
+            <div class="harsha-gallery-card" onclick="triggerPopup('img/home-relocation.png.jpeg')">
+                <img src="img/home-relocation.png.jpeg" alt="Annapurna House Shifting Services">
                 <div class="harsha-overlay">
                     <span>👁️ View Image</span>
                 </div>

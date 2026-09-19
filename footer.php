@@ -31,7 +31,7 @@
             <h3>Get In Touch With<br><strong>Annapurna Packers</strong></h3>
             <div class="footer-address">
                 <strong>Office Address</strong>
-                <span>H.O.: Shop No. 9, Sector-4, MVP Colony, Beside Prathibha Bharat Gas Company, Visakhapatnam - 530017</span>
+                <span>Iruvada, Drivers Rest Parking, Sabbavaram, Askapalli, Anakapalli District - 531035</span>
             </div>
             <div class="footer-contact-row">
                 <strong>Email Us</strong>
@@ -39,7 +39,7 @@
             </div>
             <div class="footer-contact-row">
                 <strong>Call Us</strong>
-                <span>+91 9848131259 / 8333021259<br>+91 8333031259 / 8333041259</span>
+                <span>+91 9848131259 / 8333021259</span>
             </div>
         </div>
         <div class="footer-map">

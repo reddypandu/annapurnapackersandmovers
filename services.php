@@ -221,22 +221,22 @@
             },
             {
                 title: "Loading and Unloading",
-                image: "img/pack1.jpg",
+                image: "img/loading-and-unloading.jpeg",
                 desc: "Expert loading and unloading services handled by trained professionals with care."
             },
             {
                 title: "Residential Relocation",
-                image: "img/annapurna-house-shifting-loading.jpg",
+                image: "img/residential-relocation.png.webp",
                 desc: "Hassle-free residential shifting services tailored to your specific relocation needs."
             },
             {
                 title: "Home Relocation",
-                image: "img/annapurna-house-shifting-loading.jpg",
+                image: "img/home-relocation.png.jpeg",
                 desc: "Complete end-to-end home shifting services to ensure a stress-free transition."
             },
             {
                 title: "Office Relocation",
-                image: "img/office.jpg",
+                image: "img/office-relocation.jpeg",
                 desc: "Efficient shifting of office assets, files, and IT equipment with zero disruption."
             },
             {
@@ -246,29 +246,34 @@
             },
             {
                 title: "Bike Transportation",
-                image: "img/annapurna-bike-shifting-loading.jpg",
+                image: "img/bike-transport.jpg",
                 desc: "Safe transport of two-wheelers using specialized packing and secure transit."
             },
             {
-                title: "International Transportation",
-                image: "img/international-team.jpg",
-                desc: "Global cargo and international shipping setups for seamless long-distance freight."
-            },
-            {
                 title: "Warehousing and Storage",
-                image: "img/truck-banner.jpg",
+                image: "img/warehousing-and-storage.png",
                 desc: "Safe, clean, and 24/7 secure short-term and long-term storage facilities for your goods."
             },
             {
-                title: "Transport Insurance",
-                image: "img/feature.jpg",
-                desc: "Comprehensive transit insurance coverage to safeguard your goods against unexpected damages."
+                title: "International Transportation",
+                image: "img/international-transporation.png",
+                desc: "Global cargo and international shipping setups for seamless long-distance freight."
             },
             {
                 title: "Heavy Machinery and Shifting",
-                image: "img/jcb-transport.jpg",
+                image: "img/heavy-machinery-shifting.png",
                 desc: "Specialized handling and secure relocation services for industrial heavy tools and plant machinery."
-            }
+            },
+            {
+                title: "Container Truck Services",
+                image: "img/container-truck-services.jpeg",
+                desc: "Reliable container trucking solutions for efficient and secure cargo transportation."
+            },
+            {
+                title: "Transport Insurance",
+                image: "img/transport-insurance.jpeg",
+                desc: "Comprehensive transit insurance coverage to safeguard your goods against unexpected damages."
+            },
         ];
 
         // Function to loop and print cards dynamically onto the website layout

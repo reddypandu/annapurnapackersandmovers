@@ -1,6 +1,16 @@
 html {
   box-sizing: border-box;
 }
+
+:root {
+  --brand-navy: #06285f;
+  --brand-navy-deep: #03183d;
+  --brand-red: #b00018;
+  --brand-red-dark: #850012;
+  --brand-rose: #bd7483;
+  --brand-ink: #101522;
+  --brand-surface: #f7f8fb;
+}
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
@@ -245,7 +255,7 @@ footer {
 .services-toggle:hover,
 .services-toggle[aria-expanded="true"] {
   background: rgba(255, 255, 255, 0.1);
-  color: #ffaa00;
+  color: #b00018;
 }
 
 .services-menu {
@@ -256,7 +266,7 @@ footer {
   display: none;
   width: 250px;
   padding: 8px;
-  border-top: 3px solid #ffaa00;
+  border-top: 3px solid #b00018;
   border-radius: 0 0 6px 6px;
   background: #003366;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
@@ -286,7 +296,7 @@ footer {
 
 .site-nav .services-menu a:hover {
   background: rgba(255, 255, 255, 0.12);
-  color: #ffaa00 !important;
+  color: #b00018 !important;
 }
 
 .menu-toggle {
@@ -377,7 +387,7 @@ footer {
     width: auto;
     padding: 4px 0 4px 14px;
     border-top: 0;
-    border-left: 2px solid #ffaa00;
+    border-left: 2px solid #b00018;
     border-radius: 0;
     box-shadow: none;
   }
@@ -447,7 +457,7 @@ footer {
 }
 
 .footer-brand h2 {
-  color: #ffaa00;
+  color: #b00018;
   font-size: 24px;
 }
 
@@ -456,7 +466,7 @@ footer {
 .footer-links a,
 .footer-contact-row,
 .footer-address span {
-  color: #a0aec0;
+  color: #fff;
 }
 
 .footer-brand p {
@@ -475,7 +485,7 @@ footer {
   display: inline-block;
   margin-bottom: 20px;
   padding-bottom: 5px;
-  border-bottom: 2px solid #ffaa00;
+  border-bottom: 2px solid #b00018;
   font-size: 18px;
 }
 
@@ -489,7 +499,7 @@ footer {
 
 .footer-links a:hover,
 .footer-contact-row a:hover {
-  color: #ffaa00;
+  color: #b00018;
 }
 
 .footer-contact-area {
@@ -505,10 +515,96 @@ footer {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+/* Brand palette shared by every page. */
+.site-header,
+.site-nav,
+.services-menu,
+header,
+.navbar {
+  background-color: var(--brand-navy) !important;
+}
+
+.site-nav .nav-links a:hover,
+.site-nav .nav-links a.active,
+.services-toggle:hover,
+.services-toggle[aria-expanded="true"],
+.site-nav .services-menu a:hover,
+.footer-links a:hover,
+.footer-contact-row a:hover {
+  color: var(--brand-red) !important;
+}
+
+.services-menu,
+.services-nav-item .services-menu {
+  border-color: var(--brand-red) !important;
+}
+
+.site-footer,
+footer {
+  background-color: var(--brand-navy-deep) !important;
+}
+
+.footer-brand h2,
+.footer-links h3,
 .footer-eyebrow,
 .footer-contact-card h3 strong,
 .footer-contact-row strong {
-  color: #ffaa00;
+  color: var(--brand-red) !important;
+}
+
+.footer-links h3 {
+  border-color: var(--brand-red) !important;
+}
+
+/* Re-theme legacy inline sections without changing their layout. */
+[style*="background-color: #004085"],
+[style*="background-color: #003366"],
+[style*="background-color: #0c1a40"],
+[style*="background-color: #0c1c4e"],
+[style*="background: #003366"],
+[style*="background: #0c1c4e"] {
+  background-color: var(--brand-navy) !important;
+}
+
+[style*="color: #004085"],
+[style*="color: #0c1c4e"],
+[style*="color: #0d1e3d"] {
+  color: var(--brand-navy) !important;
+}
+
+[style*="background-color: #b00018"],
+[style*="background-color: #ffc107"],
+[style*="background: #ff6a00"],
+[style*="background: #ff6600"],
+[style*="background: #b00018"],
+[style*="background: #ffc107"] {
+  background-color: var(--brand-red) !important;
+}
+
+[style*="color: #b00018"],
+[style*="color: #ffc107"],
+[style*="color: #ff6a00"],
+[style*="color: #ff6600"] {
+  color: var(--brand-red) !important;
+}
+
+[style*="border-top: 5px solid #b00018"],
+[style*="border-top: 6px solid #b00018"],
+[style*="border-top: 3px solid #ffc107"],
+[style*="border-bottom: 2px solid #b00018"],
+[style*="border: 3px solid #b00018"] {
+  border-color: var(--brand-red) !important;
+}
+
+.title-divider,
+.orange-line {
+  background-color: var(--brand-red) !important;
+}
+
+.footer-eyebrow,
+.footer-contact-card h3 strong,
+.footer-contact-row strong {
+  color: #b00018;
 }
 
 .footer-eyebrow {
@@ -537,12 +633,12 @@ footer {
 }
 
 .footer-address {
-  background: #ffaa00;
-  color: #0c1c4e;
+  background: #b00018;
+  color: #fff;
 }
 
 .footer-address span {
-  color: #0c1c4e;
+  color: #fff;
 }
 
 .footer-contact-row {
