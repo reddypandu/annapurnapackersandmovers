@@ -1225,9 +1225,161 @@
         </div>
         </div>
     </section>
-    <div style="clear: both; width: 100%; display: block;"></div>
-    <!-- START OF OUR TEAM SECTION -->
-    <!-- New Professional Services Section with Image Start -->
+
+    <style>
+        .services-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .services-hero {
+            background: linear-gradient(90deg, rgba(2, 28, 54, 0.92) 45%, rgba(2, 28, 54, 0.6) 100%),
+                url('img/services.jpeg');
+            background-size: cover;
+            background-position: center;
+            padding: 80px 60px;
+            color: #fff;
+            min-height: 220px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 36px;
+        }
+
+        .hero-title {
+            font-size: 72px;
+            font-weight: 800;
+            margin-bottom: 5px;
+            color: #ffffff;
+            letter-spacing: 1px;
+        }
+
+        /* Orange line below 'About Us' */
+        .title-divider {
+            width: 120px;
+            height: 3px;
+            background-color: #ff6600;
+            margin-bottom: 25px;
+        }
+
+        .services-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .services-header h2 {
+            color: #003366;
+            font-size: 36px;
+            margin: 0 0 10px 0;
+            font-weight: 800;
+        }
+
+        .services-header p {
+            font-size: 16px;
+            color: #666;
+            margin: 0;
+        }
+
+        /* 4 Column Responsive Grid Layout */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            align-items: stretch;
+        }
+
+        @media (max-width: 1024px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .service-card {
+            background: #ffffff;
+            border: 2px solid #003366;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            min-height: 305px;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 51, 102, 0.15);
+        }
+
+        .service-image {
+            height: 180px;
+            width: 100%;
+            overflow: hidden;
+            background: #eff5fb;
+        }
+
+        .service-image img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .service-content {
+            padding: 20px 18px 22px;
+            text-align: left;
+        }
+
+        .service-card h3 {
+            font-size: 18px;
+            color: #003366;
+            min-height: 44px;
+            display: flex;
+            align-items: center;
+            margin: 0 0 12px;
+            font-weight: 700;
+        }
+
+        .service-card p {
+            font-size: 13.5px;
+            color: #666666;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        @media (max-width: 600px) {
+            .services-container {
+                margin: 35px auto;
+                padding: 0 15px;
+            }
+
+            .services-header {
+                margin-bottom: 30px;
+            }
+
+            .services-header h2 {
+                font-size: 30px;
+            }
+
+            .service-card {
+                min-height: 0;
+                padding: 30px 20px;
+            }
+
+            .service-card h3 {
+                min-height: 0;
+            }
+        }
+    </style>
+
     <section class="premium-services-section" style="padding: 60px 0; background-color: #ffffff; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; clear: both; display: block;">
         <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
 
@@ -1235,74 +1387,195 @@
                 <h2 style="font-size: 32px; color: #0d3b66; margin: 0 0 10px 0; font-weight: 700; text-transform: uppercase;">Our Professional Services</h2>
                 <p style="font-size: 16px; color: #666; margin: 0;">Top-rated Packing and Moving solutions tailored to your relocation needs</p>
             </div>
+            <div class="services-container">
 
-            <div style="display: flex; flex-wrap: wrap; gap: 30px; align-items: center;">
+                <!-- 11 Services Grid Target Element -->
+                <div class="services-grid" id="servicesGrid">
+                    <!-- JavaScript will render the 11 cards inside here automatically -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        // List of all 11 services matching your menu layout with local photo assets
+        const servicesData = [{
+                title: "Packing and Moving",
+                image: "img/packing-photo.jpg",
+                desc: "High-quality packing and safe moving solutions for all your valuable belongings."
+            },
+            {
+                title: "Loading and Unloading",
+                image: "img/loading-and-unloading.jpeg",
+                desc: "Expert loading and unloading services handled by trained professionals with care."
+            },
+            {
+                title: "Residential Relocation",
+                image: "img/residential-relocation.png.webp",
+                desc: "Hassle-free residential shifting services tailored to your specific relocation needs."
+            },
+            {
+                title: "Home Relocation",
+                image: "img/home-relocation.png.jpeg",
+                desc: "Complete end-to-end home shifting services to ensure a stress-free transition."
+            },
+            {
+                title: "Office Relocation",
+                image: "img/office-relocation.jpeg",
+                desc: "Efficient shifting of office assets, files, and IT equipment with zero disruption."
+            },
+            {
+                title: "Car Transportation",
+                image: "img/annapurna-car-shifting-loading.jpg",
+                desc: "Secure car carrier services to transport your vehicle scratch-free and safe."
+            },
+            {
+                title: "Bike Transportation",
+                image: "img/bike-transport.jpg",
+                desc: "Safe transport of two-wheelers using specialized packing and secure transit."
+            },
+            {
+                title: "Warehousing and Storage",
+                image: "img/warehousing-and-storage.png",
+                desc: "Safe, clean, and 24/7 secure short-term and long-term storage facilities for your goods."
+            },
+            {
+                title: "International Transportation",
+                image: "img/international-transporation.png",
+                desc: "Global cargo and international shipping setups for seamless long-distance freight."
+            },
+            {
+                title: "Heavy Machinery and Shifting",
+                image: "img/heavy-machinery-shifting.png",
+                desc: "Specialized handling and secure relocation services for industrial heavy tools and plant machinery."
+            },
+            {
+                title: "Container Truck Services",
+                image: "img/container-truck-services.jpeg",
+                desc: "Reliable container trucking solutions for efficient and secure cargo transportation."
+            },
+            // {
+            //     title: "Transport Insurance",
+            //     image: "img/transport-insurance.jpeg",
+            //     desc: "Comprehensive transit insurance coverage to safeguard your goods against unexpected damages."
+            // },
+        ];
 
-                <!-- Left Side: Services List (60% Width) -->
+        // Function to loop and print cards dynamically onto the website layout
+        const gridElement = document.getElementById('servicesGrid');
+        servicesData.forEach(service => {
+            const cardHtml = `
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="${service.image}" alt="${service.title}">
+                    </div>
+                    <div class="service-content">
+                        <h3>${service.title}</h3>
+                        <p>${service.desc}</p>
+                    </div>
+                </div>
+            `;
+            gridElement.innerHTML += cardHtml;
+        });
+    </script>
+
+    <div style="clear: both; width: 100%; display: block;"></div>
+    <!-- START OF OUR TEAM SECTION -->
+    <!-- New Professional Services Section with Image Start -->
+    <section class="premium-services-section" style="padding: 60px 0; background-color: #ffffff; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; clear: both; display: block;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+
+            <!-- Section Heading -->
+            <div style="text-align: center; margin-bottom: 40px;">
+                <h2 style="font-size: 32px; color: #0d3b66; margin: 0 0 10px 0; font-weight: 700; text-transform: uppercase;">
+                    About Annapurna Packers and Movers
+                </h2>
+
+                <p style="font-size: 16px; color: #666; margin: 0;">
+                    Reliable Packing and Moving Services for a Smooth and Stress-Free Relocation
+                </p>
+            </div>
+
+            <!-- About Content + Image -->
+            <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
+
+                <!-- Left Side: About Content -->
                 <div style="flex: 1; min-width: 300px; flex-basis: 60%;">
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
 
-                        <div style="display: flex; align-items: center; gap: 12px; background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #28a745; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-                            <span style="font-size: 24px;">📦</span>
-                            <span style="font-size: 16px; font-weight: 600; color: #333;">Packing and Moving</span>
+                    <h3 style="font-size: 26px; color: #0d3b66; margin: 0 0 18px 0; font-weight: 700;">
+                        Your Trusted Relocation Partner
+                    </h3>
+
+                    <p style="font-size: 16px; line-height: 1.8; color: #555; margin: 0 0 15px 0;">
+                        Annapurna Packers and Movers is a professional relocation service provider
+                        offering reliable and efficient packing, moving, transportation, and storage
+                        solutions. We understand that moving your home, office, vehicle, or business
+                        requires careful planning and professional handling.
+                    </p>
+
+                    <p style="font-size: 16px; line-height: 1.8; color: #555; margin: 0 0 15px 0;">
+                        Our experienced team takes care of every stage of the relocation process,
+                        from packing and loading to transportation, unloading, and placement.
+                        We focus on handling your belongings safely and delivering them to their
+                        destination with care.
+                    </p>
+
+                    <p style="font-size: 16px; line-height: 1.8; color: #555; margin: 0 0 25px 0;">
+                        Whether you are planning a local household move, an office relocation,
+                        vehicle transportation, international movement, or heavy machinery shifting,
+                        our team is equipped to provide solutions based on your requirements.
+                    </p>
+
+                    <!-- Highlights -->
+                    <div style="display: grid; grid-template-columns: repeat(2, minmax(150px, 1fr)); gap: 15px;">
+
+                        <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #28a745;">
+                            <strong style="display: block; color: #0d3b66; font-size: 17px;">
+                                Professional Team
+                            </strong>
+                            <span style="font-size: 14px; color: #666;">
+                                Trained professionals for safe handling
+                            </span>
                         </div>
 
-                        <div style="display: flex; align-items: center; gap: 12px; background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #28a745; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-                            <span style="font-size: 24px;">💪</span>
-                            <span style="font-size: 16px; font-weight: 600; color: #333;">Loading and Unloading</span>
+                        <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #28a745;">
+                            <strong style="display: block; color: #0d3b66; font-size: 17px;">
+                                Safe & Secure
+                            </strong>
+                            <span style="font-size: 14px; color: #666;">
+                                Careful packing and transportation
+                            </span>
                         </div>
 
-                        <div style="display: flex; align-items: center; gap: 12px; background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #28a745; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-                            <span style="font-size: 24px;">🏢</span>
-                            <span style="font-size: 16px; font-weight: 600; color: #333;">Residential Relocation</span>
+                        <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #28a745;">
+                            <strong style="display: block; color: #0d3b66; font-size: 17px;">
+                                Complete Solutions
+                            </strong>
+                            <span style="font-size: 14px; color: #666;">
+                                From packing to final delivery
+                            </span>
                         </div>
 
-                        <div style="display: flex; align-items: center; gap: 12px; background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #28a745; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-                            <span style="font-size: 24px;">🏠</span>
-                            <span style="font-size: 16px; font-weight: 600; color: #333;">Home Relocation</span>
-                        </div>
-
-                        <div style="display: flex; align-items: center; gap: 12px; background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #28a745; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-                            <span style="font-size: 24px;">💼</span>
-                            <span style="font-size: 16px; font-weight: 600; color: #333;">Office Relocation</span>
-                        </div>
-
-                        <div style="display: flex; align-items: center; gap: 12px; background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #28a745; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-                            <span style="font-size: 24px;">🚗</span>
-                            <span style="font-size: 16px; font-weight: 600; color: #333;">Car Transportation</span>
-                        </div>
-
-                        <div style="display: flex; align-items: center; gap: 12px; background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #28a745; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-                            <span style="font-size: 24px;">🏍️</span>
-                            <span style="font-size: 16px; font-weight: 600; color: #333;">Bike Transportation</span>
-                        </div>
-
-                        <div style="display: flex; align-items: center; gap: 12px; background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #28a745; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-                            <span style="font-size: 24px;">✈️</span>
-                            <span style="font-size: 16px; font-weight: 600; color: #333;">International Transportation</span>
-                        </div>
-
-                        <div style="display: flex; align-items: center; gap: 12px; background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #28a745; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-                            <span style="font-size: 24px;">🏭</span>
-                            <span style="font-size: 16px; font-weight: 600; color: #333;">Warehousing and Storage</span>
-                        </div>
-
-
-                        <div style="display: flex; align-items: center; gap: 12px; background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #28a745; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-                            <span style="font-size: 24px;">🏗️</span>
-                            <span style="font-size: 16px; font-weight: 600; color: #333;">Heavy Machinery Shifting</span>
-                        </div>
-                        <div style="display: flex; align-items: center; gap: 12px; background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #28a745; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-                            <span style="font-size: 24px;">🚛</span>
-                            <span style="font-size: 16px; font-weight: 600; color: #333;">Container Truck Services</span>
+                        <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #28a745;">
+                            <strong style="display: block; color: #0d3b66; font-size: 17px;">
+                                Customer Focused
+                            </strong>
+                            <span style="font-size: 14px; color: #666;">
+                                Relocation services tailored to your needs
+                            </span>
                         </div>
 
                     </div>
+
                 </div>
 
-                <!-- Right Side: Team Image Box (40% Width) -->
+                <!-- Right Side: Team Image -->
                 <div style="flex: 1; min-width: 300px; flex-basis: 35%; text-align: center;">
-                    <img src="teams.png" alt="Our Packers and Movers Team" style="width: 100%; max-width: 400px; height: auto; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.15); border: 3px solid #0d3b66;">
+
+                    <img
+                        src="teams.png"
+                        alt="Annapurna Packers and Movers Team"
+                        style="width: 100%; max-width: 400px; height: auto; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.15); border: 3px solid #0d3b66;">
+
                 </div>
 
             </div>
