@@ -269,11 +269,11 @@
                 image: "img/container-truck-services.jpeg",
                 desc: "Reliable container trucking solutions for efficient and secure cargo transportation."
             },
-            {
-                title: "Transport Insurance",
-                image: "img/transport-insurance.jpeg",
-                desc: "Comprehensive transit insurance coverage to safeguard your goods against unexpected damages."
-            },
+            // {
+            //     title: "Transport Insurance",
+            //     image: "img/transport-insurance.jpeg",
+            //     desc: "Comprehensive transit insurance coverage to safeguard your goods against unexpected damages."
+            // },
         ];
 
         // Function to loop and print cards dynamically onto the website layout

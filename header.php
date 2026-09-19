@@ -29,7 +29,7 @@
                     <a href="services.php">Bike Transportation</a>
                     <a href="services.php">International Transportation</a>
                     <a href="services.php">Warehousing and Storage</a>
-                    <a href="services.php">Transport Insurance</a>
+                    <!-- <a href="services.php">Transport Insurance</a> -->
                     <a href="services.php">Heavy Machinery and Shifting</a>
                 </div>
             </div>

@@ -1287,10 +1287,10 @@
                             <span style="font-size: 16px; font-weight: 600; color: #333;">Warehousing and Storage</span>
                         </div>
 
-                        <div style="display: flex; align-items: center; gap: 12px; background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #28a745; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                        /* <div style="display: flex; align-items: center; gap: 12px; background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #28a745; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
                             <span style="font-size: 24px;">🛡️</span>
                             <span style="font-size: 16px; font-weight: 600; color: #333;">Transport Insurance</span>
-                        </div>
+                        </div> */
 
                         <div style="display: flex; align-items: center; gap: 12px; background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #28a745; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
                             <span style="font-size: 24px;">🏗️</span>
