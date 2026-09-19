@@ -29,7 +29,7 @@
         <div class="footer-contact-card">
             <span class="footer-eyebrow">Contact Us</span>
             <h3>Get In Touch With<br><strong>Annapurna Packers</strong></h3>
-            <div class="footer-address">
+            <div class="footer-contact-row">
                 <strong>Office Address</strong>
                 <span>Iruvada, Drivers Rest Parking, Sabbavaram, Askapalli, Anakapalli District - 531035</span>
             </div>

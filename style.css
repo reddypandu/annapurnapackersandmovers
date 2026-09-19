@@ -19,6 +19,70 @@ body {
   line-height: 1.6;
 }
 
+.home-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 36px;
+  min-height: 500px;
+  width: 100%;
+  padding: 120px 40px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  clear: both;
+  position: relative;
+  z-index: 1;
+  background:
+    linear-gradient(rgba(12, 26, 64, 0.65), rgba(12, 26, 64, 0.65)),
+    url("img/truckprofile.png?v=6") no-repeat center center / cover;
+}
+
+.home-hero-content {
+  max-width: 550px;
+  color: #ffffff;
+  text-align: left;
+}
+
+.home-hero-content h1 {
+  margin: 15px 0 0;
+  color: #ffffff;
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 767px) {
+  .home-hero {
+    min-height: 520px;
+    padding: 72px 18px 56px;
+    align-items: flex-end;
+    background-position: 62% center;
+  }
+
+  .home-hero-content {
+    width: 100%;
+    max-width: none;
+  }
+
+  .home-hero-content h1 {
+    font-size: clamp(30px, 9vw, 42px);
+    line-height: 1.12;
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .home-hero {
+    min-height: 480px;
+    padding: 90px 28px;
+  }
+
+  .home-hero-content h1 {
+    font-size: 40px;
+  }
+}
+
 header {
   background-color: #002c5b;
   background-size: cover;
@@ -32,8 +96,7 @@ header {
 }
 header,
 .services-banner,
-.banner,
-section:first-of-type {
+.banner {
   background-image: none !important;
   background-size: cover !important;
   background-position: center !important;

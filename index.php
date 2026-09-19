@@ -7,7 +7,7 @@
     <title>Best Packers and Movers In Visakhapatnam</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <style>
         * {
             margin: 0;
@@ -1119,110 +1119,19 @@
             font-weight: bold;
             cursor: pointer;
         }
-
-        <div class="services-container">< !-- Card 1 --><div class="service-card"><div class="icon-circle">src="img/annapurna-house-shifting-loading.jpg"
-        </div><h3>Home Relocation</h3><div class="orange-line"></div><p>household shifting with premium packing,
-        secure loading and doorstep delivery.</p></div>< !-- Card 2 --><div class="service-card"><div class="icon-circle">src="img/office.jpg"
-        </div><h3>Office Relocation</h3><div class="orange-line"></div><p>Professional office relocation with minimum business interruption and secure handling.</p></div>< !-- Card 3 --><div class="service-card"><div class="icon-circle">src="img/annapurna-car-shifting-loading.jpg"
-        </div><h3>Vehicle Transportation</h3><div class="orange-line"></div><p>Safe transportation of cars and bikes using specialized carrier vehicles.</p></div></div>
     </style>
 </head>
 
 <body>
 
     <?php include 'header.php'; ?>
-    <section id="home" class="slider-section position-relative" style="display: flex !important; align-items: center !important; justify-content: space-between !important; gap: 36px !important; background: linear-gradient(rgba(12, 26, 64, 0.65), rgba(12, 26, 64, 0.65)), url('img/truckprofile.png?v=6') no-repeat center center / cover !important; padding: 120px 40px !important; min-height: 500px !important; width: 100% !important; box-sizing: border-box !important; flex-wrap: wrap !important; clear: both !important; z-index: 1 !important;">
+    <section id="home" class="home-hero slider-section position-relative">
         <!-- Left Side: Trust Text & Quick Action Buttons -->
-        <!-- Automatic Popup Callback Form by AI -->
-        <div id="callbackPopup" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 999999; justify-content: center; align-items: center; padding: 20px; box-sizing: border-box; font-family: sans-serif;">
-            <div style="background: #ffffff; padding: 35px 25px; border-radius: 20px; max-width: 460px; width: 100%; box-sizing: border-box; position: relative; text-align: center; box-shadow: 0px 15px 35px rgba(0,0,0,0.3);">
-
-                <!-- Close Button (X) -->
-                <button type="button" onclick="document.getElementById('callbackPopup').style.display='none';" style="position: absolute; top: 15px; right: 20px; background: none; border: none; font-size: 24px; cursor: pointer !important; z-index: 999999 !important; font-weight: bold; color: #666; padding: 0; outline: none;">&times;</button>
-
-                <!-- Truck Icon Container -->
-                <div style="background: #fff5ed; width: 55px; height: 55px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px;">
-                    <span style="font-size: 26px;">🚚</span>
-                </div>
-
-                <!-- Headings -->
-                <h3 style="margin: 0 0 8px; color: #0d1e3d; font-size: 24px; font-weight: 700;">Get Free Moving Quote</h3>
-                <p style="margin: 0 0 25px; color: #666; font-size: 14px;">Fill the form & get instant estimate</p>
-
-                <!-- Form Starts -->
-                <form onsubmit="sendDetailedPopupToWhatsApp(event)" style="display: flex; flex-direction: column; gap: 15px; text-align: left;">
-
-                    <!-- Full Name Input -->
-                    <input type="text" id="pop_detailed_name" placeholder="Your Full Name *" required style="width: 100%; padding: 13px 15px; border: 1px solid #e2e8f0; border-radius: 8px; background: #fbfbfd; font-size: 14px; outline: none; box-sizing: border-box; color: #333;">
-
-                    <!-- Phone Number Input -->
-                    <input type="tel" id="pop_detailed_phone" placeholder="Phone Number *" required style="width: 100%; padding: 13px 15px; border: 1px solid #e2e8f0; border-radius: 8px; background: #fbfbfd; font-size: 14px; outline: none; box-sizing: border-box; color: #333;">
-
-                    <!-- Cities Row (From & To) -->
-                    <div style="display: flex; gap: 12px; width: 100%;">
-                        <input type="text" id="pop_detailed_from" placeholder="From City *" required style="width: 50%; padding: 13px 15px; border: 1px solid #e2e8f0; border-radius: 8px; background: #fbfbfd; font-size: 14px; outline: none; box-sizing: border-box; color: #333;">
-                        <input type="text" id="pop_detailed_to" placeholder="To City *" required style="width: 50%; padding: 13px 15px; border: 1px solid #e2e8f0; border-radius: 8px; background: #fbfbfd; font-size: 14px; outline: none; box-sizing: border-box; color: #333;">
-                    </div>
-
-                    <!-- Submit Button (Orange Color) -->
-                    <button type="submit" style="width: 100%; background: #ff6a00; color: white; border: none; padding: 14px; border-radius: 8px; font-size: 16px; font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; box-shadow: 0px 4px 10px rgba(255,106,0,0.3); margin-top: 5px; outline: none;">
-                        Get Free Quote
-                    </button>
-
-                    <!-- Bottom Call Note -->
-                    <div style="text-align: center; margin-top: 10px;">
-                        <p style="margin: 0 0 8px; color: #777; font-size: 13px;">Or call us directly</p>
-                        <a href="tel:+919966031259" style="color: #ff6a00; font-size: 20px; font-weight: bold; text-decoration: none; display: inline-flex; align-flex: center; gap: 8px; font-family: sans-serif;">📞 +91 99660 31259</a>
-                    </div>
-                </form>
-            </div>
-        </div>
-
-        <!-- Popup Activation & WhatsApp Script -->
-        <script>
-            window.addEventListener('DOMContentLoaded', (event) => {
-                setTimeout(function() {
-                    document.getElementById('callbackPopup').style.display = 'flex';
-                }, 2000);
-            });
-
-            function openQuotePopup(event) {
-                if (event) {
-                    event.preventDefault();
-                }
-                document.getElementById('callbackPopup').style.display = 'flex';
-                document.getElementById('pop_detailed_name').focus();
-            }
-
-            function closePopup() {
-                document.getElementById('callbackPopup').style.display = 'none';
-            }
-
-            function sendDetailedPopupToWhatsApp(event) {
-                event.preventDefault();
-                var name = document.getElementById('pop_detailed_name').value;
-                var phone = document.getElementById('pop_detailed_phone').value;
-                var fromCity = document.getElementById('pop_detailed_from').value;
-                var toCity = document.getElementById('pop_detailed_to').value;
-
-                var message = "*Annapurna Packers - Popup Quote Request*\n\n" +
-                    "*Name:* " + name + "\n" +
-                    "*Phone:* " + phone + "\n" +
-                    "*From City:* " + fromCity + "\n" +
-                    "*To City:* " + toCity;
-
-                var whatsappUrl = "https://wa.me/918333031259?text=" + encodeURIComponent(message);
-                window.open(whatsappUrl, '_blank');
-                closePopup();
-            }
-        </script>
-        </div>
-        <div style="max-width: 550px; color: white; text-align: left;">
-            <h1 style="font-size: 44px; color: #ffffff; font-weight: 800; margin-top: 15px; line-height: 1.2; text-shadow: 2px 2px 4px rgba(0,0,0,0.6);">Best Packers and Movers In Anakappali,Visakhapatnam</h1>
+        <div class="home-hero-content">
+            <h1>Best Packers and Movers In Anakappali,Visakhapatnam</h1>
 
             <div style="margin-top: 30px; display: flex; gap: 15px; flex-wrap: wrap;">
             </div>
-        </div>
         </div>
     </section>
 
@@ -1481,104 +1390,454 @@
     <div style="clear: both; width: 100%; display: block;"></div>
     <!-- START OF OUR TEAM SECTION -->
     <!-- New Professional Services Section with Image Start -->
-    <section class="premium-services-section" style="padding: 60px 0; background-color: #ffffff; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; clear: both; display: block;">
-        <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+    <style>
+        .apm-about {
+            padding: 80px 0;
+            background: linear-gradient(180deg, #f4f8fc 0%, #ffffff 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            clear: both;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* soft decorative circles in the background */
+        .apm-about::before,
+        .apm-about::after {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .apm-about::before {
+            width: 320px;
+            height: 320px;
+            top: -120px;
+            right: -100px;
+            background: rgba(13, 59, 102, 0.06);
+        }
+
+        .apm-about::after {
+            width: 220px;
+            height: 220px;
+            bottom: -80px;
+            left: -70px;
+            background: rgba(40, 167, 69, 0.08);
+        }
+
+        .apm-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Heading */
+        .apm-heading {
+            text-align: center;
+            margin-bottom: 55px;
+        }
+
+        .apm-tag {
+            display: inline-block;
+            background: rgba(40, 167, 69, 0.12);
+            color: #b00018;
+            padding: 6px 18px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+        }
+
+        .apm-heading h2 {
+            font-size: 36px;
+            color: #0d3b66;
+            margin: 0 0 14px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .apm-heading h2::after {
+            content: "";
+            display: block;
+            width: 80px;
+            height: 4px;
+            margin: 14px auto 0;
+            border-radius: 4px;
+            background: linear-gradient(90deg, #0d3b66, #b00018);
+        }
+
+        .apm-heading p {
+            font-size: 17px;
+            color: #666;
+            margin: 0;
+        }
+
+        /* Layout */
+        .apm-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .apm-content {
+            flex: 1 1 520px;
+        }
+
+        .apm-media {
+            flex: 1 1 320px;
+            text-align: center;
+        }
+
+        .apm-content h3 {
+            font-size: 28px;
+            color: #0d3b66;
+            margin: 0 0 18px;
+            font-weight: 700;
+            position: relative;
+            padding-left: 16px;
+        }
+
+        .apm-content h3::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 4px;
+            bottom: 4px;
+            width: 5px;
+            border-radius: 5px;
+            background: #b00018;
+        }
+
+        .apm-content p {
+            font-size: 16px;
+            line-height: 1.85;
+            color: #555;
+            margin: 0 0 15px;
+        }
+
+        /* Highlight cards */
+        .apm-highlights {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+            margin-top: 28px;
+        }
+
+        .apm-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            background: #ffffff;
+            padding: 18px;
+            border-radius: 12px;
+            border: 1px solid #e8eef5;
+            border-left: 4px solid #b00018;
+            box-shadow: 0 4px 14px rgba(13, 59, 102, 0.07);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+
+        .apm-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 26px rgba(13, 59, 102, 0.16);
+            border-left-color: #0d3b66;
+        }
+
+        .apm-icon {
+            flex: 0 0 46px;
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #0d3b66, #155a9c);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            transition: background 0.3s ease;
+        }
+
+        .apm-card:hover .apm-icon {
+            background: linear-gradient(135deg, #b00018, #1e8a38);
+        }
+
+        .apm-card strong {
+            display: block;
+            color: #0d3b66;
+            font-size: 17px;
+            margin-bottom: 3px;
+        }
+
+        .apm-card span {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        /* Buttons */
+        .apm-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-top: 32px;
+        }
+
+        .apm-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 13px 28px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 15px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .apm-btn-primary {
+            background: #b00018;
+            color: #fff;
+            box-shadow: 0 6px 16px rgba(40, 167, 69, 0.35);
+        }
+
+        .apm-btn-primary:hover {
+            background: #1e8a38;
+            transform: translateY(-3px);
+        }
+
+        .apm-btn-outline {
+            border: 2px solid #0d3b66;
+            color: #0d3b66;
+        }
+
+        .apm-btn-outline:hover {
+            background: #0d3b66;
+            color: #fff;
+            transform: translateY(-3px);
+        }
+
+        /* Image with offset frame + badge */
+        .apm-img-wrap {
+            position: relative;
+            display: inline-block;
+            max-width: 100%;
+        }
+
+        .apm-img-wrap::before {
+            content: "";
+            position: absolute;
+            top: 18px;
+            left: 18px;
+            width: 100%;
+            height: 100%;
+            border: 3px solid #b00018;
+            border-radius: 16px;
+            z-index: 0;
+            transition: transform 0.4s ease;
+        }
+
+        .apm-img-wrap:hover::before {
+            transform: translate(-8px, -8px);
+        }
+
+        .apm-img-wrap img {
+            position: relative;
+            z-index: 1;
+            display: block;
+            width: 100%;
+            max-width: 420px;
+            height: auto;
+            border-radius: 16px;
+            border: 4px solid #0d3b66;
+            box-shadow: 0 14px 34px rgba(0, 0, 0, 0.2);
+        }
+
+        .apm-badge {
+            position: absolute;
+            z-index: 2;
+            bottom: -20px;
+            right: -10px;
+            background: #0d3b66;
+            color: #fff;
+            padding: 14px 20px;
+            border-radius: 14px;
+            text-align: center;
+            border: 3px solid #fff;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+            animation: apmFloat 3s ease-in-out infinite;
+        }
+
+        .apm-badge b {
+            display: block;
+            font-size: 26px;
+            line-height: 1;
+            color: #b00018;
+        }
+
+        .apm-badge small {
+            font-size: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        @keyframes apmFloat {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-8px);
+            }
+        }
+
+        /* Stats strip */
+        .apm-stats {
+            margin-top: 70px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            background: linear-gradient(135deg, #0d3b66, #155a9c);
+            border-radius: 16px;
+            padding: 30px 10px;
+            box-shadow: 0 12px 30px rgba(13, 59, 102, 0.3);
+        }
+
+        .apm-stat {
+            text-align: center;
+            color: #fff;
+            padding: 10px;
+            border-right: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        .apm-stat:last-child {
+            border-right: none;
+        }
+
+        .apm-stat b {
+            display: block;
+            font-size: 34px;
+            font-weight: 800;
+            color: #7dffa1;
+        }
+
+        .apm-stat span {
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            opacity: 0.9;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .apm-about {
+                padding: 55px 0;
+            }
+
+            .apm-heading h2 {
+                font-size: 26px;
+            }
+
+            .apm-highlights {
+                grid-template-columns: 1fr;
+            }
+
+            .apm-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .apm-stat:nth-child(2) {
+                border-right: none;
+            }
+
+            .apm-badge {
+                right: 0;
+            }
+        }
+    </style>
+
+    <section class="apm-about">
+        <div class="apm-container">
 
             <!-- Section Heading -->
-            <div style="text-align: center; margin-bottom: 40px;">
-                <h2 style="font-size: 32px; color: #0d3b66; margin: 0 0 10px 0; font-weight: 700; text-transform: uppercase;">
-                    About Annapurna Packers and Movers
-                </h2>
-
-                <p style="font-size: 16px; color: #666; margin: 0;">
-                    Reliable Packing and Moving Services for a Smooth and Stress-Free Relocation
-                </p>
+            <div class="apm-heading">
+                <span class="apm-tag">Who We Are</span>
+                <h2>About Annapurna Packers and Movers</h2>
+                <p>Reliable Packing and Moving Services for a Smooth and Stress-Free Relocation</p>
             </div>
 
-            <!-- About Content + Image -->
-            <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
+            <div class="apm-row">
 
                 <!-- Left Side: About Content -->
-                <div style="flex: 1; min-width: 300px; flex-basis: 60%;">
+                <div class="apm-content">
+                    <h3>Your Trusted Relocation Partner</h3>
 
-                    <h3 style="font-size: 26px; color: #0d3b66; margin: 0 0 18px 0; font-weight: 700;">
-                        Your Trusted Relocation Partner
-                    </h3>
-
-                    <p style="font-size: 16px; line-height: 1.8; color: #555; margin: 0 0 15px 0;">
+                    <p>
                         Annapurna Packers and Movers is a professional relocation service provider
                         offering reliable and efficient packing, moving, transportation, and storage
                         solutions. We understand that moving your home, office, vehicle, or business
                         requires careful planning and professional handling.
                     </p>
-
-                    <p style="font-size: 16px; line-height: 1.8; color: #555; margin: 0 0 15px 0;">
+                    <p>
                         Our experienced team takes care of every stage of the relocation process,
                         from packing and loading to transportation, unloading, and placement.
                         We focus on handling your belongings safely and delivering them to their
                         destination with care.
                     </p>
-
-                    <p style="font-size: 16px; line-height: 1.8; color: #555; margin: 0 0 25px 0;">
+                    <p>
                         Whether you are planning a local household move, an office relocation,
                         vehicle transportation, international movement, or heavy machinery shifting,
                         our team is equipped to provide solutions based on your requirements.
                     </p>
 
                     <!-- Highlights -->
-                    <div style="display: grid; grid-template-columns: repeat(2, minmax(150px, 1fr)); gap: 15px;">
-
-                        <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #28a745;">
-                            <strong style="display: block; color: #0d3b66; font-size: 17px;">
-                                Professional Team
-                            </strong>
-                            <span style="font-size: 14px; color: #666;">
-                                Trained professionals for safe handling
-                            </span>
+                    <div class="apm-highlights">
+                        <div class="apm-card">
+                            <div class="apm-icon"><i class="fa-solid fa-users"></i></div>
+                            <div>
+                                <strong>Professional Team</strong>
+                                <span>Trained professionals for safe handling</span>
+                            </div>
                         </div>
-
-                        <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #28a745;">
-                            <strong style="display: block; color: #0d3b66; font-size: 17px;">
-                                Safe & Secure
-                            </strong>
-                            <span style="font-size: 14px; color: #666;">
-                                Careful packing and transportation
-                            </span>
+                        <div class="apm-card">
+                            <div class="apm-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <div>
+                                <strong>Safe &amp; Secure</strong>
+                                <span>Careful packing and transportation</span>
+                            </div>
                         </div>
-
-                        <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #28a745;">
-                            <strong style="display: block; color: #0d3b66; font-size: 17px;">
-                                Complete Solutions
-                            </strong>
-                            <span style="font-size: 14px; color: #666;">
-                                From packing to final delivery
-                            </span>
+                        <div class="apm-card">
+                            <div class="apm-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                            <div>
+                                <strong>Complete Solutions</strong>
+                                <span>From packing to final delivery</span>
+                            </div>
                         </div>
-
-                        <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #28a745;">
-                            <strong style="display: block; color: #0d3b66; font-size: 17px;">
-                                Customer Focused
-                            </strong>
-                            <span style="font-size: 14px; color: #666;">
-                                Relocation services tailored to your needs
-                            </span>
+                        <div class="apm-card">
+                            <div class="apm-icon"><i class="fa-solid fa-handshake"></i></div>
+                            <div>
+                                <strong>Customer Focused</strong>
+                                <span>Relocation services tailored to your needs</span>
+                            </div>
                         </div>
-
                     </div>
+
 
                 </div>
 
                 <!-- Right Side: Team Image -->
-                <div style="flex: 1; min-width: 300px; flex-basis: 35%; text-align: center;">
-
-                    <img
-                        src="teams.png"
-                        alt="Annapurna Packers and Movers Team"
-                        style="width: 100%; max-width: 400px; height: auto; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.15); border: 3px solid #0d3b66;">
-
+                <div class="apm-media">
+                    <div class="apm-img-wrap">
+                        <img src="teams.png" alt="Annapurna Packers and Movers Team">
+                    </div>
                 </div>
 
             </div>
+
+
 
         </div>
     </section>
@@ -2027,12 +2286,12 @@
         <div style="position: fixed; right: 20px; top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; gap: 12px; z-index: 99999;">
 
             <!-- Call Icon -->
-            <a href="tel:+918333031259" style="width: 48px; height: 48px; background-color: #0d3b66; border: 2px solid #28a745; color: #28a745; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.3); transition: all 0.3s;" title="Call Us">
+            <a href="tel:+918333031259" style="width: 48px; height: 48px; background-color: #25d366; border: 2px solid #25d366; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.3); transition: all 0.3s;" title="Call Us">
                 <i class="fa-solid fa-phone"></i>
             </a>
 
             <!-- WhatsApp Icon -->
-            <a href="https://wa.me/918333031259" target="_blank" rel="noopener" style="width: 48px; height: 48px; background-color: #0d3b66; border: 2px solid #25d366; color: #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.3); transition: all 0.3s;" title="WhatsApp">
+            <a href="https://wa.me/918333031259" target="_blank" rel="noopener" style="width: 48px; height: 48px; background-color: #25d366; border: 2px solid #25d366; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.3); transition: all 0.3s;" title="WhatsApp">
                 <i class="fa-brands fa-whatsapp"></i>
             </a>
 

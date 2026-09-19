@@ -131,6 +131,59 @@
             margin-top: 30px;
         }
 
+        .contact-enquiry-form {
+            max-width: 900px;
+            margin: 30px auto 0;
+            padding: 28px;
+            background: #ffffff;
+            border-top: 4px solid #b00018;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        .contact-enquiry-form h2 {
+            margin: 0 0 18px;
+            color: #06285f;
+            font-size: 26px;
+        }
+
+        .contact-enquiry-fields {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 14px;
+        }
+
+        .contact-enquiry-fields input {
+            width: 100%;
+            padding: 13px 14px;
+            border: 1px solid #d9dee8;
+            border-radius: 6px;
+            font: inherit;
+            box-sizing: border-box;
+        }
+
+        .contact-enquiry-fields button {
+            grid-column: 1 / -1;
+            padding: 13px 18px;
+            border: 0;
+            border-radius: 6px;
+            background: #b00018;
+            color: #ffffff;
+            font: inherit;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        @media (max-width: 600px) {
+            .contact-enquiry-form {
+                padding: 22px 18px;
+            }
+
+            .contact-enquiry-fields {
+                grid-template-columns: 1fr;
+            }
+        }
+
         .google-map-box iframe {
             width: 100%;
             height: 450px;
@@ -179,8 +232,8 @@
                     <div class="icon-box">📞</div>
                     <div>
                         <h4>Call Us</h4>
-                        <p style="margin-bottom: 5px;"><a href="tel:+919966031259" style="color: #333;">+91 99660 31259</a></p>
-                        <p><a href="tel:+918985541259" style="color: #333;">+91 89855 41259</a></p>
+                        <p style="margin-bottom: 5px;"><a href="tel:+919848131259" style="color: #333;">+91 9848131259</a></p>
+                        <p><a href="tel:+918333021259" style="color: #333;">+91 8333021259</a></p>
                     </div>
                 </div>
             </div>
@@ -192,13 +245,43 @@
 
         </div>
 
-        <!-- 4. Bottom: Verified Google Map Section (Sabbavaram) -->
+        <!-- 4. Enquiry Form -->
+        <form class="contact-enquiry-form" onsubmit="sendContactEnquiryToWhatsApp(event)">
+            <h2>Send Your Moving Enquiry</h2>
+            <div class="contact-enquiry-fields">
+                <input type="text" id="contact_enquiry_name" placeholder="Name *" required>
+                <input type="tel" id="contact_enquiry_phone" placeholder="Phone Number *" required>
+                <input type="text" id="contact_enquiry_pickup" placeholder="Pick-up Address *" required>
+                <input type="text" id="contact_enquiry_drop" placeholder="Drop Address *" required>
+                <button type="submit">Send Enquiry on WhatsApp</button>
+            </div>
+        </form>
+
+        <!-- 5. Bottom: Verified Google Map Section (Sabbavaram) -->
         <div class="google-map-box">
             <iframe src="https://www.google.com/maps?q=Visakhapatnam%20India&output=embed" title="Annapurna Packers and Movers location" loading="lazy"></iframe>
         </div>
     </div>
 
     <?php include 'footer.php'; ?>
+
+    <script>
+        function sendContactEnquiryToWhatsApp(event) {
+            event.preventDefault();
+
+            var name = document.getElementById('contact_enquiry_name').value;
+            var phone = document.getElementById('contact_enquiry_phone').value;
+            var pickupAddress = document.getElementById('contact_enquiry_pickup').value;
+            var dropAddress = document.getElementById('contact_enquiry_drop').value;
+            var message = '*Annapurna Packers - Contact Enquiry*\n\n' +
+                '*Name:* ' + name + '\n' +
+                '*Phone:* ' + phone + '\n' +
+                '*Pick-up Address:* ' + pickupAddress + '\n' +
+                '*Drop Address:* ' + dropAddress;
+
+            window.open('https://wa.me/918333031259?text=' + encodeURIComponent(message), '_blank');
+        }
+    </script>
 
 </body>
 
