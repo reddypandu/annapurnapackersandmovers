@@ -79,10 +79,15 @@
             display: flex;
             align-items: flex-start;
             gap: 15px;
+            min-height: 62px;
         }
 
         .contact-row .icon-box {
+            width: 28px;
+            flex: 0 0 28px;
             font-size: 22px;
+            line-height: 1.4;
+            text-align: center;
             margin-top: 2px;
         }
 
@@ -95,15 +100,30 @@
 
         .contact-row p {
             margin: 0;
-            color: #666;
+            color: #333;
             font-size: 14px;
             line-height: 1.6;
+            font-weight: bold;
+        }
+
+        .contact-row p+p {
+            margin-top: 5px;
+        }
+
+        .contact-row .contact-note {
+            color: #999;
+            font-size: 13px;
+            font-style: italic;
         }
 
         .contact-row a {
             text-decoration: none;
-            color: #ff6f00;
+            color: #333;
             font-weight: bold;
+        }
+
+        .contact-row a:hover {
+            color: #ff6f00;
         }
 
         .truck-image-box {
@@ -213,8 +233,8 @@
                     <div class="icon-box">📍</div>
                     <div>
                         <h4>Office Address</h4>
-                        <p>Iruvada, Drivers Rest Parking,<br>Sabbavaram, Anakapalli,<br>Anakapalli District - 531035.</p>
-                        <p style="margin-top: 5px; color: #999; font-size: 13px; font-style: italic;">Branch: Visakhapatnam, Andhra Pradesh.</p>
+                        <p style="font-size:bold;">Iruvada, Drivers Rest Parking,<br>Sabbavaram, Anakapalli,<br>Anakapalli District - 531035.</p>
+                        <p class="contact-note">Branch: Visakhapatnam, Andhra Pradesh.</p>
                     </div>
                 </div>
 
@@ -232,8 +252,8 @@
                     <div class="icon-box">📞</div>
                     <div>
                         <h4>Call Us</h4>
-                        <p style="margin-bottom: 5px;"><a href="tel:+919966031259" style="color: #333;">+91 9966031259</a></p>
-                        <p><a href="tel:+918333031259" style="color: #333;">+91 8333031259</a></p>
+                        <p><a href="tel:+919966031259">+91 9966031259</a></p>
+                        <p><a href="tel:+918333031259">+91 8333031259</a></p>
                     </div>
                 </div>
             </div>
