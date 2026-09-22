@@ -39,7 +39,7 @@
             </div>
             <div class="footer-contact-row">
                 <strong>Call Us</strong>
-                <span>+91 9848131259 / 8333021259</span>
+                <span>+91 9966031259 / 8333031259</span>
             </div>
         </div>
         <div class="footer-map">

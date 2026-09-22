@@ -44,7 +44,7 @@
             padding: 0 20px;
         }
 
-        .services-hero {
+        .about-hero {
             background: linear-gradient(90deg, rgba(2, 28, 54, 0.92) 45%, rgba(2, 28, 54, 0.6) 100%),
                 url('img/services.jpeg');
             background-size: cover;
@@ -55,7 +55,6 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            font-size: 36px;
         }
 
         .hero-title {
@@ -64,6 +63,7 @@
             margin-bottom: 5px;
             color: #ffffff;
             letter-spacing: 1px;
+            margin-top: 0;
         }
 
         /* Orange line below 'About Us' */
@@ -73,6 +73,57 @@
             background-color: #ff6600;
             margin-bottom: 25px;
         }
+
+
+        /* Hero Icons Container Layout */
+        .hero-icons-grid {
+            display: flex;
+            gap: 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 30px;
+            max-width: 600px;
+        }
+
+        .hero-icon-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 120px;
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .hero-icon-item:last-child {
+            border-right: none;
+        }
+
+        .icon-circle {
+            width: 65px;
+            height: 65px;
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 12px;
+            font-size: 24px;
+            color: #ffffff;
+            transition: all 0.3s ease;
+        }
+
+        .hero-icon-item:hover .icon-circle {
+            border-color: #ff6600;
+            color: #ff6600;
+            background: rgba(255, 102, 0, 0.1);
+        }
+
+        .icon-label {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 700;
+            color: #ff6600;
+        }
+
 
         .services-header {
             text-align: center;
@@ -189,15 +240,57 @@
                 min-height: 0;
             }
         }
+
+        @media (max-width: 768px) {
+            .hero-icons-grid {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            .hero-icon-item {
+                border-right: none;
+                width: 45%;
+            }
+
+
+            .hero-title {
+                font-size: 48px;
+            }
+        }
     </style>
 </head>
 
 <body>
 
     <?php include 'header.php'; ?>
-    <div class="services-hero">
+
+    <div class="about-hero">
         <h1 class="hero-title">Our Services</h1>
         <div class="title-divider"></div>
+        <p class="hero-subtitle">
+            Safe, Reliable, and Professional Logistics Solutions
+        </p>
+
+        <!-- Exact Icons Grid Layout -->
+        <div class="hero-icons-grid">
+            <div class="hero-icon-item">
+                <div class="icon-circle"><i class="fa-solid fa-house"></i></div>
+                <div class="icon-label">Home</div>
+            </div>
+            <div class="hero-icon-item">
+                <div class="icon-circle"><i class="fa-solid fa-building"></i></div>
+                <div class="icon-label">Office</div>
+            </div>
+            <div class="hero-icon-item">
+                <div class="icon-circle"><i class="fa-solid fa-car"></i></div>
+                <div class="icon-label">Vehicle</div>
+            </div>
+            <div class="hero-icon-item">
+                <div class="icon-circle"><i class="fa-solid fa-globe"></i></div>
+                <div class="icon-label">International</div>
+            </div>
+        </div>
     </div>
 
     <div class="services-container">

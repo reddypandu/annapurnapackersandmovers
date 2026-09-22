@@ -232,8 +232,8 @@
                     <div class="icon-box">📞</div>
                     <div>
                         <h4>Call Us</h4>
-                        <p style="margin-bottom: 5px;"><a href="tel:+919848131259" style="color: #333;">+91 9848131259</a></p>
-                        <p><a href="tel:+918333021259" style="color: #333;">+91 8333021259</a></p>
+                        <p style="margin-bottom: 5px;"><a href="tel:+919966031259" style="color: #333;">+91 9966031259</a></p>
+                        <p><a href="tel:+918333031259" style="color: #333;">+91 8333031259</a></p>
                     </div>
                 </div>
             </div>

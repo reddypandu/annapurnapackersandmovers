@@ -2231,7 +2231,7 @@
                         <div style="flex-shrink: 0; font-size: 16px;">📞</div>
                         <div>
                             <h4 style="margin: 0 0 3px 0; font-size: 14px; font-weight: 700; color: #b00018;">Call Us</h4>
-                            <p style="margin: 0; font-size: 13px; font-weight: 600; color: #ffffff;">+91 9848131259 / 8333021259</p>
+                            <p style="margin: 0; font-size: 13px; font-weight: 600; color: #ffffff;">+91 9966031259 / 8333031259</p>
                             <p style="margin: 2px 0 0 0; font-size: 13px; font-weight: 600; color: #ffffff;">+91 8333031259 / 8333041259</p>
                         </div>
                     </div>
