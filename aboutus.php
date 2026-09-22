@@ -68,7 +68,7 @@
         /* --- IMAGE MATCHED HERO BANNER --- */
         .about-hero {
             background: linear-gradient(90deg, rgba(2, 28, 54, 0.92) 45%, rgba(2, 28, 54, 0.6) 100%),
-                url('img/annapurna-logo.jpg');
+                url('img/annapurna-logo.png');
             background-size: cover;
             background-position: center;
             padding: 80px 60px;

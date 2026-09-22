@@ -433,7 +433,7 @@
 
         .about-hero {
             background: linear-gradient(90deg, rgba(2, 28, 54, 0.92) 45%, rgba(2, 28, 54, 0.6) 100%),
-                url('img/blog.jpeg');
+                url('img/blog.png');
             background-size: cover;
             background-position: center;
             padding: 80px 60px;
