@@ -42,9 +42,7 @@
                 <span>+91 9966031259 / 8333031259</span>
             </div>
         </div>
-        <div class="footer-map">
-            <iframe src="https://www.google.com/maps?q=Visakhapatnam%20India&output=embed" title="Annapurna Packers and Movers location" loading="lazy"></iframe>
-        </div>
+
     </div>
 
     <div class="footer-copyright">&copy; 2026 Annapurna Packers and Movers. All Rights Reserved.</div>
