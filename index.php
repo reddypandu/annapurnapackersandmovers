@@ -710,7 +710,6 @@
     <section class="section section-bg-light">
         <div class="container">
             <div class="brand-summary">
-                <div class="summary-icon">🚚</div>
                 <h2>Annapurna Packers and Movers | Packers &amp; Movers, Home, Office &amp; Vehicle Relocation Services Across India</h2>
                 <p>
                     Annapurna Packers and Movers provides professional <strong>Packers &amp; Movers</strong> services including

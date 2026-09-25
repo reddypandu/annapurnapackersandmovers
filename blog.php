@@ -164,7 +164,7 @@
                 <!-- Article 3 -->
                 <article class="blog-card">
                     <div class="blog-img-box">
-                        <img src="img/office.jpg" alt="Office Shifting Checklist" loading="lazy" width="380" height="220">
+                        <img src="img/image.webp" alt="Office Shifting Checklist" loading="lazy" width="380" height="220">
                         <span class="blog-date-badge"><i class="fas fa-calendar-alt"></i> Commercial Move</span>
                     </div>
                     <div class="blog-card-body">

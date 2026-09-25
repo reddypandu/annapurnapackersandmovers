@@ -45,10 +45,14 @@ $currentPage = basename($_SERVER['PHP_SELF']);
                         <li><a href="services.php#packing-moving" class="dropdown-item">Packing &amp; Moving</a></li>
                         <li><a href="services.php#storage-warehousing" class="dropdown-item">Storage &amp; Warehousing</a></li>
                         <li><a href="services.php#international-relocation" class="dropdown-item">International Relocation</a></li>
+                        <li><a href="services.php#loading-unloading" class="dropdown-item">Loading &amp; Unloading</a></li>
+                        <li><a href="services.php#heavy-machinery" class="dropdown-item">Heavy Machinery Shifting</a></li>
+                        <li><a href="services.php#container-trucks" class="dropdown-item">Container Truck Services</a></li>
                     </ul>
                 </li>
-                <li><a href="gallery.php" class="nav-link <?php echo $currentPage == 'gallery.php' ? 'active' : ''; ?>">Gallery</a></li>
                 <li><a href="transportation.php" class="nav-link <?php echo $currentPage == 'transportation.php' ? 'active' : ''; ?>">Transportation</a></li>
+                <li><a href="blog.php" class="nav-link <?php echo $currentPage == 'blog.php' ? 'active' : ''; ?>">Blogs</a></li>
+                <li><a href="gallery.php" class="nav-link <?php echo $currentPage == 'gallery.php' ? 'active' : ''; ?>">Gallery</a></li>
                 <li><a href="contact.php" class="nav-link <?php echo $currentPage == 'contact.php' ? 'active' : ''; ?>">Contact Us</a></li>
             </ul>
 
