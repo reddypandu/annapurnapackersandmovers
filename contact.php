@@ -108,7 +108,7 @@
                             <div>
                                 <h4 style="font-size: 1.05rem; margin-bottom: 4px;">Visakhapatnam (Head Administrative Office)</h4>
                                 <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 6px;">
-                                    Shop No. 9, Sector-4, MVP Colony, Beside Prathibha Bharat Gas Company, Visakhapatnam, AP – 530017
+                                    Iruvada, Drivers Rest Parking, Sabbavaram, Askapalli, Anakapalli District - 531035
                                 </p>
                             </div>
                         </div>
