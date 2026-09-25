@@ -49,7 +49,7 @@
                 <div class="footer-contact-info">
                     <div class="contact-info-row">
                         <i class="fas fa-map-marker-alt"></i>
-                        <p><strong>Vizag (H.O.):</strong> Shop No. 9, Sector-4, MVP Colony, Visakhapatnam - 530017</p>
+                        <p><strong>Vizag (H.O.):</strong> Iruvada, Drivers Rest Parking, Sabbavaram, Askapalli, Anakapalli District - 531035</p>
                     </div>
                     <div class="contact-info-row">
                         <i class="fas fa-warehouse"></i>
