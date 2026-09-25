@@ -636,7 +636,103 @@
             </div>
         </div>
     </section>
+    <!-- ==========================================================================
+     Brand Summary / SEO Block
+     Self-contained: works even if var(--navy-dark) etc. aren't defined,
+     since fallback hex values are given for every custom property use.
+     ========================================================================== -->
+    <style>
+        .brand-summary {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 48px 40px;
+            background: #FFFFFF;
+            border-radius: var(--radius-lg, 16px);
+            box-shadow: var(--shadow-sm, 0 2px 10px rgba(0, 0, 0, 0.06));
+            text-align: center;
+        }
 
+        .brand-summary .summary-icon {
+            font-size: 2.4rem;
+            margin-bottom: 18px;
+            line-height: 1;
+        }
+
+        .brand-summary h2 {
+            margin: 0 0 22px;
+            color: var(--navy-dark, #0f1c30);
+            font-size: 1.9rem;
+            line-height: 1.35;
+        }
+
+        .brand-summary p {
+            margin: 0 0 26px;
+            color: var(--text-muted, #5b6472);
+            font-size: 1.02rem;
+            line-height: 1.75;
+        }
+
+        .brand-summary p strong {
+            color: var(--navy-dark, #0f1c30);
+        }
+
+        .brand-summary .serve-bar {
+            margin: 0 0 26px;
+            padding: 18px 24px;
+            background: var(--navy-dark, #0f1c30);
+            border-radius: var(--radius-md, 10px);
+            color: #FFFFFF;
+            font-weight: 700;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        .brand-summary .serve-bar mark {
+            background: rgba(255, 255, 255, 0.14);
+            color: #FFFFFF;
+            padding: 2px 4px;
+            border-radius: 4px;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+        }
+
+        @media (max-width: 640px) {
+            .brand-summary {
+                padding: 36px 22px;
+            }
+
+            .brand-summary h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+
+    <section class="section section-bg-light">
+        <div class="container">
+            <div class="brand-summary">
+                <div class="summary-icon">🚚</div>
+                <h2>Annapurna Packers and Movers | Packers &amp; Movers, Home, Office &amp; Vehicle Relocation Services Across India</h2>
+                <p>
+                    Annapurna Packers and Movers provides professional <strong>Packers &amp; Movers</strong> services including
+                    <strong>Home Relocation</strong>, <strong>Office Shifting</strong>, <strong>Vehicle Transportation</strong>,
+                    <strong>International Relocation</strong>, <strong>Warehouse &amp; Storage Solutions</strong>,
+                    <strong>Air &amp; Sea Cargo Services</strong>, and <strong>Industrial Moving</strong> with safe packing,
+                    secure transportation, and on-time delivery.
+                </p>
+
+                <div class="serve-bar">
+                    We proudly serve
+                    <mark>Visakhapatnam, Vijayawada, Guntur, Rajahmundry, Kakinada, Tirupati, Nellore, Hyderabad, Chennai, Bengaluru, Mumbai, Pune, Delhi, Kolkata and all major cities across India.</mark>
+                </div>
+
+                <p>
+                    Whether you're relocating your home, office, vehicle or planning an international move, our experienced
+                    team ensures professional packing, careful handling, secure transportation and hassle-free relocation
+                    at affordable prices.
+                </p>
+            </div>
+        </div>
+    </section>
     <!-- 11. Final Strong Quote Request CTA -->
     <section class="final-cta-section">
         <div class="container">
