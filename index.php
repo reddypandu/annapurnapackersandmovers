@@ -262,6 +262,9 @@
                     </div>
                 </div>
             </div>
+            <div class="text-center " style="display: flex; justify-content: center;margin-top: 20px;">
+                <a href="services.php" class="btn btn-primary">View All Services</a>
+            </div>
         </div>
     </section>
 

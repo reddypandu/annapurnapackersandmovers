@@ -148,15 +148,15 @@
                 <!-- Article 2 -->
                 <article class="blog-card">
                     <div class="blog-img-box">
-                        <img src="img/annapurna-car-shifting-loading.jpg" alt="Car and Bike Relocation Tips" loading="lazy" width="380" height="220">
-                        <span class="blog-date-badge"><i class="fas fa-calendar-alt"></i> Vehicle Care</span>
+                        <img src="img/blog-1.png" alt="How We Pack, Label & Load Your Home for a Safe Move" loading="lazy" width="380" height="220">
+                        <span class="blog-date-badge"><i class="fas fa-calendar-alt"></i> Home Relocation</span>
                     </div>
                     <div class="blog-card-body">
-                        <span class="blog-tag">Vehicle Shifting</span>
-                        <h3>Checklist for Intercity Car &amp; Motorcycle Relocation</h3>
-                        <p>What steps to take before handing over your car or bike to a carrier: fuel level checks, loose accessory removal, and pre-loading inspection reports.</p>
+                        <span class="blog-tag">Home Relocation</span>
+                        <h3>How We Pack, Label & Load Your Home for a Safe Move</h3>
+                        <p>See how our trained team sorts belongings room by room, wraps fragile items securely, and clearly labels every box — from the kitchen to the living room — so nothing gets lost or damaged between your old home and the new one.</p>
                         <button type="button" class="btn btn-outline" onclick="openQuoteModal()" style="margin-top: auto;">
-                            <i class="fas fa-car"></i> Get Vehicle Transport Quote
+                            <i class="fas fa-truck-moving"></i> Hire Professional Packers
                         </button>
                     </div>
                 </article>

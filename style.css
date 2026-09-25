@@ -1401,7 +1401,7 @@ img {
    INNER PAGE HERO & UTILITIES
    ========================================================================== */
 .inner-hero {
-    background: linear-gradient(135deg, rgba(10, 28, 46, 0.95) 0%, rgba(16, 42, 67, 0.9) 100%), url('img/truck-banner.jpg') center/cover no-repeat;
+    background: linear-gradient(135deg, rgba(10, 28, 46, 0.95) 0%, rgba(16, 42, 67, 0.9) 100%), url('img/annapurna-logo.png') center/cover no-repeat;
     color: #FFFFFF;
     padding: 70px 0;
     text-align: center;

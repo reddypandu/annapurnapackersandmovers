@@ -54,6 +54,28 @@ $currentPage = basename($_SERVER['PHP_SELF']);
                 <li><a href="blog.php" class="nav-link <?php echo $currentPage == 'blog.php' ? 'active' : ''; ?>">Blogs</a></li>
                 <li><a href="gallery.php" class="nav-link <?php echo $currentPage == 'gallery.php' ? 'active' : ''; ?>">Gallery</a></li>
                 <li><a href="contact.php" class="nav-link <?php echo $currentPage == 'contact.php' ? 'active' : ''; ?>">Contact Us</a></li>
+                <li class="nav-item-dropdown">
+                    <a href="#" class="nav-link <?php echo $currentPage == 'services.php' ? 'active' : ''; ?>" aria-haspopup="true">
+                        <i class="fas fa-map-marker-alt"></i> <i class="fas fa-chevron-down" style="font-size: 0.75rem;"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-label="Services Submenu" style="overflow-y: auto; height: 300px;">
+                        <li><a href="#" class="dropdown-item">Andhra Pradesh</a></li>
+                        <li><a href="#" class="dropdown-item">Telangana</a></li>
+                        <li><a href="#" class="dropdown-item">Hyderabad</a></li>
+                        <li><a href="#" class="dropdown-item">Bangalore</a></li>
+                        <li><a href="#" class="dropdown-item">Mangalore</a></li>
+                        <li><a href="#" class="dropdown-item">Chennai</a></li>
+                        <li><a href="#" class="dropdown-item">Kerala</a></li>
+                        <li><a href="#" class="dropdown-item">All Odisha</a></li>
+                        <li><a href="#" class="dropdown-item">Bihar</a></li>
+                        <li><a href="#" class="dropdown-item">Kolkata</a></li>
+                        <li><a href="#" class="dropdown-item">Maharashtra</a></li>
+                        <li><a href="#" class="dropdown-item">Gujarat</a></li>
+                        <li><a href="#" class="dropdown-item">Madhya Pradesh</a></li>
+                        <li><a href="#" class="dropdown-item">Uttar Pradesh</a></li>
+                        <li><a href="#" class="dropdown-item">Punjab</a></li>
+                    </ul>
+                </li>
             </ul>
 
             <div class="nav-actions">
