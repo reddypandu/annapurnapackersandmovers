@@ -1,437 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery | Annapurna Packers and Movers</title>
+    <title>Photo Gallery | Annapurna Packers and Movers</title>
+    <meta name="description" content="View authentic photos of Annapurna Packers and Movers in action: Household packing, furniture protection, car loading, container fleet, and safe unloading across Visakhapatnam.">
+    <link rel="canonical" href="https://annapurnapackersandmovers.com/gallery.php">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="img/favicon.png" type="image/x-icon">
 
     <style>
-        /* --- HARSHA WORLDWIDE STYLE GALLERY DESIGN --- */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: sans-serif;
-            background-color: #ffffff;
-        }
-
-        /* టాప్ బ్యానర్ స్టైల్ (Harsha Movers తరహాలో) */
-        .gallery-banner-section {
-            background: linear-gradient(rgba(0, 34, 68, 0.7), rgba(0, 51, 102, 0.8)), url('img/truck-banner.jpg') no-repeat center center/cover;
-            padding: 90px 20px;
-            text-align: center;
-            color: #ffffff;
-            box-sizing: border-box;
-            border-bottom: 4px solid #b10507;
-        }
-
-        .about-hero {
-            background: linear-gradient(90deg, rgba(2, 28, 54, 0.92) 45%, rgba(2, 28, 54, 0.6) 100%),
-                url('img/gallery.png');
-            background-size: cover;
-            background-position: center;
-            padding: 80px 60px;
-            color: #fff;
-            min-height: 220px;
+        .filter-nav {
             display: flex;
-            flex-direction: column;
             justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 35px;
         }
-
-        .hero-title {
-            font-size: 72px;
-            font-weight: 800;
-            margin-bottom: 5px;
-            color: #ffffff;
-            letter-spacing: 1px;
-            margin-top: 0;
-        }
-
-        /* Orange line below 'About Us' */
-        .title-divider {
-            width: 120px;
-            height: 3px;
-            background-color: #ff6600;
-            margin-bottom: 25px;
-        }
-
-
-
-        /* Hero Icons Container Layout */
-        .hero-icons-grid {
-            display: flex;
-            gap: 0;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            padding-top: 30px;
-            max-width: 600px;
-        }
-
-        .hero-icon-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 120px;
-            border-right: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .hero-icon-item:last-child {
-            border-right: none;
-        }
-
-        .icon-circle {
-            width: 65px;
-            height: 65px;
-            border: 2px solid rgba(255, 255, 255, 0.4);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 12px;
-            font-size: 24px;
-            color: #ffffff;
-            transition: all 0.3s ease;
-        }
-
-        .hero-icon-item:hover .icon-circle {
-            border-color: #ff6600;
-            color: #ff6600;
-            background: rgba(255, 102, 0, 0.1);
-        }
-
-        .icon-label {
-            font-size: 13px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-weight: 700;
-            color: #ff6600;
-        }
-
-        .gallery-banner-section h1 {
-            font-size: 42px;
-            margin: 0;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-weight: 700;
-        }
-
-        .gallery-banner-section p {
-            margin: 10px 0 0 0;
-            font-size: 16px;
-            color: #f8f9fa;
-        }
-
-        /* 3-Column ఫోటో గ్రిడ్ లేఅవుట్ */
-        .gallery-main-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 60px 20px;
-            box-sizing: border-box;
-        }
-
-        .harsha-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 25px;
-        }
-
-        .harsha-gallery-card {
-            position: relative;
+        .filter-btn {
+            background: #FFFFFF;
+            border: 1px solid var(--border-color);
+            padding: 9px 20px;
+            border-radius: var(--radius-pill);
+            font-family: var(--font-heading);
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--primary-navy);
             cursor: pointer;
+            transition: var(--transition);
+        }
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--accent-orange);
+            color: #FFFFFF;
+            border-color: var(--accent-orange);
+            box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
+        }
+        .gallery-card {
+            border-radius: var(--radius-md);
             overflow: hidden;
-            border-radius: 4px;
-            border: 1px solid #e0e0e0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-            background: #fff;
-            transition: all 0.3s ease;
+            background: #FFFFFF;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
         }
-
-        .harsha-gallery-card:hover {
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-            transform: translateY(-4px);
+        .gallery-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--accent-orange);
         }
-
-        .harsha-gallery-card img {
+        .gallery-card img {
             width: 100%;
-            height: 250px;
+            height: 240px;
             object-fit: cover;
             display: block;
             transition: transform 0.4s ease;
         }
-
-        /* హార్వర్డ్/హర్ష టైప్ హోవర్ జూమ్ అండ్ ఓవర్లే ఎఫెక్ట్ */
-        .harsha-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 51, 102, 0.8);
-            color: #ffffff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            transition: all 0.3s ease;
+        .gallery-card:hover img {
+            transform: scale(1.05);
         }
-
-        .harsha-gallery-card:hover .harsha-overlay {
-            opacity: 1;
+        .gallery-info {
+            padding: 16px 20px;
         }
-
-        .harsha-overlay span {
-            font-size: 18px;
-            font-weight: bold;
-            border: 2px solid #ffffff;
-            padding: 8px 16px;
-            border-radius: 4px;
-            background: rgba(255, 255, 255, 0.1);
+        .gallery-info h4 {
+            font-size: 1.05rem;
+            margin-bottom: 4px;
         }
-
-        /* పాపప్ (Lightbox Modal) మోడల్ స్టైల్స్ */
-        .popup-modal-view {
-            display: none;
-            position: fixed;
-            z-index: 999999;
-            padding-top: 60px;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.9);
-        }
-
-        .popup-modal-content {
-            margin: auto;
-            display: block;
-            max-width: 80%;
-            max-height: 80%;
-            border-radius: 4px;
-            animation: zoomEffect 0.3s ease;
-        }
-
-        @keyframes zoomEffect {
-            from {
-                transform: scale(0.7);
-                opacity: 0;
-            }
-
-            to {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .hero-icons-grid {
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 20px;
-            }
-
-            .hero-icon-item {
-                border-right: none;
-                width: 45%;
-            }
-
-
-            .hero-title {
-                font-size: 48px;
-            }
-        }
-
-        .popup-close-trigger {
-            position: absolute;
-            top: 25px;
-            right: 40px;
-            color: #ffffff;
-            font-size: 50px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        .popup-close-trigger:hover {
-            color: #b10507;
+        .gallery-info span {
+            font-size: 0.82rem;
+            color: var(--accent-orange);
+            font-weight: 600;
+            text-transform: uppercase;
         }
     </style>
 </head>
-
 <body>
 
+    <!-- Header -->
     <?php include 'header.php'; ?>
 
-    <!-- 2. గ్యాలరీ మెయిన్ హెడర్ బ్యానర్ (Harsha Style) -->
-
-    <div class="about-hero">
-        <h1 class="hero-title">Gallery</h1>
-        <div class="title-divider"></div>
-        <p class="hero-subtitle">Home Shifting, Office Relocation & Vehicle Transportation Images</p>
-        <!-- Exact Icons Grid Layout -->
-        <div class="hero-icons-grid">
-            <div class="hero-icon-item">
-                <div class="icon-circle"><i class="fa-solid fa-house"></i></div>
-                <div class="icon-label">Home</div>
-            </div>
-            <div class="hero-icon-item">
-                <div class="icon-circle"><i class="fa-solid fa-building"></i></div>
-                <div class="icon-label">Office</div>
-            </div>
-            <div class="hero-icon-item">
-                <div class="icon-circle"><i class="fa-solid fa-car"></i></div>
-                <div class="icon-label">Vehicle</div>
-            </div>
-            <div class="hero-icon-item">
-                <div class="icon-circle"><i class="fa-solid fa-globe"></i></div>
-                <div class="icon-label">International</div>
+    <!-- Premium Hero Section Banner -->
+    <section class="inner-hero" style="background: linear-gradient(135deg, rgba(10, 28, 46, 0.95) 0%, rgba(16, 42, 67, 0.88) 100%), url('img/gallery.png') center/cover no-repeat;">
+        <div class="container">
+            <span class="badge-tag" style="background: rgba(249, 115, 22, 0.2); color: #FFEDD5; border-color: rgba(249, 115, 22, 0.4);">
+                <i class="fas fa-camera"></i> Authentic Work Samples
+            </span>
+            <h1 style="margin-top: 14px;">On-Site Relocation Gallery</h1>
+            <p>Real photographs documenting our multi-layer packing techniques, container truck loading, and furniture care.</p>
+            <div class="breadcrumb">
+                <a href="index.php"><i class="fas fa-home"></i> Home</a>
+                <i class="fas fa-chevron-right" style="font-size: 0.75rem;"></i>
+                <span>Gallery</span>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- 3. గ్యాలరీ బాడీ & ఫోటో గ్రిడ్ -->
-    <div class="gallery-main-container">
-        <div class="harsha-grid">
+    <!-- Gallery Section with Filters -->
+    <section class="section section-bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge-tag">Visual Proof</span>
+                <h2>Our Recent Shifting Operations</h2>
+                <p>Browse through actual field photographs showing our dedicated packing crew, secured cargo strapping, and transport fleet.</p>
+            </div>
 
-            <!-- ఫోటో 1 (మీ బైక్ లోడింగ్ లైవ్ ఫోటో) -->
-            <div class="harsha-gallery-card" onclick="triggerPopup('img/annapurna-bike-shifting-loading.jpg')">
-                <img src="img/annapurna-bike-shifting-loading.jpg" alt="Bike Shifting & Loading">
-                <div class="harsha-overlay">
-                    <span>🔍 View Image</span>
+            <!-- Category Filters -->
+            <div class="filter-nav">
+                <button type="button" class="filter-btn active" onclick="filterGallery('all', this)"><i class="fas fa-border-all"></i> All Projects</button>
+                <button type="button" class="filter-btn" onclick="filterGallery('packing', this)"><i class="fas fa-box"></i> Packing &amp; Wrapping</button>
+                <button type="button" class="filter-btn" onclick="filterGallery('loading', this)"><i class="fas fa-truck-loading"></i> Loading &amp; Transit</button>
+                <button type="button" class="filter-btn" onclick="filterGallery('vehicles', this)"><i class="fas fa-car"></i> Vehicles Transport</button>
+                <button type="button" class="filter-btn" onclick="filterGallery('household', this)"><i class="fas fa-home"></i> Home Relocation</button>
+            </div>
+
+            <div class="gallery-grid" id="galleryContainer" style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));">
+                <!-- 1 -->
+                <div class="gallery-card" data-category="packing">
+                    <img src="img/pack1.jpg" alt="Furniture multi-layer wrapping" loading="lazy" width="300" height="240">
+                    <div class="gallery-info">
+                        <span>Packing &amp; Wrapping</span>
+                        <h4>Corrugated Sofa Wrapping</h4>
+                    </div>
                 </div>
-            </div>
-            <!-- ఫోటో 2 (కార్ లోడింగ్ లైవ్ ఫోటో) -->
-            <div class="harsha-gallery-card" onclick="triggerPopup('img/annapurna-car-shifting-loading.jpg')">
-                <img src="img/annapurna-car-shifting-loading.jpg" alt="Car Shifting and Transportation Service">
-                <div class="harsha-overlay">
-                    <span>🔍 View Image</span>
-                </div>
-            </div>
-            <!-- ఫోటో 3 (హౌస్ షిఫ్టింగ్ లోడింగ్ ఫోటో) -->
-            <!-- ఆఫీస్ షిఫ్టింగ్ ఫోటో (పాతది తిరిగి తెచ్చాము) -->
-            <div class="harsha-gallery-card" onclick="triggerPopup('img/office.jpg')">
-                <img src="img/office.jpg" alt="Office Shifting Services">
-                <div class="harsha-overlay">
-                    <span>👁️ View Image</span>
-                </div>
-            </div>
 
-            <!-- కొత్త హౌస్ షిఫ్టింగ్ ఫోటో -->
-            <div class="harsha-gallery-card" onclick="triggerPopup('img/home-relocation.png.jpeg')">
-                <img src="img/home-relocation.png.jpeg" alt="Annapurna House Shifting Services">
-                <div class="harsha-overlay">
-                    <span>👁️ View Image</span>
+                <!-- 2 -->
+                <div class="gallery-card" data-category="packing">
+                    <img src="img/pack2.jpg" alt="Delicate items carton packing" loading="lazy" width="300" height="240">
+                    <div class="gallery-info">
+                        <span>Packing &amp; Wrapping</span>
+                        <h4>Heavy-Duty Cartons</h4>
+                    </div>
                 </div>
-            </div>
 
+                <!-- 3 -->
+                <div class="gallery-card" data-category="packing">
+                    <img src="img/pack3.jpg" alt="Wardrobe and cabinet packing" loading="lazy" width="300" height="240">
+                    <div class="gallery-info">
+                        <span>Packing &amp; Wrapping</span>
+                        <h4>Wooden Wardrobe Protection</h4>
+                    </div>
+                </div>
 
-            <!-- Annapurna Packers New 28 Images Gallery -->
-            <div class="harsha-gallery-card" onclick="triggerPopup('img/pack1.jpg')"><img src="img/pack1.jpg" alt="Annapurna Packers">
-                <div class="harsha-overlay"><span>👁️ View Image</span></div>
-            </div>
-            <div class="harsha-gallery-card" onclick="triggerPopup('img/pack2.jpg')"><img src="img/pack2.jpg" alt="Annapurna Packers">
-                <div class="harsha-overlay"><span>👁️ View Image</span></div>
-            </div>
-            <div class="harsha-gallery-card" onclick="triggerPopup('img/pack3.jpg')"><img src="img/pack3.jpg" alt="Annapurna Packers">
-                <div class="harsha-overlay"><span>👁️ View Image</span></div>
-            </div>
-            <div class="harsha-gallery-card" onclick="triggerPopup('img/pack4.jpg')"><img src="img/pack4.jpg" alt="Annapurna Packers">
-                <div class="harsha-overlay"><span>👁️ View Image</span></div>
-            </div>
-            <div class="harsha-gallery-card" onclick="triggerPopup('img/pack5.jpg')"><img src="img/pack5.jpg" alt="Annapurna Packers">
-                <div class="harsha-overlay"><span>👁️ View Image</span></div>
-            </div>
-            <div class="harsha-gallery-card" onclick="triggerPopup('img/pack6.jpg')"><img src="img/pack6.jpg" alt="Annapurna Packers">
-                <div class="harsha-overlay"><span>👁️ View Image</span></div>
-            </div>
-            <div class="harsha-gallery-card" onclick="triggerPopup('img/pack7.jpg')"><img src="img/pack7.jpg" alt="Annapurna Packers">
-                <div class="harsha-overlay"><span>👁️ View Image</span></div>
-            </div>
-            <div class="harsha-gallery-card" onclick="triggerPopup('img/pack8.jpg')"><img src="img/pack8.jpg" alt="Annapurna Packers">
-                <div class="harsha-overlay"><span>👁️ View Image</span></div>
-            </div>
-            <div class="harsha-gallery-card" onclick="triggerPopup('img/pack9.jpg')"><img src="img/pack9.jpg" alt="Annapurna Packers">
-                <div class="harsha-overlay"><span>👁️ View Image</span></div>
-            </div>
-            <div class="harsha-gallery-card" onclick="triggerPopup('img/pack10.jpg')"><img src="img/pack10.jpg" alt="Annapurna Packers">
-                <div class="harsha-overlay"><span>👁️ View Image</span></div>
-            </div>
-            <div class="harsha-gallery-card" onclick="triggerPopup('img/pack11.jpg')"><img src="img/pack11.jpg" alt="Annapurna Packers">
-                <div class="harsha-overlay"><span>👁️ View Image</span></div>
-            </div>
-            <div class="harsha-gallery-card" onclick="triggerPopup('img/pack12.jpg')"><img src="img/pack12.jpg" alt="Annapurna Packers">
-                <div class="harsha-overlay"><span>👁️ View Image</span></div>
-            </div>
-            <div class="harsha-gallery-card" onclick="triggerPopup('img/pack13.jpg')"><img src="img/pack13.jpg" alt="Annapurna Packers">
-                <div class="harsha-overlay"><span>👁️ View Image</span></div>
-            </div>
-            <div class="harsha-gallery-card" onclick="triggerPopup('img/pack14.jpg')"><img src="img/pack14.jpg" alt="Annapurna Packers">
-                <div class="harsha-overlay"><span>👁️ View Image</span></div>
-            </div>
-            <div class="harsha-gallery-card" onclick="triggerPopup('img/pack15.jpg')"><img src="img/pack15.jpg" alt="Annapurna Packers">
-                <div class="harsha-overlay"><span>👁️ View Image</span></div>
-            </div>
-            <div class="harsha-gallery-card" onclick="triggerPopup('img/pack16.jpg')"><img src="img/pack16.jpg" alt="Annapurna Packers">
-                <div class="harsha-overlay"><span>👁️ View Image</span></div>
-            </div>
-            <div class="harsha-gallery-card" onclick="triggerPopup('img/pack17.jpg')"><img src="img/pack17.jpg" alt="Annapurna Packers">
-                <div class="harsha-overlay"><span>👁️ View Image</span></div>
-            </div>
-            <div class="harsha-gallery-card" onclick="triggerPopup('img/pack18.jpg')"><img src="img/pack18.jpg" alt="Annapurna Packers">
-                <div class="harsha-overlay"><span>👁️ View Image</span></div>
-            </div>
-            <div class="harsha-gallery-card" onclick="triggerPopup('img/pack19.jpg')"><img src="img/pack19.jpg" alt="Annapurna Packers">
-                <div class="harsha-overlay"><span>👁️ View Image</span></div>
-            </div>
-            <div class="harsha-gallery-card" onclick="triggerPopup('img/pack20.jpg')"><img src="img/pack20.jpg" alt="Annapurna Packers">
-                <div class="harsha-overlay"><span>👁️ View Image</span></div>
-            </div>
-            <div class="harsha-gallery-card" onclick="triggerPopup('img/pack21.jpg')"><img src="img/pack21.jpg" alt="Annapurna Packers">
-                <div class="harsha-overlay"><span>👁️ View Image</span></div>
-            </div>
-            <div class="harsha-gallery-card" onclick="triggerPopup('img/pack22.jpg')"><img src="img/pack22.jpg" alt="Annapurna Packers">
-                <div class="harsha-overlay"><span>👁️ View Image</span></div>
-            </div>
-            <div class="harsha-gallery-card" onclick="triggerPopup('img/pack23.jpg')"><img src="img/pack23.jpg" alt="Annapurna Packers">
-                <div class="harsha-overlay"><span>👁️ View Image</span></div>
-            </div>
-            <div class="harsha-gallery-card" onclick="triggerPopup('img/pack24.jpg')"><img src="img/pack24.jpg" alt="Annapurna Packers">
-                <div class="harsha-overlay"><span>👁️ View Image</span></div>
-            </div>
-            <div class="harsha-gallery-card" onclick="triggerPopup('img/pack25.jpg')"><img src="img/pack25.jpg" alt="Annapurna Packers">
-                <div class="harsha-overlay"><span>👁️ View Image</span></div>
-            </div>
-            <div class="harsha-gallery-card" onclick="triggerPopup('img/pack26.jpg')"><img src="img/pack26.jpg" alt="Annapurna Packers">
-                <div class="harsha-overlay"><span>👁️ View Image</span></div>
-            </div>
-            <div class="harsha-gallery-card" onclick="triggerPopup('img/pack27.jpg')"><img src="img/pack27.jpg" alt="Annapurna Packers">
-                <div class="harsha-overlay"><span>👁️ View Image</span></div>
-            </div>
-            <div class="harsha-gallery-card" onclick="triggerPopup('img/pack28.jpg')"><img src="img/pack28.jpg" alt="Annapurna Packers">
-                <div class="harsha-overlay"><span>👁️ View Image</span></div>
+                <!-- 4 -->
+                <div class="gallery-card" data-category="household">
+                    <img src="img/annapurna-house-shifting-loading.jpg" alt="Household shifting loading" loading="lazy" width="300" height="240">
+                    <div class="gallery-info">
+                        <span>Home Relocation</span>
+                        <h4>Household Move in Vizag</h4>
+                    </div>
+                </div>
+
+                <!-- 5 -->
+                <div class="gallery-card" data-category="vehicles">
+                    <img src="img/annapurna-car-shifting-loading.jpg" alt="Car loading on transport carrier" loading="lazy" width="300" height="240">
+                    <div class="gallery-info">
+                        <span>Vehicles Transport</span>
+                        <h4>Car Carrier Ramp Loading</h4>
+                    </div>
+                </div>
+
+                <!-- 6 -->
+                <div class="gallery-card" data-category="vehicles">
+                    <img src="img/annapurna-bike-shifting-loading.jpg" alt="Bike packing and strapping" loading="lazy" width="300" height="240">
+                    <div class="gallery-info">
+                        <span>Vehicles Transport</span>
+                        <h4>Motorcycle Foam Padding</h4>
+                    </div>
+                </div>
+
+                <!-- 7 -->
+                <div class="gallery-card" data-category="loading">
+                    <img src="img/container-truck-services.jpeg" alt="Container truck fleet" loading="lazy" width="300" height="240">
+                    <div class="gallery-info">
+                        <span>Loading &amp; Transit</span>
+                        <h4>All-Weather Container Fleet</h4>
+                    </div>
+                </div>
+
+                <!-- 8 -->
+                <div class="gallery-card" data-category="loading">
+                    <img src="img/loading-and-unloading.jpeg" alt="Trained crew loading cartons" loading="lazy" width="300" height="240">
+                    <div class="gallery-info">
+                        <span>Loading &amp; Transit</span>
+                        <h4>Careful Truck Loading</h4>
+                    </div>
+                </div>
+
+                <!-- 9 -->
+                <div class="gallery-card" data-category="packing">
+                    <img src="img/pack6.jpg" alt="Kitchen glassware packing" loading="lazy" width="300" height="240">
+                    <div class="gallery-info">
+                        <span>Packing &amp; Wrapping</span>
+                        <h4>Fragile Chinaware Packing</h4>
+                    </div>
+                </div>
+
+                <!-- 10 -->
+                <div class="gallery-card" data-category="packing">
+                    <img src="img/pack10.jpg" alt="Electronics bubble wrapping" loading="lazy" width="300" height="240">
+                    <div class="gallery-info">
+                        <span>Packing &amp; Wrapping</span>
+                        <h4>LED TV &amp; Electronics Wrap</h4>
+                    </div>
+                </div>
+
+                <!-- 11 -->
+                <div class="gallery-card" data-category="loading">
+                    <img src="img/pack13.jpg" alt="Stacking cartons in truck" loading="lazy" width="300" height="240">
+                    <div class="gallery-info">
+                        <span>Loading &amp; Transit</span>
+                        <h4>Organized Transit Stacking</h4>
+                    </div>
+                </div>
+
+                <!-- 12 -->
+                <div class="gallery-card" data-category="household">
+                    <img src="img/pack18.jpg" alt="Unloading at new residence" loading="lazy" width="300" height="240">
+                    <div class="gallery-info">
+                        <span>Home Relocation</span>
+                        <h4>Destination Unloading</h4>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- క్లిక్ చేసినప్పుడు ఓపెన్ అయ్యే పాపప్ మోడల్ బాక్స్ -->
-    <div id="customGalleryModal" class="popup-modal-view" onclick="dismissPopup()">
-        <span class="popup-close-trigger">&times;</span>
-        <img class="popup-modal-content" id="modalTargetImg">
-    </div>
+    </section>
 
+    <!-- Final CTA -->
+    <section class="final-cta-section">
+        <div class="container">
+            <div class="final-cta-box">
+                <div>
+                    <h2>Want the Same Professional Care for Your Move?</h2>
+                    <p>Request an inspection or send your inventory list on WhatsApp for an immediate quote.</p>
+                </div>
+                <div class="final-cta-actions">
+                    <button type="button" class="btn btn-primary" onclick="openQuoteModal()">
+                        <i class="fas fa-file-invoice"></i> Get Free Quote
+                    </button>
+                    <a href="https://wa.me/918333031259" target="_blank" rel="noopener" class="btn btn-outline-white">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Photos
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <?php include 'footer.php'; ?>
 
-    <!-- పాపప్ క్లిక్ ఈవెంట్ జావాస్క్రిప్ట్ -->
     <script>
-        function triggerPopup(imageSource) {
-            document.getElementById("customGalleryModal").style.display = "block";
-            document.getElementById("modalTargetImg").src = imageSource;
-        }
+    function filterGallery(category, btn) {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
 
-        function dismissPopup() {
-            document.getElementById("customGalleryModal").style.display = "none";
-        }
+        const cards = document.querySelectorAll('#galleryContainer .gallery-card');
+        cards.forEach(card => {
+            if (category === 'all' || card.getAttribute('data-category') === category) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
     </script>
 </body>
-
 </html>

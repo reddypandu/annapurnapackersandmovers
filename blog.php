@@ -4,724 +4,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Annapurna Packers and Movers</title>
+    <title>Moving Tips & Relocation Guides | Annapurna Packers and Movers</title>
+    <meta name="description" content="Expert tips and packing advice from Annapurna Packers and Movers. Learn how to prepare for house shifting, office moves, and vehicle transport in Visakhapatnam.">
+    <link rel="canonical" href="https://annapurnapackersandmovers.com/blog.php">
+    <link rel="icon" href="img/favicon.png" type="image/png">
 
-    <!-- CSS Dependencies from your server -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
 
     <style>
-        /* ========================================================
-           HARSHA STYLE LAYOUT - APPLIED FOR ANNAPURNA PACKERS
-           ======================================================== */
-        .harsha-layout-section {
-            padding: 80px 0;
-            background-color: #f7f9fc;
-            font-family: Arial, sans-serif;
-        }
-
-        .harsha-layout-title {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .keyword-section {
-            padding: 40px 20px;
-            background-color: #f9fbff;
-            text-align: center;
-            clear: both;
-        }
-
-        .section-title {
-            color: #ff6f00;
-            font-size: 16px;
-            font-weight: bold;
-            letter-spacing: 1.5px;
-            margin-bottom: 35px;
-            text-transform: uppercase;
-        }
-
-        .keyword-grid {
+        .blog-grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
         }
 
-        .keyword-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #ffffff;
-            color: #0b2240;
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: 600;
-            padding: 18px 12px;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
-            text-align: center;
-            min-height: 50px;
-            border: 1px solid #edf2f9;
-        }
-
-        .keyword-btn:hover {
-            background-color: #0b2240;
-            color: #ffffff;
-            transform: translateY(-3px);
-            box-shadow: 0 6px 18px rgba(11, 34, 64, 0.15);
-        }
-
-        @media (max-width: 992px) {
-            .keyword-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 576px) {
-            .keyword-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .harsha-layout-title .sub-heading {
-            display: inline-block;
-            font-size: 14px;
-            font-weight: 700;
-            color: #d32f2f;
-            /* Annapurna Red Color */
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 10px;
-        }
-
-        .harsha-layout-title h2 {
-            font-size: 36px;
-            font-weight: 700;
-            color: #fff;
-            margin: 0 0 15px 0;
-        }
-
-        .harsha-layout-title p {
-            max-width: 750px;
-            margin: 0 auto;
-            color: #666;
-            font-size: 16px;
-            line-height: 1.6;
-        }
-
-        /* 3-Column Card Layout Container like Harsha Site */
-        .harsha-card-grid {
-            display: flex;
-            flex-wrap: wrap;
-            margin-right: -15px;
-            margin-left: -15px;
-        }
-
-        .harsha-card-col {
-            position: relative;
-            width: 100%;
-            padding-right: 15px;
-            padding-left: 15px;
-            margin-bottom: 30px;
-            box-sizing: border-box;
-        }
-
-        @media (min-width: 768px) {
-            .harsha-card-col {
-                flex: 0 0 50%;
-                max-width: 50%;
-            }
-        }
-
-        @media (min-width: 992px) {
-            .harsha-card-col {
-                flex: 0 0 33.333333%;
-                max-width: 33.333333%;
-            }
-        }
-
-        /* Modern Box Card Style */
-        .harsha-style-card {
-            background: #ffffff;
-            border-radius: 12px;
+        .blog-card {
+            background: #FFFFFF;
+            border-radius: var(--radius-lg);
             overflow: hidden;
-            height: 100%;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
-            transition: all 0.4s ease;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
             display: flex;
             flex-direction: column;
-            border: 1px solid #eef2f5;
         }
 
-        .harsha-style-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+        .blog-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--accent-orange);
         }
 
-        .harsha-card-image {
+        .blog-img-box {
             position: relative;
-            width: 100%;
-            height: 240px;
-            background: #eaeaea;
+            height: 220px;
             overflow: hidden;
         }
 
-        .harsha-card-image img {
+        .blog-img-box img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: transform 0.6s ease;
+            transition: transform 0.5s ease;
         }
 
-        .harsha-style-card:hover .harsha-card-image img {
-            transform: scale(1.08);
+        .blog-card:hover .blog-img-box img {
+            transform: scale(1.06);
         }
 
-        /* Floating Date Badge Style like Harsha Movers */
-        .harsha-style-date {
+        .blog-date-badge {
             position: absolute;
-            left: 20px;
-            bottom: 20px;
-            width: 65px;
-            height: 70px;
-            background: #d32f2f;
-            /* Annapurna Theme Color */
-            color: #ffffff;
-            text-align: center;
-            border-radius: 8px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            font-weight: bold;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-            z-index: 2;
-        }
-
-        .harsha-style-date span {
-            font-size: 22px;
-            line-height: 1;
-            display: block;
-            color: #fff !important;
-        }
-
-        .harsha-style-date small {
-            font-size: 11px;
-            text-transform: uppercase;
-            display: block;
-            margin-top: 2px;
-            color: #fff !important;
-        }
-
-        .harsha-card-body {
-            padding: 25px;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            text-align: left;
-        }
-
-        .harsha-card-cat {
-            display: inline-block;
-            font-size: 13px;
-            font-weight: 600;
-            color: #d32f2f;
-            text-transform: uppercase;
-            margin-bottom: 12px;
-            letter-spacing: 0.5px;
-        }
-
-        .harsha-card-body h3 {
-            font-size: 20px;
+            bottom: 12px;
+            left: 12px;
+            background: var(--accent-orange);
+            color: #FFFFFF;
+            padding: 6px 14px;
+            border-radius: var(--radius-sm);
+            font-size: 0.8rem;
             font-weight: 700;
-            line-height: 1.4;
-            margin: 0 0 12px 0;
-            color: #1c2c52;
         }
 
-        .harsha-card-body p {
-            color: #666;
-            font-size: 15px;
-            line-height: 1.6;
-            margin: 0 0 20px 0;
-        }
-
-        .harsha-card-btn {
-            font-size: 15px;
-            font-weight: 600;
-            color: #1c2c52;
-            text-decoration: none;
-            margin-top: auto;
-            display: inline-flex;
-            align-items: center;
-            transition: color 0.3s;
-        }
-
-        .harsha-card-btn i {
-            margin-left: 8px;
-            font-size: 13px;
-            transition: transform 0.3s;
-        }
-
-        .harsha-card-btn:hover {
-            color: #d32f2f;
-            text-decoration: none;
-        }
-
-        .harsha-card-btn:hover i {
-            transform: translateX(5px);
-        }
-
-        /* --- Popular Keywords Styling --- */
-        .keyword-section {
-            padding: 40px 20px;
-            background-color: #f9fbff;
-            text-align: center;
-            clear: both;
-        }
-
-        .section-title {
-            color: #ff6f00;
-            font-size: 16px;
-            font-weight: bold;
-            letter-spacing: 1.5px;
-            margin-bottom: 35px;
-            text-transform: uppercase;
-        }
-
-        .keyword-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .keyword-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #ffffff;
-            color: #0b2240;
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: 600;
-            padding: 18px 12px;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
-            text-align: center;
-            min-height: 50px;
-            border: 1px solid #edf2f9;
-        }
-
-        .keyword-btn:hover {
-            background-color: #0b2240;
-            color: #ffffff;
-            transform: translateY(-3px);
-            box-shadow: 0 6px 18px rgba(11, 34, 64, 0.15);
-        }
-
-        @media (max-width: 992px) {
-            .keyword-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 576px) {
-            .keyword-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* --- Areas We Serve Styling --- */
-        .areas-section {
-            padding: 60px 20px;
-            background-color: #f4f8ff;
-            text-align: center;
-        }
-
-        .areas-badge {
-            background-color: #ffb300;
-            color: #ffffff;
-            font-size: 13px;
-            font-weight: bold;
-            padding: 6px 20px;
-            border-radius: 20px;
-            display: inline-block;
-            letter-spacing: 1px;
-            margin-bottom: 20px;
-        }
-
-        .areas-title {
-            color: #0d233a;
-            font-size: 28px;
-            font-weight: bold;
-            max-width: 900px;
-            margin: 0 auto 20px auto;
-            line-height: 1.4;
-        }
-
-        .areas-desc {
-            color: #555555;
-            font-size: 15px;
-            max-width: 850px;
-            margin: 0 auto 40px auto;
-            line-height: 1.6;
-        }
-
-        .areas-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 15px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .state-card {
-            background-color: #ffffff;
-            border-radius: 8px;
-            padding: 15px 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
-            border: 1px solid #eef2f7;
+        .blog-card-body {
+            padding: 24px;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease;
+            flex-grow: 1;
         }
 
-        .state-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
-        }
-
-        .truck-icon {
-            font-size: 24px;
+        .blog-tag {
+            color: var(--accent-orange);
+            font-size: 0.82rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
             margin-bottom: 8px;
         }
 
-        .state-name {
-            font-size: 13px;
-            font-weight: 600;
-            color: #333333;
-        }
-
-        @media (max-width: 992px) {
-            .areas-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-
-            .areas-title {
-                font-size: 22px;
-            }
-        }
-
-        @media (max-width: 576px) {
-            .areas-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .areas-title {
-                font-size: 18px;
-            }
-        }
-
-        .about-hero {
-            background: linear-gradient(90deg, rgba(2, 28, 54, 0.92) 45%, rgba(2, 28, 54, 0.6) 100%),
-                url('img/blog.png');
-            background-size: cover;
-            background-position: center;
-            padding: 80px 60px;
-            color: #fff;
-            min-height: 220px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-
-
-        .hero-title {
-            font-size: 72px;
-            font-weight: 800;
-            margin-bottom: 5px;
-            color: #ffffff;
-            letter-spacing: 1px;
-            margin-top: 0;
-        }
-
-        /* Orange line below 'About Us' */
-        .title-divider {
-            width: 120px;
-            height: 3px;
-            background-color: #ff6600;
-            margin-bottom: 25px;
-        }
-
-        .hero-icons-grid {
-            display: flex;
-            gap: 0;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            padding-top: 30px;
-            max-width: 600px;
-        }
-
-        .hero-icon-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 120px;
-            border-right: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .hero-icon-item:last-child {
-            border-right: none;
-        }
-
-        .icon-circle {
-            width: 65px;
-            height: 65px;
-            border: 2px solid rgba(255, 255, 255, 0.4);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .blog-card-body h3 {
+            font-size: 1.25rem;
             margin-bottom: 12px;
-            font-size: 24px;
-            color: #ffffff;
-            transition: all 0.3s ease;
+            line-height: 1.35;
         }
 
-        .hero-icon-item:hover .icon-circle {
-            border-color: #ff6600;
-            color: #ff6600;
-            background: rgba(255, 102, 0, 0.1);
-        }
-
-        .icon-label {
-            font-size: 13px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-weight: 700;
-            color: #ff6600;
-        }
-
-
-        @media (max-width: 768px) {
-            .hero-icons-grid {
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 20px;
-            }
-
-            .hero-icon-item {
-                border-right: none;
-                width: 45%;
-            }
-
-
-            .hero-title {
-                font-size: 48px;
-            }
+        .blog-card-body p {
+            color: var(--text-muted);
+            font-size: 0.92rem;
+            margin-bottom: 18px;
+            flex-grow: 1;
         }
     </style>
 </head>
 
 <body>
 
+    <!-- Header -->
     <?php include 'header.php'; ?>
 
-    <div class="about-hero">
-        <h1 class="hero-title">Our Blog</h1>
-        <div class="title-divider"></div>
-        <p class="hero-subtitle">
-            Latest Moving & Packing Tips
-        </p>
-        <!-- Exact Icons Grid Layout -->
-        <div class="hero-icons-grid">
-            <div class="hero-icon-item">
-                <div class="icon-circle"><i class="fa-solid fa-house"></i></div>
-                <div class="icon-label">Home</div>
-            </div>
-            <div class="hero-icon-item">
-                <div class="icon-circle"><i class="fa-solid fa-building"></i></div>
-                <div class="icon-label">Office</div>
-            </div>
-            <div class="hero-icon-item">
-                <div class="icon-circle"><i class="fa-solid fa-car"></i></div>
-                <div class="icon-label">Vehicle</div>
-            </div>
-            <div class="hero-icon-item">
-                <div class="icon-circle"><i class="fa-solid fa-globe"></i></div>
-                <div class="icon-label">International</div>
+    <!-- Premium Hero Section Banner -->
+    <section class="inner-hero" style="background: linear-gradient(135deg, rgba(10, 28, 46, 0.95) 0%, rgba(16, 42, 67, 0.88) 100%), url('img/blog.png') center/cover no-repeat;">
+        <div class="container">
+            <span class="badge-tag" style="background: rgba(249, 115, 22, 0.2); color: #FFEDD5; border-color: rgba(249, 115, 22, 0.4);">
+                <i class="fas fa-newspaper"></i> Helpful Resources
+            </span>
+            <h1 style="margin-top: 14px;">Moving Guides &amp; Relocation Insights</h1>
+            <p>Practical advice, packing checklists, and logistics tips from our moving coordinators in Visakhapatnam.</p>
+            <div class="breadcrumb">
+                <a href="index.php"><i class="fas fa-home"></i> Home</a>
+                <i class="fas fa-chevron-right" style="font-size: 0.75rem;"></i>
+                <span>Blog</span>
             </div>
         </div>
+    </section>
 
-    </div>
-    <div class="page-wrapper">
+    <!-- Articles Grid -->
+    <section class="section section-bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge-tag">Knowledge Hub</span>
+                <h2>Relocation Best Practices</h2>
+                <p>Learn how to streamline packing, safeguard delicate items, and plan an organized shift.</p>
+            </div>
 
-        <section class="harsha-layout-section">
-            <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 15px;">
+            <div class="blog-grid">
+                <!-- Article 1 -->
+                <article class="blog-card">
+                    <div class="blog-img-box">
+                        <img src="img/How-to-Move-Fragile.webp" alt="How to Move Fragile Items" loading="lazy" width="380" height="220">
+                        <span class="blog-date-badge"><i class="fas fa-calendar-alt"></i> Packing Guide</span>
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">Packing Techniques</span>
+                        <h3>How to Protect Fragile Glassware and Chinaware</h3>
+                        <p>Essential techniques for wrapping glassware, ceramics, and photo frames with bubble wrap and corrugated sheets to prevent cracks during road transit.</p>
+                        <button type="button" class="btn btn-outline" onclick="openQuoteModal()" style="margin-top: auto;">
+                            <i class="fas fa-truck-moving"></i> Hire Professional Packers
+                        </button>
+                    </div>
+                </article>
 
-                <!-- Section Title (Harsha Style Layout) -->
-                <div class="harsha-layout-title">
-                    <h2>Latest Moving & Packing Tips</h2>
-                    <p>Explore useful packing tips, home shifting guides, domestic moving advice, and expert insights from Annapurna Packers and Movers.</p>
+                <!-- Article 2 -->
+                <article class="blog-card">
+                    <div class="blog-img-box">
+                        <img src="img/annapurna-car-shifting-loading.jpg" alt="Car and Bike Relocation Tips" loading="lazy" width="380" height="220">
+                        <span class="blog-date-badge"><i class="fas fa-calendar-alt"></i> Vehicle Care</span>
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">Vehicle Shifting</span>
+                        <h3>Checklist for Intercity Car &amp; Motorcycle Relocation</h3>
+                        <p>What steps to take before handing over your car or bike to a carrier: fuel level checks, loose accessory removal, and pre-loading inspection reports.</p>
+                        <button type="button" class="btn btn-outline" onclick="openQuoteModal()" style="margin-top: auto;">
+                            <i class="fas fa-car"></i> Get Vehicle Transport Quote
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="blog-card">
+                    <div class="blog-img-box">
+                        <img src="img/office.jpg" alt="Office Shifting Checklist" loading="lazy" width="380" height="220">
+                        <span class="blog-date-badge"><i class="fas fa-calendar-alt"></i> Commercial Move</span>
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">Corporate Relocation</span>
+                        <h3>Planning a Smooth Corporate Office Relocation</h3>
+                        <p>How to minimize team downtime, catalog servers and IT devices, and execute department-by-department transfers over a single weekend.</p>
+                        <button type="button" class="btn btn-outline" onclick="openQuoteModal()" style="margin-top: auto;">
+                            <i class="fas fa-building"></i> Plan Office Move
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta-section">
+        <div class="container">
+            <div class="final-cta-box">
+                <div>
+                    <h2>Ready to Experience a Seamless Relocation?</h2>
+                    <p>Contact Annapurna Packers and Movers in Visakhapatnam for a fast, free estimate.</p>
                 </div>
-
-                <!-- 3-Column Box Grid Row -->
-                <div class="harsha-card-grid">
-
-                    <!-- BOX 1 -->
-                    <div class="harsha-card-col">
-                        <div class="harsha-style-card">
-                            <div class="harsha-card-image">
-                                <!-- Pulls Faster.jpg from your live server folder -->
-                                <img src="img/blog-1.png" alt="Annapurna House Shifting Guide">
-                                <div class="harsha-style-date">
-                                    <span>27</span>
-                                    <small>Aug</small>
-                                </div>
-                            </div>
-                            <div class="harsha-card-body">
-                                <span class="harsha-card-cat">Home Shifting</span>
-                                <h3>Top Tips for a Stress-Free House Shifting Experience</h3>
-                                <p>Learn how professional local and domestic packers and movers can make your home relocation safe, organized, and completely hassle-free from packing to delivery.</p>
-                                <a href="index.php#contact" class="harsha-card-btn">Read More <i class="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- BOX 2 -->
-                    <div class="harsha-card-col">
-                        <div class="harsha-style-card">
-                            <div class="harsha-card-image">
-                                <img src="img/blog-2.webp" alt="Annapurna Packing Tips">
-                                <div class="harsha-style-date">
-                                    <span>20</span>
-                                    <small>Aug</small>
-                                </div>
-                            </div>
-                            <div class="harsha-card-body">
-                                <span class="harsha-card-cat">Packing Tips</span>
-                                <h3>Essential Packing Materials for a Safe and Secured Move</h3>
-                                <p>Discover practical packing tips using sturdy cardboard boxes and bubble wraps to protect fragile household items, electronics, and valuable belongings.</p>
-                                <a href="index.php#contact" class="harsha-card-btn">Read More <i class="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- BOX 3 -->
-                    <div class="harsha-card-col">
-                        <div class="harsha-style-card">
-                            <div class="harsha-card-image">
-                                <img src="img/dom.webp" alt="Annapurna Relocation Guide">
-                                <div class="harsha-style-date">
-                                    <span>15</span>
-                                    <small>Aug</small>
-                                </div>
-                            </div>
-                            <div class="harsha-card-body">
-                                <span class="harsha-card-cat">Relocation Guide</span>
-                                <h3>How to Plan a Hassle-Free Domestic Home Relocation</h3>
-                                <p>Planning a household move requires proper steps. Here is a complete guide to organizing your shifting schedule, safe loading, and secure transit options.</p>
-                                <a href="index.php#contact" class="harsha-card-btn">Read More <i class="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
+                <div class="final-cta-actions">
+                    <button type="button" class="btn btn-primary" onclick="openQuoteModal()">
+                        <i class="fas fa-file-invoice"></i> Get Free Quote
+                    </button>
+                    <a href="tel:+919966031259" class="btn btn-outline-white">
+                        <i class="fas fa-phone"></i> Call +91 99660 31259
+                    </a>
                 </div>
             </div>
-        </section>
-        <div class="keyword-section">
-            <div class="section-title">— POPULAR SEARCH KEYWORDS —</div>
-
-            <div class="keyword-grid">
-                <!-- Vizag Keywords -->
-                <a href="https://annapurnapackersandmovers.com" class="keyword-btn">Packers and Movers in Vizag</a>
-                <a href="https://annapurnapackersandmovers.com" class="keyword-btn">Packers and Movers in Visakhapatnam</a>
-                <a href="https://annapurnapackersandmovers.com" class="keyword-btn">Best Packers and Movers Vizag</a>
-                <a href="https://annapurnapackersandmovers.com" class="keyword-btn">Home Shifting Services Vizag</a>
-                <a href="https://annapurnapackersandmovers.com" class="keyword-btn">Office Relocation Vizag</a>
-                <a href="https://annapurnapackersandmovers.com" class="keyword-btn">Local Shifting Vizag</a>
-                <a href="https://annapurnapackersandmovers.com" class="keyword-btn">Household Shifting Vizag</a>
-                <a href="https://annapurnapackersandmovers.com" class="keyword-btn">Furniture Relocation Vizag</a>
-
-                <!-- Hyderabad Keywords -->
-                <a href="https://annapurnapackersandmovers.com" class="keyword-btn">Packers and Movers Hyderabad</a>
-                <a href="https://annapurnapackersandmovers.com" class="keyword-btn">Best Packers and Movers Hyderabad</a>
-                <a href="https://annapurnapackersandmovers.com" class="keyword-btn">Home Relocation Hyderabad</a>
-                <a href="https://annapurnapackersandmovers.com" class="keyword-btn">Office Shifting Hyderabad</a>
-                <a href="https://annapurnapackersandmovers.com" class="keyword-btn">Corporate Relocation Hyderabad</a>
-                <a href="https://annapurnapackersandmovers.com" class="keyword-btn">Bike Transport Hyderabad</a>
-                <a href="https://annapurnapackersandmovers.com" class="keyword-btn">Car Transport Hyderabad</a>
-                <a href="https://annapurnapackersandmovers.com" class="keyword-btn">Warehouse Services Hyderabad</a>
-
-                <!-- International Keywords -->
-                <a href="https://annapurnapackersandmovers.com" class="keyword-btn">International Packers and Movers</a>
-                <a href="https://annapurnapackersandmovers.com" class="keyword-btn">International Relocation Services</a>
-                <a href="https://annapurnapackersandmovers.com" class="keyword-btn">International Household Moving</a>
-                <a href="https://annapurnapackersandmovers.com" class="keyword-btn">International Office Relocation</a>
-                <a href="https://annapurnapackersandmovers.com" class="keyword-btn">Door to Door International Moving</a>
-                <a href="https://annapurnapackersandmovers.com" class="keyword-btn">Overseas Relocation</a>
-                <a href="https://annapurnapackersandmovers.com" class="keyword-btn">International Cargo Services</a>
-                <a href="https://annapurnapackersandmovers.com" class="keyword-btn">Sea Freight Services</a>
-                <a href="https://annapurnapackersandmovers.com" class="keyword-btn">Air Freight Services</a>
-                <a href="https://annapurnapackersandmovers.com" class="keyword-btn">Customs Clearance</a>
-                <a href="https://annapurnapackersandmovers.com" class="keyword-btn">International Car Shipping</a>
-                <a href="https://annapurnapackersandmovers.com" class="keyword-btn">International Bike Shipping</a>
-
-                <!-- General Shifting Keywords -->
-                <a href="https://annapurnapackersandmovers.com" class="keyword-btn">Domestic Packers and Movers</a>
-                <a href="https://annapurnapackersandmovers.com" class="keyword-btn">Household Relocation</a>
-                <a href="https://annapurnapackersandmovers.com" class="keyword-btn">Office Moving Company</a>
-                <a href="https://annapurnapackersandmovers.com" class="keyword-btn">Safe Packing Services</a>
-                <a href="https://annapurnapackersandmovers.com" class="keyword-btn">Loading & Unloading</a>
-                <a href="https://annapurnapackersandmovers.com" class="keyword-btn">Storage & Warehousing</a>
-                <a href="https://annapurnapackersandmovers.com" class="keyword-btn">Professional Movers</a>
-                <a href="https://annapurnapackersandmovers.com" class="keyword-btn">Affordable Relocation Services</a>
-            </div>
         </div>
-        <!-- --- Areas We Serve Section --- -->
-        <div class="areas-section">
-            <div class="areas-badge">📍 AREAS WE SERVE</div>
-            <div class="areas-title">Annapurna Packers and Movers | Packers & Movers, Home, Office & Vehicle Relocation Services Across India</div>
-            <p class="areas-desc">Annapurna Packers and Movers provides reliable household shifting, office relocation, vehicle transportation, warehouse storage, logistics, and international moving services across all states of India with professional packing, secure transportation, timely delivery, and complete customer satisfaction.</p>
+    </section>
 
-            <div class="areas-grid">
-                <div class="state-card"><span class="truck-icon">🚚</span><span class="state-name">Andhra Pradesh</span></div>
-                <div class="state-card"><span class="truck-icon">🚚</span><span class="state-name">Arunachal Pradesh</span></div>
-                <div class="state-card"><span class="truck-icon">🚚</span><span class="state-name">Assam</span></div>
-                <div class="state-card"><span class="truck-icon">🚚</span><span class="state-name">Bihar</span></div>
-                <div class="state-card"><span class="truck-icon">🚚</span><span class="state-name">Chhattisgarh</span></div>
-                <div class="state-card"><span class="truck-icon">🚚</span><span class="state-name">Goa</span></div>
-                <div class="state-card"><span class="truck-icon">🚚</span><span class="state-name">Gujarat</span></div>
-                <div class="state-card"><span class="truck-icon">🚚</span><span class="state-name">Haryana</span></div>
-                <div class="state-card"><span class="truck-icon">🚚</span><span class="state-name">Himachal Pradesh</span></div>
-                <div class="state-card"><span class="truck-icon">🚚</span><span class="state-name">Jharkhand</span></div>
-                <div class="state-card"><span class="truck-icon">🚚</span><span class="state-name">Karnataka</span></div>
-                <div class="state-card"><span class="truck-icon">🚚</span><span class="state-name">Kerala</span></div>
-                <div class="state-card"><span class="truck-icon">🚚</span><span class="state-name">Madhya Pradesh</span></div>
-                <div class="state-card"><span class="truck-icon">🚚</span><span class="state-name">Maharashtra</span></div>
-                <div class="state-card"><span class="truck-icon">🚚</span><span class="state-name">Manipur</span></div>
-                <div class="state-card"><span class="truck-icon">🚚</span><span class="state-name">Meghalaya</span></div>
-                <div class="state-card"><span class="truck-icon">🚚</span><span class="state-name">Mizoram</span></div>
-                <div class="state-card"><span class="truck-icon">🚚</span><span class="state-name">Nagaland</span></div>
-                <div class="state-card"><span class="truck-icon">🚚</span><span class="state-name">Odisha</span></div>
-                <div class="state-card"><span class="truck-icon">🚚</span><span class="state-name">Punjab</span></div>
-                <div class="state-card"><span class="truck-icon">🚚</span><span class="state-name">Rajasthan</span></div>
-                <div class="state-card"><span class="truck-icon">🚚</span><span class="state-name">Sikkim</span></div>
-                <div class="state-card"><span class="truck-icon">🚚</span><span class="state-name">Tamil Nadu</span></div>
-                <div class="state-card"><span class="truck-icon">🚚</span><span class="state-name">Telangana</span></div>
-                <div class="state-card"><span class="truck-icon">🚚</span><span class="state-name">Tripura</span></div>
-                <div class="state-card"><span class="truck-icon">🚚</span><span class="state-name">Uttar Pradesh</span></div>
-                <div class="state-card"><span class="truck-icon">🚚</span><span class="state-name">Uttarakhand</span></div>
-                <div class="state-card"><span class="truck-icon">🚚</span><span class="state-name">West Bengal</span></div>
-            </div>
-        </div>
-        <?php include 'footer.php'; ?>
+    <!-- Footer -->
+    <?php include 'footer.php'; ?>
+
+</body>
+
+</html>

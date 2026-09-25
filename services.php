@@ -4,389 +4,332 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services - Annapurna Packers and Movers</title>
+    <title>Comprehensive Logistics & Relocation Services | Annapurna Packers</title>
+    <meta name="description" content="Explore full-spectrum relocation services by Annapurna Packers and Movers: Home shifting, office moving, vehicle transport, warehousing, and international moving from Visakhapatnam.">
+    <link rel="canonical" href="https://annapurnapackersandmovers.com/services.php">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+
+    <!-- Google Fonts & Font Awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="img/favicon.png" type="image/x-icon">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f8fafc;
-            color: #333;
-        }
-
-        /* Top Header */
-        header {
-            background-image: linear-gradient(rgba(0, 43, 91, 0.8), rgba(0, 43, 91, 0.8)), url('img/truckprofile.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            padding: 15px 30px;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-        header .logo img {
-            height: 70px;
-            width: auto;
-            display: block;
-            object-fit: contain;
-            border-radius: 4px;
-        }
-
-        .services-container {
-            max-width: 1200px;
-            margin: 50px auto;
-            padding: 0 20px;
-        }
-
-        .about-hero {
-            background: linear-gradient(90deg, rgba(2, 28, 54, 0.92) 45%, rgba(2, 28, 54, 0.6) 100%),
-                url('img/services.png');
-            background-size: cover;
-            background-position: center;
-            padding: 80px 60px;
-            color: #fff;
-            min-height: 220px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .hero-title {
-            font-size: 72px;
-            font-weight: 800;
-            margin-bottom: 5px;
-            color: #ffffff;
-            letter-spacing: 1px;
-            margin-top: 0;
-        }
-
-        /* Orange line below 'About Us' */
-        .title-divider {
-            width: 120px;
-            height: 3px;
-            background-color: #ff6600;
-            margin-bottom: 25px;
-        }
-
-
-        /* Hero Icons Container Layout */
-        .hero-icons-grid {
-            display: flex;
-            gap: 0;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            padding-top: 30px;
-            max-width: 600px;
-        }
-
-        .hero-icon-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 120px;
-            border-right: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .hero-icon-item:last-child {
-            border-right: none;
-        }
-
-        .icon-circle {
-            width: 65px;
-            height: 65px;
-            border: 2px solid rgba(255, 255, 255, 0.4);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 12px;
-            font-size: 24px;
-            color: #ffffff;
-            transition: all 0.3s ease;
-        }
-
-        .hero-icon-item:hover .icon-circle {
-            border-color: #ff6600;
-            color: #ff6600;
-            background: rgba(255, 102, 0, 0.1);
-        }
-
-        .icon-label {
-            font-size: 13px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-weight: 700;
-            color: #ff6600;
-        }
-
-
-        .services-header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .services-header h2 {
-            color: #003366;
-            font-size: 36px;
-            margin: 0 0 10px 0;
-            font-weight: 800;
-        }
-
-        .services-header p {
-            font-size: 16px;
-            color: #666;
-            margin: 0;
-        }
-
-        /* 4 Column Responsive Grid Layout */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 25px;
-            align-items: stretch;
-        }
-
-        @media (max-width: 1024px) {
-            .services-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 600px) {
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .service-card {
-            background: #ffffff;
-            border: 2px solid #003366;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-            box-sizing: border-box;
-            display: flex;
-            flex-direction: column;
-            min-height: 305px;
-            transition: transform 0.3s ease;
-        }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 20px rgba(0, 51, 102, 0.15);
-        }
-
-        .service-image {
-            height: 180px;
-            width: 100%;
-            overflow: hidden;
-            background: #eff5fb;
-        }
-
-        .service-image img {
-            width: 100%;
-            height: 100%;
-            display: block;
-            object-fit: cover;
-        }
-
-        .service-content {
-            padding: 20px 18px 22px;
-            text-align: left;
-        }
-
-        .service-card h3 {
-            font-size: 18px;
-            color: #003366;
-            min-height: 44px;
-            display: flex;
-            align-items: center;
-            margin: 0 0 12px;
-            font-weight: 700;
-        }
-
-        .service-card p {
-            font-size: 13.5px;
-            color: #666666;
-            line-height: 1.5;
-            margin: 0;
-        }
-
-        @media (max-width: 600px) {
-            .services-container {
-                margin: 35px auto;
-                padding: 0 15px;
-            }
-
-            .services-header {
-                margin-bottom: 30px;
-            }
-
-            .services-header h2 {
-                font-size: 30px;
-            }
-
-            .service-card {
-                min-height: 0;
-                padding: 30px 20px;
-            }
-
-            .service-card h3 {
-                min-height: 0;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .hero-icons-grid {
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 20px;
-            }
-
-            .hero-icon-item {
-                border-right: none;
-                width: 45%;
-            }
-
-
-            .hero-title {
-                font-size: 48px;
-            }
-        }
-    </style>
 </head>
 
 <body>
 
+    <!-- Header -->
     <?php include 'header.php'; ?>
 
-    <div class="about-hero">
-        <h1 class="hero-title">Our Services</h1>
-        <div class="title-divider"></div>
-        <p class="hero-subtitle">
-            Safe, Reliable, and Professional Logistics Solutions
-        </p>
-
-        <!-- Exact Icons Grid Layout -->
-        <div class="hero-icons-grid">
-            <div class="hero-icon-item">
-                <div class="icon-circle"><i class="fa-solid fa-house"></i></div>
-                <div class="icon-label">Home</div>
-            </div>
-            <div class="hero-icon-item">
-                <div class="icon-circle"><i class="fa-solid fa-building"></i></div>
-                <div class="icon-label">Office</div>
-            </div>
-            <div class="hero-icon-item">
-                <div class="icon-circle"><i class="fa-solid fa-car"></i></div>
-                <div class="icon-label">Vehicle</div>
-            </div>
-            <div class="hero-icon-item">
-                <div class="icon-circle"><i class="fa-solid fa-globe"></i></div>
-                <div class="icon-label">International</div>
+    <!-- Premium Hero Section Banner -->
+    <section class="inner-hero" style="background: linear-gradient(135deg, rgba(10, 28, 46, 0.95) 0%, rgba(16, 42, 67, 0.88) 100%), url('img/services.png') center/cover no-repeat;">
+        <div class="container">
+            <span class="badge-tag" style="background: rgba(249, 115, 22, 0.2); color: #FFEDD5; border-color: rgba(249, 115, 22, 0.4);">
+                <i class="fas fa-boxes"></i> End-to-End Solutions
+            </span>
+            <h1 style="margin-top: 14px;">Professional Relocation Services</h1>
+            <p>Reliable, damage-free shifting solutions engineered for households, corporates, and industries across India.</p>
+            <div class="breadcrumb">
+                <a href="index.php"><i class="fas fa-home"></i> Home</a>
+                <i class="fas fa-chevron-right" style="font-size: 0.75rem;"></i>
+                <span>Our Services</span>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="services-container">
-        <div class="services-header">
-            <p>Safe, Reliable, and Professional Logistics Solutions</p>
-        </div>
+    <!-- Services Overview Section -->
+    <section class="section section-bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge-tag">Service Portfolio</span>
+                <h2>Specialized Logistics &amp; Shifting</h2>
+                <p>Every assignment is executed by disciplined crews using protective wrapping, modern handling equipment, and closed-container vehicles.</p>
+            </div>
 
-        <!-- 11 Services Grid Target Element -->
-        <div class="services-grid" id="servicesGrid">
-            <!-- JavaScript will render the 11 cards inside here automatically -->
-        </div>
-    </div>
-
-    <!-- JavaScript Data Rendering Section -->
-    <script>
-        // List of all 11 services matching your menu layout with local photo assets
-        const servicesData = [{
-                title: "Packing and Moving",
-                image: "img/packing-photo.jpg",
-                desc: "High-quality packing and safe moving solutions for all your valuable belongings."
-            },
-            {
-                title: "Loading and Unloading",
-                image: "img/loading-and-unloading.jpeg",
-                desc: "Expert loading and unloading services handled by trained professionals with care."
-            },
-            {
-                title: "Residential Relocation",
-                image: "img/residential-relocation.png.webp",
-                desc: "Hassle-free residential shifting services tailored to your specific relocation needs."
-            },
-            {
-                title: "Home Relocation",
-                image: "img/home-relocation.png.jpeg",
-                desc: "Complete end-to-end home shifting services to ensure a stress-free transition."
-            },
-            {
-                title: "Office Relocation",
-                image: "img/office-relocation.jpeg",
-                desc: "Efficient shifting of office assets, files, and IT equipment with zero disruption."
-            },
-            {
-                title: "Car Transportation",
-                image: "img/annapurna-car-shifting-loading.jpg",
-                desc: "Secure car carrier services to transport your vehicle scratch-free and safe."
-            },
-            {
-                title: "Bike Transportation",
-                image: "img/bike-transport.jpg",
-                desc: "Safe transport of two-wheelers using specialized packing and secure transit."
-            },
-            {
-                title: "Warehousing and Storage",
-                image: "img/warehousing-and-storage.png",
-                desc: "Safe, clean, and 24/7 secure short-term and long-term storage facilities for your goods."
-            },
-            {
-                title: "International Transportation",
-                image: "img/international-transporation.png",
-                desc: "Global cargo and international shipping setups for seamless long-distance freight."
-            },
-            {
-                title: "Heavy Machinery and Shifting",
-                image: "img/heavy-machinery-shifting.png",
-                desc: "Specialized handling and secure relocation services for industrial heavy tools and plant machinery."
-            },
-            {
-                title: "Container Truck Services",
-                image: "img/container-truck-services.jpeg",
-                desc: "Reliable container trucking solutions for efficient and secure cargo transportation."
-            },
-            // {
-            //     title: "Transport Insurance",
-            //     image: "img/transport-insurance.jpeg",
-            //     desc: "Comprehensive transit insurance coverage to safeguard your goods against unexpected damages."
-            // },
-        ];
-
-        // Function to loop and print cards dynamically onto the website layout
-        const gridElement = document.getElementById('servicesGrid');
-        servicesData.forEach(service => {
-            const cardHtml = `
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="${service.image}" alt="${service.title}">
+            <div class="services-grid" id="servicesGrid">
+                <!-- 1. Packing and Moving -->
+                <div class="service-card" id="packing-moving">
+                    <div class="service-img-wrapper">
+                        <img src="img/packing-photo.jpg" alt="Professional Packing and Moving" loading="lazy" width="380" height="220">
+                        <span class="service-tag"><i class="fas fa-box-open"></i> Full Packing</span>
                     </div>
-                    <div class="service-content">
-                        <h3>${service.title}</h3>
-                        <p>${service.desc}</p>
+                    <div class="service-body">
+                        <h3>Packing &amp; Moving</h3>
+                        <p>Multi-layered packing utilizing heavy 5-ply cartons, corrugated rolls, thermocol, and stretch film. Our skilled personnel systematically pack, code, and crate your valuable goods.</p>
+                        <button type="button" class="btn btn-outline" onclick="openQuoteWithService('Packing & Moving')" style="width: 100%; margin-top: auto;">
+                            <i class="fas fa-paper-plane"></i> Enquire for Packing
+                        </button>
                     </div>
                 </div>
-            `;
-            gridElement.innerHTML += cardHtml;
-        });
-    </script>
+
+                <!-- 2. Home Relocation -->
+                <div class="service-card" id="home-relocation">
+                    <div class="service-img-wrapper">
+                        <img src="img/home-relocation.png.jpeg" alt="Home Relocation and Shifting" loading="lazy" width="380" height="220">
+                        <span class="service-tag"><i class="fas fa-house"></i> Household</span>
+                    </div>
+                    <div class="service-body">
+                        <h3>Home Relocation</h3>
+                        <p>Complete household shifting from single apartments to large bungalows. We handle delicate glassware, electronics, kitchen sets, wardrobes, and furniture with supreme care.</p>
+                        <button type="button" class="btn btn-outline" onclick="openQuoteWithService('Home Relocation')" style="width: 100%; margin-top: auto;">
+                            <i class="fas fa-paper-plane"></i> Enquire for Home Move
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 3. Office Relocation -->
+                <div class="service-card" id="office-relocation">
+                    <div class="service-img-wrapper">
+                        <img src="img/office-relocation.jpeg" alt="Corporate Office Shifting" loading="lazy" width="380" height="220">
+                        <span class="service-tag"><i class="fas fa-building"></i> Commercial</span>
+                    </div>
+                    <div class="service-body">
+                        <h3>Office Relocation</h3>
+                        <p>Streamlined corporate moves scheduled on weekends or off-peak hours to minimize business downtime. Safe transport of server racks, workstations, confidential files, and conference furniture.</p>
+                        <button type="button" class="btn btn-outline" onclick="openQuoteWithService('Office Relocation')" style="width: 100%; margin-top: auto;">
+                            <i class="fas fa-paper-plane"></i> Enquire for Office Move
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 4. Vehicle Transportation -->
+                <div class="service-card" id="vehicle-transportation">
+                    <div class="service-img-wrapper">
+                        <img src="img/car-transport.jpg" alt="Car Transportation in Enclosed Carrier" loading="lazy" width="380" height="220">
+                        <span class="service-tag"><i class="fas fa-car"></i> Car Carrier</span>
+                    </div>
+                    <div class="service-body">
+                        <h3>Car Transportation</h3>
+                        <p>Enclosed hydraulic car carrier trailers guaranteeing scratch-free door-to-door transit for sedans, SUVs, and luxury automobiles across intercity corridors.</p>
+                        <button type="button" class="btn btn-outline" onclick="openQuoteWithService('Vehicle Transportation')" style="width: 100%; margin-top: auto;">
+                            <i class="fas fa-paper-plane"></i> Enquire for Car Transport
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 5. Bike Transportation -->
+                <div class="service-card" id="bike-transportation">
+                    <div class="service-img-wrapper">
+                        <img src="img/bike-transport.jpg" alt="Two-Wheeler Bike Shifting" loading="lazy" width="380" height="220">
+                        <span class="service-tag"><i class="fas fa-motorcycle"></i> Two-Wheeler</span>
+                    </div>
+                    <div class="service-body">
+                        <h3>Bike Transportation</h3>
+                        <p>Secure motorcycle shifting with protective foam wrapping, mirror and indicator padding, bubble wrap, and firm wooden-base strapping inside transit trucks.</p>
+                        <button type="button" class="btn btn-outline" onclick="openQuoteWithService('Vehicle Transportation')" style="width: 100%; margin-top: auto;">
+                            <i class="fas fa-paper-plane"></i> Enquire for Bike Transport
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 6. Storage & Warehousing -->
+                <div class="service-card" id="storage-warehousing">
+                    <div class="service-img-wrapper">
+                        <img src="img/warehousing-and-storage.png" alt="Warehouse and Safe Storage Facility" loading="lazy" width="380" height="220">
+                        <span class="service-tag"><i class="fas fa-warehouse"></i> Storage Hub</span>
+                    </div>
+                    <div class="service-body">
+                        <h3>Storage &amp; Warehousing</h3>
+                        <p>Pest-controlled, 24/7 guarded warehousing in Visakhapatnam. Store excess household goods, corporate archives, or transitional shipments with monthly flexible terms.</p>
+                        <button type="button" class="btn btn-outline" onclick="openQuoteWithService('Storage & Warehousing')" style="width: 100%; margin-top: auto;">
+                            <i class="fas fa-paper-plane"></i> Enquire for Storage
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 7. International Relocation -->
+                <div class="service-card" id="international-relocation">
+                    <div class="service-img-wrapper">
+                        <img src="img/international-transporation.png" alt="International Relocation Freight" loading="lazy" width="380" height="220">
+                        <span class="service-tag"><i class="fas fa-plane-departure"></i> Global Cargo</span>
+                    </div>
+                    <div class="service-body">
+                        <h3>International Relocation</h3>
+                        <p>Air and sea cargo shipping with export-standard wooden crating, container stuffing, customs clearance coordination, and worldwide door delivery assistance.</p>
+                        <button type="button" class="btn btn-outline" onclick="openQuoteWithService('International Relocation')" style="width: 100%; margin-top: auto;">
+                            <i class="fas fa-paper-plane"></i> Enquire for Global Move
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 8. Loading & Unloading -->
+                <div class="service-card" id="loading-unloading">
+                    <div class="service-img-wrapper">
+                        <img src="img/loading-and-unloading.jpeg" alt="Trained Crew Loading and Unloading" loading="lazy" width="380" height="220">
+                        <span class="service-tag"><i class="fas fa-people-carry"></i> Manpower</span>
+                    </div>
+                    <div class="service-body">
+                        <h3>Loading &amp; Unloading</h3>
+                        <p>Physically fit, trained handlers equipped with trollies, ramps, and safety straps to load and unload heavy boxes without damaging walls, lifts, or staircases.</p>
+                        <button type="button" class="btn btn-outline" onclick="openQuoteWithService('Packing & Moving')" style="width: 100%; margin-top: auto;">
+                            <i class="fas fa-paper-plane"></i> Enquire for Labor Crew
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 9. Heavy Machinery Shifting -->
+                <div class="service-card" id="heavy-machinery">
+                    <div class="service-img-wrapper">
+                        <img src="img/heavy-machinery-shifting.png" alt="Heavy Machinery and Industrial Shifting" loading="lazy" width="380" height="220">
+                        <span class="service-tag"><i class="fas fa-cogs"></i> Industrial</span>
+                    </div>
+                    <div class="service-body">
+                        <h3>Heavy Machinery Shifting</h3>
+                        <p>Industrial machinery moving and factory relocation utilizing hydraulic jacks, cranes, heavy-duty trailers, and specialized rigging experts in Vizag industrial hubs.</p>
+                        <button type="button" class="btn btn-outline" onclick="openQuoteWithService('Office Relocation')" style="width: 100%; margin-top: auto;">
+                            <i class="fas fa-paper-plane"></i> Enquire for Machinery
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 10. Container Truck Services -->
+                <div class="service-card" id="container-trucks">
+                    <div class="service-img-wrapper">
+                        <img src="img/container-truck-services.jpeg" alt="Container Truck Services" loading="lazy" width="380" height="220">
+                        <span class="service-tag"><i class="fas fa-truck"></i> Dedicated Fleet</span>
+                    </div>
+                    <div class="service-body">
+                        <h3>Container Truck Services</h3>
+                        <p>Dedicated sealed-container trucks (14ft, 17ft, 19ft, 22ft, 32ft) ensuring your cargo travels privately without mix-ups or exposure to rain and road grime.</p>
+                        <button type="button" class="btn btn-outline" onclick="openQuoteWithService('Packing & Moving')" style="width: 100%; margin-top: auto;">
+                            <i class="fas fa-paper-plane"></i> Enquire for Container Truck
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 11. Residential Relocation -->
+                <div class="service-card" id="residential-relocation">
+                    <div class="service-img-wrapper">
+                        <img src="img/residential-relocation.png.webp" alt="Residential Shifting" loading="lazy" width="380" height="220">
+                        <span class="service-tag"><i class="fas fa-door-open"></i> Full Setup</span>
+                    </div>
+                    <div class="service-body">
+                        <h3>Residential Relocation</h3>
+                        <p>Customized residential shifting packages including furniture assembly, basic electronics setup, and systematic unpacking so you can settle in immediately.</p>
+                        <button type="button" class="btn btn-outline" onclick="openQuoteWithService('Home Relocation')" style="width: 100%; margin-top: auto;">
+                            <i class="fas fa-paper-plane"></i> Enquire for Residential
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Moving Process & Quality Standards -->
+    <section class="section section-bg-white">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge-tag">Execution Standard</span>
+                <h2>How We Safeguard Your Consignment</h2>
+                <p>Every step of our relocation cycle is monitored for absolute cargo protection.</p>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-layer-group"></i></div>
+                    <h3>Multi-Tier Protective Layering</h3>
+                    <p>Fragile items receive specialized micro-foam wrapping, corrugated cushions, and double-taped shock absorbers inside rigid cartons.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-truck-loading"></i></div>
+                    <h3>Engineered Vehicle Weight Distribution</h3>
+                    <p>Heavy furniture and appliances are base-anchored with industrial straps to eliminate shifts or tipping during highway maneuvers.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-clipboard-list"></i></div>
+                    <h3>Itemized Consignment Note</h3>
+                    <p>Every carton is marked with room destinations and cataloged on a verified inventory note signed prior to dispatch.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-clock"></i></div>
+                    <h3>Punctual Delivery Guarantee</h3>
+                    <p>Pre-planned transit routing avoids bottlenecks, ensuring arrival within the agreed delivery window.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Section for Services -->
+    <section class="section section-bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge-tag">Service FAQs</span>
+                <h2>Frequently Asked Questions About Services</h2>
+                <p>Quick answers to questions regarding packing standards, transit, and special items.</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item active">
+                    <button type="button" class="faq-question" onclick="toggleFaq(this)">
+                        <span>Do you provide packing materials or should I arrange them?</span>
+                        <div class="faq-icon-wrapper"><i class="fas fa-chevron-down"></i></div>
+                    </button>
+                    <div class="faq-answer" style="max-height: 200px;">
+                        <div class="faq-answer-inner">
+                            Annapurna Packers brings all necessary packing materials, including 5-ply cartons, bubble wrap, stretch film, corrugated sheets, waterproof covers, and sealing tapes. You do not need to arrange anything.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button type="button" class="faq-question" onclick="toggleFaq(this)">
+                        <span>How are electronics such as LED TVs and refrigerators protected?</span>
+                        <div class="faq-icon-wrapper"><i class="fas fa-chevron-down"></i></div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            LED TVs are wrapped in shock-absorbing foam, enclosed in custom-sized wooden or heavy corrugated LED boxes with corner buffers. Refrigerators are defrost-checked, secured with internal padding, and stretch-wrapped.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button type="button" class="faq-question" onclick="toggleFaq(this)">
+                        <span>Can I transport plants or perishable food items?</span>
+                        <div class="faq-icon-wrapper"><i class="fas fa-chevron-down"></i></div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            For local moves within Visakhapatnam, potted plants can be accommodated. For intercity moves spanning multiple days, we advise against moving perishable foodstuffs or fragile potted plants due to enclosed vehicle temperature conditions.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta-section">
+        <div class="container">
+            <div class="final-cta-box">
+                <div>
+                    <h2>Need a Custom Quote for Your Relocation?</h2>
+                    <p>Call our Visakhapatnam customer desk or request a call back with full item assessment.</p>
+                </div>
+                <div class="final-cta-actions">
+                    <button type="button" class="btn btn-primary" onclick="openQuoteModal()">
+                        <i class="fas fa-calculator"></i> Get Free Quote
+                    </button>
+                    <a href="tel:+919966031259" class="btn btn-outline-white">
+                        <i class="fas fa-phone"></i> Call +91 99660 31259
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <?php include 'footer.php'; ?>
+
+    <script>
+        function openQuoteWithService(serviceName) {
+            openQuoteModal();
+            const selectElem = document.getElementById('m_service');
+            if (selectElem) {
+                selectElem.value = serviceName;
+            }
+        }
+    </script>
 </body>
 
 </html>

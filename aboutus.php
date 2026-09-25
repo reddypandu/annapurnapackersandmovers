@@ -4,429 +4,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Annapurna Packers and Movers</title>
+    <title>About Us | Annapurna Packers and Movers Visakhapatnam</title>
+    <meta name="description" content="Learn about Annapurna Packers and Movers, our team, fleet infrastructure, and commitment to safe and reliable packing and relocation services in Visakhapatnam and pan-India.">
+    <link rel="canonical" href="https://annapurnapackersandmovers.com/aboutus.php">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="img/favicon.png" type="image/x-icon">
-    <!-- FontAwesome icons used in the hero and service sections -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background-color: #f8fafc;
-            color: #334155;
-            line-height: 1.6;
-        }
-
-        /* Premium Navigation Bar matching main theme */
-        .navbar {
-            background-color: #004085;
-            padding: 15px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .logo-text {
-            font-size: 22px;
-            font-weight: 800;
-            color: #FFF;
-            text-decoration: none;
-            letter-spacing: 1px;
-        }
-
-        .logo-text span {
-            color: #ff6600;
-        }
-
-        .nav-links a {
-            color: #b0c4de;
-            text-decoration: none;
-            margin-left: 20px;
-            font-weight: 500;
-            font-size: 0.95rem;
-            transition: color 0.3s;
-        }
-
-        .nav-links a:hover,
-        .nav-links a.active {
-            color: #ffffff;
-        }
-
-        .nav-links a.active,
-        .nav-links a:hover,
-        a.active {
-            color: #ffffff !important;
-        }
-
-        /* --- IMAGE MATCHED HERO BANNER --- */
-        .about-hero {
-            background: linear-gradient(90deg, rgba(2, 28, 54, 0.92) 45%, rgba(2, 28, 54, 0.6) 100%),
-                url('img/annapurna-logo.png');
-            background-size: cover;
-            background-position: center;
-            padding: 80px 60px;
-            color: #fff;
-            min-height: 220px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .hero-title {
-            font-size: 72px;
-            font-weight: 800;
-            margin-bottom: 5px;
-            color: #ffffff;
-            letter-spacing: 1px;
-        }
-
-        /* Orange line below 'About Us' */
-        .title-divider {
-            width: 120px;
-            height: 3px;
-            background-color: #ff6600;
-            margin-bottom: 25px;
-        }
-
-        .hero-subtitle {
-            font-size: 22px;
-            color: #cbd5e1;
-            margin-bottom: 45px;
-            font-weight: 500;
-            letter-spacing: 0.5px;
-        }
-
-        /* Hero Icons Container Layout */
-        .hero-icons-grid {
-            display: flex;
-            gap: 0;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            padding-top: 30px;
-            max-width: 600px;
-        }
-
-        .hero-icon-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 120px;
-            border-right: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .hero-icon-item:last-child {
-            border-right: none;
-        }
-
-        .icon-circle {
-            width: 65px;
-            height: 65px;
-            border: 2px solid rgba(255, 255, 255, 0.4);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 12px;
-            font-size: 24px;
-            color: #ffffff;
-            transition: all 0.3s ease;
-        }
-
-        .hero-icon-item:hover .icon-circle {
-            border-color: #ff6600;
-            color: #ff6600;
-            background: rgba(255, 102, 0, 0.1);
-        }
-
-        .icon-label {
-            font-size: 13px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-weight: 700;
-            color: #ff6600;
-        }
-
-        /* General Container */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 60px 20px;
-        }
-
-        /* Section 1: About Owner & Company */
-        .about-section {
-            display: flex;
-            gap: 50px;
-            align-items: center;
-            margin-bottom: 60px;
-        }
-
-        .about-content {
-            flex: 1;
-        }
-
-        .sub-title {
-            color: #ff6600;
-            font-size: 14px;
-            font-weight: 700;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            margin-bottom: 10px;
-        }
-
-        .main-title {
-            color: #002244;
-            font-size: 36px;
-            font-weight: 800;
-            margin-bottom: 20px;
-        }
-
-        .about-text {
-            font-size: 16px;
-            color: #556270;
-            margin-bottom: 15px;
-            text-align: justify;
-        }
-
-        .about-image-wrapper {
-            flex: 1;
-            text-align: center;
-            position: relative;
-        }
-
-        .owner-img {
-            width: 100%;
-            max-width: 450px;
-            border-radius: 8px;
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-        }
-
-        .experience-badge {
-            position: absolute;
-            bottom: 20px;
-            left: 40px;
-            background: #ff6600;
-            color: #fff;
-            padding: 15px 25px;
-            border-radius: 4px;
-            font-weight: bold;
-            font-size: 18px;
-            box-shadow: 0 10px 15px rgba(255, 102, 0, 0.3);
-        }
-
-        /* Section 2: Vision & Mission */
-        .vision-mission-section {
-            background-color: #fff;
-            padding: 60px 0;
-            border-top: 1px solid #e2e8f0;
-            border-bottom: 1px solid #e2e8f0;
-        }
-
-        .cards-grid {
-            display: flex;
-            gap: 30px;
-            margin-top: 30px;
-        }
-
-        .card {
-            flex: 1;
-            background: #fff;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            border: 1px solid #e2e8f0;
-        }
-
-        .card h3 {
-            color: #002244;
-            font-size: 24px;
-            margin-bottom: 15px;
-        }
-
-        /* Section 3: Services Grid */
-        .services-section {
-            margin-top: 60px;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 30px;
-        }
-
-        .service-box {
-            background: #fff;
-            padding: 30px 20px;
-            border-radius: 8px;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s;
-            border-bottom: 3px solid #e2e8f0;
-        }
-
-        .service-box:hover {
-            transform: translateY(-5px);
-            border-bottom-color: #ff6600;
-        }
-
-        .service-box h4 {
-            color: #002244;
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-
-        .service-box p {
-            font-size: 14px;
-            color: #64748b;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-
-            .about-section,
-            .cards-grid {
-                flex-direction: column;
-            }
-
-            .hero-icons-grid {
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 20px;
-            }
-
-            .hero-icon-item {
-                border-right: none;
-                width: 45%;
-            }
-
-            .navbar {
-                padding: 20px;
-                flex-direction: column;
-                gap: 15px;
-            }
-
-            .nav-links a {
-                margin: 0 10px;
-            }
-
-            .hero-title {
-                font-size: 48px;
-            }
-        }
-    </style>
 </head>
 
 <body>
 
+    <!-- Global Header -->
     <?php include 'header.php'; ?>
 
-    <!-- --- HERO BANNER SECTION MATCHING USER IMAGE --- -->
-    <div class="about-hero">
-        <h1 class="hero-title">About Us</h1>
-        <div class="title-divider"></div>
-        <p class="hero-subtitle">Packers & Movers, Home, Office & Vehicle Relocation Services</p>
-
-        <!-- Exact Icons Grid Layout -->
-        <div class="hero-icons-grid">
-            <div class="hero-icon-item">
-                <div class="icon-circle"><i class="fa-solid fa-house"></i></div>
-                <div class="icon-label">Home</div>
-            </div>
-            <div class="hero-icon-item">
-                <div class="icon-circle"><i class="fa-solid fa-building"></i></div>
-                <div class="icon-label">Office</div>
-            </div>
-            <div class="hero-icon-item">
-                <div class="icon-circle"><i class="fa-solid fa-car"></i></div>
-                <div class="icon-label">Vehicle</div>
-            </div>
-            <div class="hero-icon-item">
-                <div class="icon-circle"><i class="fa-solid fa-globe"></i></div>
-                <div class="icon-label">International</div>
+    <!-- Inner Hero -->
+    <section class="inner-hero">
+        <div class="container">
+            <span class="badge-tag" style="background: rgba(249, 115, 22, 0.2); color: #FFEDD5; border-color: rgba(249, 115, 22, 0.4);">
+                About Our Enterprise
+            </span>
+            <h1 style="margin-top: 12px;">About Annapurna Packers &amp; Movers</h1>
+            <p>Committed to providing dependable, safe, and transparent relocation services in Visakhapatnam and nationwide.</p>
+            <div class="breadcrumb">
+                <a href="index.php">Home</a>
+                <i class="fas fa-chevron-right" style="font-size: 0.75rem;"></i>
+                <span>About Us</span>
             </div>
         </div>
-    </div>
+    </section>
 
+    <!-- Company Overview & Leadership -->
+    <section class="section section-bg-white">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="badge-tag">Company Profile</span>
+                    <h2>Dedicated to Safe &amp; Dependable Relocations</h2>
+                    <p>
+                        <strong>Annapurna Packers and Movers</strong> is an established logistics and shifting service based in Visakhapatnam, Andhra Pradesh. We specialize in household moving, commercial office shifting, automobile crating &amp; transportation, and secured warehouse storage.
+                    </p>
+                    <p>
+                        With decades of combined hands-on experience in the transport and packing industry, our certified team handles every relocation project with careful precision. From fragile kitchenware and high-value consumer electronics to heavy industrial machinery, we use durable packing materials and specialized closed-body vehicles to ensure damage-free transit.
+                    </p>
+                    <ul class="about-checklist">
+                        <li><i class="fas fa-check-circle"></i> Experienced &amp; Uniformed Packing Staff</li>
+                        <li><i class="fas fa-check-circle"></i> High-Grade Multi-Layer Packing Materials</li>
+                        <li><i class="fas fa-check-circle"></i> All-Weather Closed Container Fleet</li>
+                        <li><i class="fas fa-check-circle"></i> Dedicated Route &amp; Transit Coordination</li>
+                    </ul>
+                    <div style="display: flex; gap: 14px; flex-wrap: wrap; margin-top: 20px;">
+                        <button type="button" class="btn btn-primary" onclick="openQuoteModal()">
+                            <i class="fas fa-file-invoice"></i> Request a Quote
+                        </button>
+                        <a href="tel:+919966031259" class="btn btn-outline">
+                            <i class="fas fa-phone"></i> Call Coordinator
+                        </a>
+                    </div>
+                </div>
 
-    <!-- Rest of the Content in English -->
-    <div class="container">
-        <!-- Section 1: About Owner & Company -->
-        <div class="about-section">
-            <div class="about-content">
-                <div class="sub-title">INTERNATIONAL PACKERS AND MOVERS</div>
-                <h2 class="main-title">Annapurna Packers & Movers</h2>
-                <p class="about-text"><strong>Most Trusted and Secure Packing & Moving Services in Visakhapatnam.</strong></p>
-                <p class="about-text">Annapurna Packers & Movers is a leading relocation service provider in Vizag and across India. We specialize in household shifting, office relocation, and vehicle transportation. Ensuring the safety, reliability, and timely delivery of your valuable goods is our topmost priority.</p>
-                <p class="about-text">With over 30 years of extensive experience and a team of highly skilled professionals, we handle every relocation with utmost care. Using high-quality packing materials and our own fleet of transport vehicles, we deliver completely stress-free moving solutions without any damage.</p>
-            </div>
-            <div class="about-image-wrapper">
-                <img src="img/owner-profile.jpg" alt="Owner Profile" class="owner-img">
-                <div class="experience-badge">30+ Years Exp.</div>
+                <div class="about-img-gallery">
+                    <div class="about-main-img">
+                        <img src="img/owner-profile.jpg" alt="Annapurna Packers Leadership" loading="lazy" width="500" height="420" style="object-fit: cover; width: 100%;">
+                    </div>
+                    <div class="about-badge-exp">
+                        <div class="exp-years">30+ Years</div>
+                        <div class="exp-text">Industry Experience</div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Section 2: Vision & Mission -->
-    <div class="vision-mission-section">
-        <div class="container" style="padding: 0 20px;">
-            <div class="sub-title" style="text-align: center;">OUR COMMITMENT</div>
-            <h2 class="main-title" style="text-align: center; margin-bottom: 40px;">Our Vision & Mission</h2>
-            <div class="cards-grid">
-                <div class="card">
+    <!-- Vision & Mission Cards -->
+    <section class="section section-bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge-tag">Core Principles</span>
+                <h2>Our Vision &amp; Mission</h2>
+                <p>Guided by customer satisfaction, integrity in pricing, and high standards in cargo care.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
+                <div class="why-card" style="border-top: 4px solid var(--accent-orange);">
+                    <div class="why-icon"><i class="fas fa-bullseye"></i></div>
                     <h3>Our Vision</h3>
-                    <p>To become India's most trusted and preferred packers and movers company by continuously implementing advanced technology, logistics infrastructure, and premium packing standards.</p>
+                    <p>To be the premier, most reliable relocation and logistics partner in Andhra Pradesh and across India, recognized for punctuality, cargo safety, and superior customer satisfaction.</p>
                 </div>
-                <div class="card">
+                <div class="why-card" style="border-top: 4px solid var(--primary-navy);">
+                    <div class="why-icon"><i class="fas fa-hand-holding-heart"></i></div>
                     <h3>Our Mission</h3>
-                    <p>To provide custom, affordable, and stress-free shifting services tailored to customer needs, ensuring seamless transitions and complete customer satisfaction on every single move.</p>
+                    <p>To eliminate moving anxiety for families and businesses by providing customized packing solutions, courteous and skilled manpower, and honest, upfront pricing on every move.</p>
+                </div>
+                <div class="why-card" style="border-top: 4px solid var(--accent-orange);">
+                    <div class="why-icon"><i class="fas fa-gem"></i></div>
+                    <h3>Our Values</h3>
+                    <p>Uncompromising commitment to cargo safety, clear communication at every transit milestone, and respectful handling of our clients' valuable personal possessions.</p>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Section 3: Services Grid -->
-    <!-- Section 3: Services Grid -->
-    <div class="container">
-        <div class="services-section">
-            <div class="sub-title" style="text-align: center;">OUR SERVICES</div>
-            <h2 class="main-title" style="text-align: center; margin-bottom: 40px;">Complete Moving Solutions</h2>
-
-            <div class="cards-grid">
-                <!-- Card 1: International Household Moving -->
-                <div class="card" style="text-align: center; padding: 20px;">
-                    <div class="icon" style="font-size: 40px; margin-bottom: 15px;">🏠</div>
-                    <h3 style="font-size: 20px; margin-bottom: 10px;">International Household Moving</h3>
-                    <p style="color: #666; font-size: 14px;">Safe relocation services for household goods to worldwide destinations with optimal safety measures.</p>
+    <!-- Logistics Infrastructure & Fleet -->
+    <section class="section section-bg-white">
+        <div class="container">
+            <div class="about-grid" style="direction: rtl;">
+                <div class="about-content" style="direction: ltr;">
+                    <span class="badge-tag">Fleet &amp; Infrastructure</span>
+                    <h2>Weatherproof Fleet &amp; Modern Warehousing</h2>
+                    <p>
+                        Our operational infrastructure includes a dedicated transport parking and fleet yard at <strong>Sabbavaram, Anakapalli District</strong>, alongside our primary administrative head office at <strong>Sector-4, MVP Colony, Visakhapatnam</strong>.
+                    </p>
+                    <p>
+                        We operate container trucks designed to prevent rainwater ingress, dust, and transit vibrations. Additionally, our warehousing facility provides round-the-clock monitoring and pest-controlled storage for short or long durations.
+                    </p>
+                    <div style="margin-top: 25px;">
+                        <a href="LocateUs.php" class="btn btn-secondary">
+                            <i class="fas fa-map-marked-alt"></i> View Office &amp; Hub Locations
+                        </a>
+                    </div>
                 </div>
 
-                <!-- Card 2: Air & Sea Freight -->
-                <div class="card" style="text-align: center; padding: 20px;">
-                    <div class="icon" style="font-size: 40px; margin-bottom: 15px;">✈️</div>
-                    <h3 style="font-size: 20px; margin-bottom: 10px;">Air & Sea Freight</h3>
-                    <p style="color: #666; font-size: 14px;">Fast, cost-effective ocean and air transportation solutions for global commercial shipping.</p>
-                </div>
-
-                <!-- Card 3: Customs Clearance -->
-                <div class="card" style="text-align: center; padding: 20px;">
-                    <div class="icon" style="font-size: 40px; margin-bottom: 15px;">📋</div>
-                    <h3 style="font-size: 20px; margin-bottom: 10px;">Customs Clearance</h3>
-                    <p style="color: #666; font-size: 14px;">Professional custom brokerage services for seamless import and export documentation worldwide.</p>
-                </div>
-
-                <!-- Card 4: Door-to-Door Global Relocation -->
-                <div class="card" style="text-align: center; padding: 20px;">
-                    <div class="icon" style="font-size: 40px; margin-bottom: 15px;">🌐</div>
-                    <h3 style="font-size: 20px; margin-bottom: 10px;">Door-to-Door Global Relocation</h3>
-                    <p style="color: #666; font-size: 14px;">Complete end-to-end relocation management from packing and shipping to final door delivery.</p>
+                <div class="about-img-gallery" style="direction: ltr;">
+                    <div class="about-main-img">
+                        <img src="img/container-truck-services.jpeg" alt="Annapurna Closed Container Fleet" loading="lazy" width="500" height="380" style="object-fit: cover; width: 100%;">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta-section">
+        <div class="container">
+            <div class="final-cta-box">
+                <div>
+                    <h2>Planning a Move From or To Visakhapatnam?</h2>
+                    <p>Get in touch today for an honest, upfront quotation with no surprise charges.</p>
+                </div>
+                <div class="final-cta-actions">
+                    <button type="button" class="btn btn-primary" onclick="openQuoteModal()">
+                        <i class="fas fa-calculator"></i> Get Free Quote
+                    </button>
+                    <a href="tel:+919966031259" class="btn btn-outline-white">
+                        <i class="fas fa-phone"></i> Call +91 99660 31259
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Footer -->
     <?php include 'footer.php'; ?>
+
+</body>
+
+</html>
