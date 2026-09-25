@@ -51,18 +51,7 @@
                         <i class="fas fa-map-marker-alt"></i>
                         <p><strong>Vizag (H.O.):</strong> Iruvada, Drivers Rest Parking, Sabbavaram, Askapalli, Anakapalli District - 531035</p>
                     </div>
-                    <div class="contact-info-row">
-                        <i class="fas fa-warehouse"></i>
-                        <p><strong>Vizag (Aganampudi):</strong> <a href="https://share.google/g6T2ohr6RRSykyA2T" target="_blank" rel="noopener">Aganampudi Hub, Visakhapatnam - 530053 <i class="fas fa-external-link-alt" style="font-size: 0.75rem;"></i></a></p>
-                    </div>
-                    <div class="contact-info-row">
-                        <i class="fas fa-map-pin"></i>
-                        <p><strong>Hyderabad:</strong> <a href="https://maps.app.goo.gl/Mu2oyxfdt1vzT2v77?g_st=aw" target="_blank" rel="noopener">Devi Krupa Residency, Shaikpet, Hyderabad - 500104 <i class="fas fa-external-link-alt" style="font-size: 0.75rem;"></i></a></p>
-                    </div>
-                    <div class="contact-info-row">
-                        <i class="fas fa-map-pin"></i>
-                        <p><strong>Mumbai:</strong> <a href="https://maps.app.goo.gl/gm9pwz7bCKDTVn5B8" target="_blank" rel="noopener">Swadeshi Mill Complex, Kurla East, Mumbai - 400024 <i class="fas fa-external-link-alt" style="font-size: 0.75rem;"></i></a></p>
-                    </div>
+
                     <div class="contact-info-row">
                         <i class="fas fa-phone"></i>
                         <p>
@@ -99,13 +88,13 @@
 <div class="mobile-action-bar">
     <div class="mobile-action-inner">
         <a href="tel:+919966031259" class="mobile-action-btn mobile-call">
-            <i class="fas fa-phone"></i> Call Now
+            <i class="fas fa-phone"></i> <span>Call Now</span>
         </a>
         <a href="https://wa.me/918333031259" target="_blank" rel="noopener" class="mobile-action-btn mobile-whatsapp">
-            <i class="fab fa-whatsapp"></i> WhatsApp
+            <i class="fab fa-whatsapp"></i> <span>WhatsApp</span>
         </a>
         <button type="button" onclick="openQuoteModal()" class="mobile-action-btn mobile-quote" style="border: none; cursor: pointer;">
-            <i class="fas fa-paper-plane"></i> Get Quote
+            <i class="fas fa-paper-plane"></i> <span>Get Quote</span>
         </button>
     </div>
 </div>

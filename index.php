@@ -391,53 +391,123 @@
     </section>
 
     <!-- 7. Service Locations -->
+    <!-- 7. Service Locations -->
+    <style>
+        #locations .hub-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 22px;
+            max-width: 980px;
+            margin: 0 auto;
+        }
+
+        #locations .hub-card {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 26px 24px;
+            background: #FFFFFF;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        #locations .hub-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-orange);
+            box-shadow: var(--shadow-xl);
+        }
+
+        #locations .hub-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: var(--orange-light);
+            color: var(--accent-orange);
+            font-size: 1rem;
+        }
+
+        #locations .hub-card h4 {
+            margin: 0;
+            padding-bottom: 8px;
+            color: var(--navy-dark);
+            font-size: 1.05rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Dashed route-line underline — same motif used across the site */
+        #locations .hub-card h4::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 30px;
+            border-bottom: 2px dashed var(--accent-orange);
+        }
+
+        #locations .hub-card p {
+            margin: 0;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        #locations .hub-card a {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 4px;
+            color: var(--accent-orange);
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-decoration: none;
+        }
+
+        #locations .hub-card a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
     <section class="section section-bg-light" id="locations">
         <div class="container">
             <div class="section-header">
                 <span class="badge-tag">Coverage Area</span>
-                <h2>Key Relocation Routes &amp; Hubs</h2>
+                <h2>Packers and Movers Locations</h2>
                 <p>Operating from our Visakhapatnam headquarters, we connect Andhra Pradesh with key business centers and metropolitan cities across India.</p>
             </div>
 
-            <div class="locations-grid">
-                <a href="LocateUs.php#vizag" class="location-chip">
-                    <i class="fas fa-map-pin"></i>
-                    <span>Visakhapatnam (HQ)</span>
-                </a>
-                <a href="LocateUs.php#vijayawada" class="location-chip">
-                    <i class="fas fa-map-pin"></i>
-                    <span>Vijayawada</span>
-                </a>
-                <a href="LocateUs.php#hyderabad" class="location-chip">
-                    <i class="fas fa-map-pin"></i>
-                    <span>Hyderabad &amp; Secunderabad</span>
-                </a>
-                <a href="LocateUs.php#bengaluru" class="location-chip">
-                    <i class="fas fa-map-pin"></i>
-                    <span>Bengaluru</span>
-                </a>
-                <a href="LocateUs.php#chennai" class="location-chip">
-                    <i class="fas fa-map-pin"></i>
-                    <span>Chennai</span>
-                </a>
-                <a href="LocateUs.php#bhubaneswar" class="location-chip">
-                    <i class="fas fa-map-pin"></i>
-                    <span>Bhubaneswar &amp; Odisha</span>
-                </a>
-                <a href="LocateUs.php#mumbai" class="location-chip">
-                    <i class="fas fa-map-pin"></i>
-                    <span>Mumbai &amp; Pune</span>
-                </a>
-                <a href="LocateUs.php#kolkata" class="location-chip">
-                    <i class="fas fa-map-pin"></i>
-                    <span>Kolkata &amp; West Bengal</span>
-                </a>
-            </div>
+            <div class="hub-grid">
+                <div class="hub-card">
+                    <div class="hub-icon"><i class="fas fa-warehouse"></i></div>
+                    <h4>Vizag (Aganampudi)</h4>
+                    <p>Aganampudi Hub, Visakhapatnam - 530053</p>
+                    <a href="https://share.google/g6T2ohr6RRSykyA2T" target="_blank" rel="noopener">
+                        View on Map <i class="fas fa-external-link-alt" style="font-size: 0.75rem;"></i>
+                    </a>
+                </div>
 
-            <div style="text-align: center; margin-top: 30px;">
-                <a href="LocateUs.php" class="btn btn-outline">
-                    <i class="fas fa-map"></i> View Complete Service Locations
-                </a>
+                <div class="hub-card">
+                    <div class="hub-icon"><i class="fas fa-map-pin"></i></div>
+                    <h4>Hyderabad</h4>
+                    <p>Devi Krupa Residency, Shaikpet, Hyderabad - 500104</p>
+                    <a href="https://maps.app.goo.gl/Mu2oyxfdt1vzT2v77?g_st=aw" target="_blank" rel="noopener">
+                        View on Map <i class="fas fa-external-link-alt" style="font-size: 0.75rem;"></i>
+                    </a>
+                </div>
+
+                <div class="hub-card">
+                    <div class="hub-icon"><i class="fas fa-map-pin"></i></div>
+                    <h4>Mumbai</h4>
+                    <p>Swadeshi Mill Complex, Kurla East, Mumbai - 400024</p>
+                    <a href="https://maps.app.goo.gl/gm9pwz7bCKDTVn5B8" target="_blank" rel="noopener">
+                        View on Map <i class="fas fa-external-link-alt" style="font-size: 0.75rem;"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </section>

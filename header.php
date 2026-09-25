@@ -35,7 +35,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
                 <li><a href="index.php" class="nav-link <?php echo ($currentPage == 'index.php' || $currentPage == '') ? 'active' : ''; ?>">Home</a></li>
                 <li><a href="aboutus.php" class="nav-link <?php echo $currentPage == 'aboutus.php' ? 'active' : ''; ?>">About Us</a></li>
                 <li class="nav-item-dropdown">
-                    <a href="services.php" class="nav-link <?php echo $currentPage == 'services.php' ? 'active' : ''; ?>" aria-haspopup="true">
+                    <a href="#" class="nav-link <?php echo $currentPage == 'services.php' ? 'active' : ''; ?>" aria-haspopup="true">
                         Services <i class="fas fa-chevron-down" style="font-size: 0.75rem;"></i>
                     </a>
                     <ul class="dropdown-menu" aria-label="Services Submenu">
@@ -47,16 +47,15 @@ $currentPage = basename($_SERVER['PHP_SELF']);
                         <li><a href="services.php#international-relocation" class="dropdown-item">International Relocation</a></li>
                     </ul>
                 </li>
-                <li><a href="LocateUs.php" class="nav-link <?php echo $currentPage == 'LocateUs.php' ? 'active' : ''; ?>">Locations</a></li>
                 <li><a href="gallery.php" class="nav-link <?php echo $currentPage == 'gallery.php' ? 'active' : ''; ?>">Gallery</a></li>
-                <li><a href="transportation.php" class="nav-link">Transportation</a></li>
+                <li><a href="transportation.php" class="nav-link <?php echo $currentPage == 'transportation.php' ? 'active' : ''; ?>">Transportation</a></li>
                 <li><a href="contact.php" class="nav-link <?php echo $currentPage == 'contact.php' ? 'active' : ''; ?>">Contact Us</a></li>
             </ul>
 
             <div class="nav-actions">
 
-                <button type="button" class="btn btn-primary" onclick="openQuoteModal()">
-                    <i class="fas fa-file-invoice"></i> Get Free Quote
+                <button type="button" class="btn btn-primary get" onclick="openQuoteModal()">
+                    <i class="fas fa-paper-plane"></i> <span>Get Free Quote</span>
                 </button>
                 <button type="button" class="menu-toggle-btn" id="menuToggle" aria-label="Toggle Menu" aria-expanded="false" aria-controls="navMenu">
                     <i class="fas fa-bars"></i>
