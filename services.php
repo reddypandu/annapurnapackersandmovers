@@ -50,7 +50,7 @@
                 <!-- 1. Packing and Moving -->
                 <div class="service-card" id="packing-moving">
                     <div class="service-img-wrapper">
-                        <img src="img/packing-photo.jpg" alt="Professional Packing and Moving" loading="lazy" width="380" height="220">
+                        <img src="img/packing-moving.png" alt="Professional Packing and Moving" loading="lazy" width="380" height="220">
                         <span class="service-tag"><i class="fas fa-box-open"></i> Full Packing</span>
                     </div>
                     <div class="service-body">
@@ -80,7 +80,7 @@
                 <!-- 3. Office Relocation -->
                 <div class="service-card" id="office-relocation">
                     <div class="service-img-wrapper">
-                        <img src="img/office-relocation.jpeg" alt="Corporate Office Shifting" loading="lazy" width="380" height="220">
+                        <img src="img/office-relocaton.png" alt="Corporate Office Shifting" loading="lazy" width="380" height="220">
                         <span class="service-tag"><i class="fas fa-building"></i> Commercial</span>
                     </div>
                     <div class="service-body">
@@ -107,21 +107,20 @@
                     </div>
                 </div>
 
-                <!-- 5. Bike Transportation -->
-                <div class="service-card" id="bike-transportation">
+                <!-- 11. Residential Relocation -->
+                <div class="service-card" id="residential-relocation">
                     <div class="service-img-wrapper">
-                        <img src="img/bike-transport.jpg" alt="Two-Wheeler Bike Shifting" loading="lazy" width="380" height="220">
-                        <span class="service-tag"><i class="fas fa-motorcycle"></i> Two-Wheeler</span>
+                        <img src="img/residential-relocation.png.webp" alt="Residential Shifting" loading="lazy" width="380" height="220">
+                        <span class="service-tag"><i class="fas fa-door-open"></i> Full Setup</span>
                     </div>
                     <div class="service-body">
-                        <h3>Bike Transportation</h3>
-                        <p>Secure motorcycle shifting with protective foam wrapping, mirror and indicator padding, bubble wrap, and firm wooden-base strapping inside transit trucks.</p>
-                        <button type="button" class="btn btn-outline" onclick="openQuoteWithService('Vehicle Transportation')" style="width: 100%; margin-top: auto;">
-                            <i class="fas fa-paper-plane"></i> Enquire for Bike Transport
+                        <h3>Residential Relocation</h3>
+                        <p>Customized residential shifting packages including furniture assembly, basic electronics setup, and systematic unpacking so you can settle in immediately.</p>
+                        <button type="button" class="btn btn-outline" onclick="openQuoteWithService('Home Relocation')" style="width: 100%; margin-top: auto;">
+                            <i class="fas fa-paper-plane"></i> Enquire for Residential
                         </button>
                     </div>
                 </div>
-
                 <!-- 6. Storage & Warehousing -->
                 <div class="service-card" id="storage-warehousing">
                     <div class="service-img-wrapper">
@@ -197,20 +196,21 @@
                     </div>
                 </div>
 
-                <!-- 11. Residential Relocation -->
-                <div class="service-card" id="residential-relocation">
+                <!-- 5. Bike Transportation -->
+                <div class="service-card" id="bike-transportation">
                     <div class="service-img-wrapper">
-                        <img src="img/residential-relocation.png.webp" alt="Residential Shifting" loading="lazy" width="380" height="220">
-                        <span class="service-tag"><i class="fas fa-door-open"></i> Full Setup</span>
+                        <img src="img/bike-transport.jpg" alt="Two-Wheeler Bike Shifting" loading="lazy" width="380" height="220">
+                        <span class="service-tag"><i class="fas fa-motorcycle"></i> Two-Wheeler</span>
                     </div>
                     <div class="service-body">
-                        <h3>Residential Relocation</h3>
-                        <p>Customized residential shifting packages including furniture assembly, basic electronics setup, and systematic unpacking so you can settle in immediately.</p>
-                        <button type="button" class="btn btn-outline" onclick="openQuoteWithService('Home Relocation')" style="width: 100%; margin-top: auto;">
-                            <i class="fas fa-paper-plane"></i> Enquire for Residential
+                        <h3>Bike Transportation</h3>
+                        <p>Secure motorcycle shifting with protective foam wrapping, mirror and indicator padding, bubble wrap, and firm wooden-base strapping inside transit trucks.</p>
+                        <button type="button" class="btn btn-outline" onclick="openQuoteWithService('Vehicle Transportation')" style="width: 100%; margin-top: auto;">
+                            <i class="fas fa-paper-plane"></i> Enquire for Bike Transport
                         </button>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>

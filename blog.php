@@ -176,6 +176,53 @@
                         </button>
                     </div>
                 </article>
+                <!-- Article 4 -->
+                <article class="blog-card">
+                    <div class="blog-img-box">
+                        <img src="img/vehicle-blog.png" alt="Car and Bike Shifting Checklist" loading="lazy" width="380" height="220">
+                        <span class="blog-date-badge"><i class="fas fa-calendar-alt"></i> Vehicle Care</span>
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">Vehicle Transportation</span>
+                        <h3>Car &amp; Bike Shifting: What to Check Before Handover</h3>
+                        <p>Fuel level limits, loose accessory removal, and the pre-loading inspection report you should ask for before your vehicle goes onto the carrier.</p>
+                        <button type="button" class="btn btn-outline" onclick="openQuoteModal()" style="margin-top: auto;">
+                            <i class="fas fa-car"></i> Book Vehicle Transport
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Article 5 -->
+                <article class="blog-card">
+                    <div class="blog-img-box">
+                        <img src="img/warehouse-blog.png" alt="Short Term Storage During a Move" loading="lazy" width="380" height="220">
+                        <span class="blog-date-badge"><i class="fas fa-calendar-alt"></i> Storage Solutions</span>
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">Storage &amp; Warehousing</span>
+                        <h3>When You Need Short-Term Storage During a Move</h3>
+                        <p>Gaps between move-out and move-in dates, renovation delays, or downsizing — here's when secure warehouse storage makes a relocation easier, not harder.</p>
+                        <button type="button" class="btn btn-outline" onclick="openQuoteModal()" style="margin-top: auto;">
+                            <i class="fas fa-warehouse"></i> Get Storage Quote
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Article 6 -->
+                <article class="blog-card">
+                    <div class="blog-img-box">
+                        <img src="img/international-blog.png" alt="International Relocation Checklist" loading="lazy" width="380" height="220">
+                        <span class="blog-date-badge"><i class="fas fa-calendar-alt"></i> International Move</span>
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">International Relocation</span>
+                        <h3>Moving Abroad? A Checklist for International Shipments</h3>
+                        <p>Customs documentation, export packing standards, and shipping timelines to plan for when your move crosses an ocean, not just a state border.</p>
+                        <button type="button" class="btn btn-outline" onclick="openQuoteModal()" style="margin-top: auto;">
+                            <i class="fas fa-plane-departure"></i> Plan International Move
+                        </button>
+                    </div>
+                </article>
             </div>
         </div>
     </section>

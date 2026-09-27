@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,7 @@
     <meta name="description" content="View authentic photos of Annapurna Packers and Movers in action: Household packing, furniture protection, car loading, container fleet, and safe unloading across Visakhapatnam.">
     <link rel="canonical" href="https://annapurnapackersandmovers.com/gallery.php">
     <link rel="icon" href="img/favicon.png" type="image/png">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -21,6 +22,7 @@
             flex-wrap: wrap;
             margin-bottom: 35px;
         }
+
         .filter-btn {
             background: #FFFFFF;
             border: 1px solid var(--border-color);
@@ -33,6 +35,7 @@
             cursor: pointer;
             transition: var(--transition);
         }
+
         .filter-btn:hover,
         .filter-btn.active {
             background: var(--accent-orange);
@@ -40,6 +43,7 @@
             border-color: var(--accent-orange);
             box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
         }
+
         .gallery-card {
             border-radius: var(--radius-md);
             overflow: hidden;
@@ -48,11 +52,13 @@
             border: 1px solid var(--border-color);
             transition: var(--transition);
         }
+
         .gallery-card:hover {
             transform: translateY(-6px);
             box-shadow: var(--shadow-xl);
             border-color: var(--accent-orange);
         }
+
         .gallery-card img {
             width: 100%;
             height: 240px;
@@ -60,16 +66,20 @@
             display: block;
             transition: transform 0.4s ease;
         }
+
         .gallery-card:hover img {
             transform: scale(1.05);
         }
+
         .gallery-info {
             padding: 16px 20px;
         }
+
         .gallery-info h4 {
             font-size: 1.05rem;
             margin-bottom: 4px;
         }
+
         .gallery-info span {
             font-size: 0.82rem;
             color: var(--accent-orange);
@@ -78,6 +88,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <!-- Header -->
@@ -183,7 +194,7 @@
 
                 <!-- 8 -->
                 <div class="gallery-card" data-category="loading">
-                    <img src="img/loading-and-unloading.jpeg" alt="Trained crew loading cartons" loading="lazy" width="300" height="240">
+                    <img src="img/pack22.jpg" alt="Trained crew loading cartons" loading="lazy" width="300" height="240">
                     <div class="gallery-info">
                         <span>Loading &amp; Transit</span>
                         <h4>Careful Truck Loading</h4>
@@ -253,19 +264,20 @@
     <?php include 'footer.php'; ?>
 
     <script>
-    function filterGallery(category, btn) {
-        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
+        function filterGallery(category, btn) {
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
 
-        const cards = document.querySelectorAll('#galleryContainer .gallery-card');
-        cards.forEach(card => {
-            if (category === 'all' || card.getAttribute('data-category') === category) {
-                card.style.display = 'block';
-            } else {
-                card.style.display = 'none';
-            }
-        });
-    }
+            const cards = document.querySelectorAll('#galleryContainer .gallery-card');
+            cards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
     </script>
 </body>
+
 </html>
