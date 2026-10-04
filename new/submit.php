@@ -24,9 +24,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     // Database storage (if MySQL is running and accessible)
     $host = "localhost";
-    $username = "annapurn_user"; 
-    $password = "9AllesfiHYXn";  
-    $database = "annapurn_packers"; 
+    $username = "annapurn_user";
+    $password = "9AllesfiHYXn";
+    $database = "annapurn_packers";
 
     $conn = @new mysqli($host, $username, $password, $database);
     if (!$conn->connect_error) {
@@ -47,20 +47,20 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     // WhatsApp Message
     $whatsapp_text = "🚚 *New Moving Quote Request - Annapurna Packers*\n\n"
-                   . "👤 *Name:* " . $name . "\n"
-                   . "📞 *Phone:* " . $phone . "\n"
-                   . ($email ? "✉️ *Email:* " . $email . "\n" : "")
-                   . "📦 *Service:* " . $service . "\n"
-                   . "📍 *From:* " . $pickup . "\n"
-                   . "🏁 *To:* " . $drop . "\n"
-                   . ($move_date ? "📅 *Date:* " . $move_date . "\n" : "")
-                   . ($message ? "📝 *Notes:* " . $message . "\n" : "");
+        . "👤 *Name:* " . $name . "\n"
+        . "📞 *Phone:* " . $phone . "\n"
+        . ($email ? "✉️ *Email:* " . $email . "\n" : "")
+        . "📦 *Service:* " . $service . "\n"
+        . "📍 *From:* " . $pickup . "\n"
+        . "🏁 *To:* " . $drop . "\n"
+        . ($move_date ? "📅 *Date:* " . $move_date . "\n" : "")
+        . ($message ? "📝 *Notes:* " . $message . "\n" : "");
 
     $whatsapp_url = "https://wa.me/" . $my_whatsapp_number . "?text=" . urlencode($whatsapp_text);
 
     // If client requested JSON (AJAX)
-    $is_ajax = (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') || 
-               (isset($_SERVER['HTTP_ACCEPT']) && strpos($_SERVER['HTTP_ACCEPT'], 'application/json') !== false);
+    $is_ajax = (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') ||
+        (isset($_SERVER['HTTP_ACCEPT']) && strpos($_SERVER['HTTP_ACCEPT'], 'application/json') !== false);
 
     if ($is_ajax) {
         echo json_encode([
@@ -79,4 +79,3 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     echo json_encode(['status' => 'error', 'message' => 'Method Not Allowed']);
     exit;
 }
-?>
