@@ -72,7 +72,6 @@
             <div class="footer-legal-links">
                 <a href="contact.php">Support</a>
                 <a href="aboutus.php">Privacy &amp; Terms</a>
-                <a href="LocateUs.php">Locations</a>
             </div>
         </div>
     </div>
