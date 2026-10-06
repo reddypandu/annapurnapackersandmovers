@@ -7,7 +7,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
     <div class="container">
         <div class="top-bar-inner">
             <div class="top-bar-contact">
-                <a href="tel:+919966031259"><i class="fas fa-phone"></i> +91 99660 31259</a>
+                <a href="tel:+918985541259"><i class="fas fa-phone"></i> +918985541259</a>
                 <a href="tel:+918333031259"><i class="fas fa-mobile-alt"></i> +91 83330 31259</a>
                 <a href="mailto:annapurnapackersandmovers@gmail.com"><i class="fas fa-envelope"></i> annapurnapackersandmovers@gmail.com</a>
                 <span><i class="fas fa-map-marker-alt"></i> Visakhapatnam, Andhra Pradesh</span>

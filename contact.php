@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Annapurna Packers and Movers Visakhapatnam</title>
-    <meta name="description" content="Get in touch with Annapurna Packers and Movers for moving estimates, support, and relocation scheduling in Visakhapatnam and pan-India. Call +91 99660 31259.">
+    <meta name="description" content="Get in touch with Annapurna Packers and Movers for moving estimates, support, and relocation scheduling in Visakhapatnam and pan-India. Call +918985541259.">
     <link rel="canonical" href="https://annapurnapackersandmovers.com/contact.php">
     <link rel="icon" href="img/favicon.png" type="image/png">
 
@@ -46,7 +46,7 @@
                     <h3>Call Us Directly</h3>
                     <p>Speak immediately with our moving supervisor for booking inquiries.</p>
                     <div style="margin-top: 14px;">
-                        <a href="tel:+919966031259" style="font-weight: 700; color: var(--accent-orange); display: block; font-size: 1.05rem;">+91 99660 31259</a>
+                        <a href="tel:+918985541259" style="font-weight: 700; color: var(--accent-orange); display: block; font-size: 1.05rem;">+918985541259</a>
                         <a href="tel:+918333031259" style="font-weight: 700; color: var(--primary-navy); display: block; margin-top: 4px;">+91 83330 31259</a>
                     </div>
                 </div>

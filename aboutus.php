@@ -59,7 +59,7 @@
                         <button type="button" class="btn btn-primary" onclick="openQuoteModal()">
                             <i class="fas fa-file-invoice"></i> Request a Quote
                         </button>
-                        <a href="tel:+919966031259" class="btn btn-outline">
+                        <a href="tel:+918985541259" class="btn btn-outline">
                             <i class="fas fa-phone"></i> Call Coordinator
                         </a>
                     </div>
@@ -148,8 +148,8 @@
                     <button type="button" class="btn btn-primary" onclick="openQuoteModal()">
                         <i class="fas fa-calculator"></i> Get Free Quote
                     </button>
-                    <a href="tel:+919966031259" class="btn btn-outline-white">
-                        <i class="fas fa-phone"></i> Call +91 99660 31259
+                    <a href="tel:+918985541259" class="btn btn-outline-white">
+                        <i class="fas fa-phone"></i> Call +918985541259
                     </a>
                 </div>
             </div>

@@ -69,8 +69,8 @@
                         <button type="button" class="btn btn-primary" onclick="openQuoteModal()">
                             <i class="fas fa-calculator"></i> Get Free Quote
                         </button>
-                        <a href="tel:+919966031259" class="btn btn-outline-white">
-                            <i class="fas fa-phone"></i> Call +91 99660 31259
+                        <a href="tel:+918985541259" class="btn btn-outline-white">
+                            <i class="fas fa-phone"></i> Call +918985541259
                         </a>
                     </div>
                     <div class="hero-features">
@@ -190,7 +190,7 @@
                 <!-- Service 2: Office Relocation -->
                 <div class="service-card">
                     <div class="service-img-wrapper">
-                        <img src="img/office-relocation.jpeg" alt="Corporate Office Shifting" loading="lazy" width="380" height="220">
+                        <img src="img/office-relocaton.png" alt="Corporate Office Shifting" loading="lazy" width="380" height="220">
                         <span class="service-tag">Commercial</span>
                     </div>
                     <div class="service-body">
@@ -747,8 +747,8 @@
                     <button type="button" class="btn btn-primary" onclick="openQuoteModal()">
                         <i class="fas fa-file-invoice"></i> Get Free Moving Quote
                     </button>
-                    <a href="tel:+919966031259" class="btn btn-outline-white">
-                        <i class="fas fa-phone"></i> Call +91 99660 31259
+                    <a href="tel:+918985541259" class="btn btn-outline-white">
+                        <i class="fas fa-phone"></i> Call +918985541259
                     </a>
                 </div>
             </div>

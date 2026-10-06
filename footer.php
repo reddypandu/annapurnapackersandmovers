@@ -53,10 +53,31 @@
                     </div>
 
                     <div class="contact-info-row">
-                        <i class="fas fa-phone"></i>
-                        <p>
-                            <a href="tel:+919966031259">+91 99660 31259</a> /
+                        <i class="fas fa-box"></i>
+                        <p><strong>Packers and Movers:</strong><br>
+                            <a href="tel:+918985541259">+91 89855 41259</a> /
                             <a href="tel:+918333031259">+91 83330 31259</a>
+                        </p>
+                    </div>
+                    <div class="contact-info-row">
+                        <i class="fas fa-truck-pickup"></i>
+                        <p><strong>Mini Transport:</strong><br>
+                            <a href="tel:+918333041259">+91 83330 41259</a> /
+                            <a href="tel:+919703931259">+91 97039 31259</a>
+                        </p>
+                    </div>
+                    <div class="contact-info-row">
+                        <i class="fas fa-truck"></i>
+                        <p><strong>ODC Transport:</strong><br>
+                            <a href="tel:+919666521259">+91 96665 21259</a> /
+                            <a href="tel:+918333051259">+91 83330 51259</a>
+                        </p>
+                    </div>
+                    <div class="contact-info-row">
+                        <i class="fas fa-truck-moving"></i>
+                        <p><strong>Annapurna Container Service:</strong><br>
+                            <a href="tel:+919666831259">+91 96668 31259</a> /
+                            <a href="tel:+919666321259">+91 96663 21259</a>
                         </p>
                     </div>
                     <div class="contact-info-row">
@@ -79,14 +100,14 @@
 
 <!-- Floating Action Icons (Desktop) -->
 <div class="floating-social-sidebar" aria-label="Quick Contact">
-    <a href="tel:+919966031259" class="floating-btn btn-floating-call" title="Call Us"><i class="fas fa-phone"></i></a>
+    <a href="tel:+918985541259" class="floating-btn btn-floating-call" title="Call Us"><i class="fas fa-phone"></i></a>
     <a href="https://wa.me/918333031259" target="_blank" rel="noopener" class="floating-btn btn-floating-whatsapp" title="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
 </div>
 
 <!-- Mobile Sticky Bottom Action Bar -->
 <div class="mobile-action-bar">
     <div class="mobile-action-inner">
-        <a href="tel:+919966031259" class="mobile-action-btn mobile-call">
+        <a href="tel:+918985541259" class="mobile-action-btn mobile-call">
             <i class="fas fa-phone"></i> <span>Call Now</span>
         </a>
         <a href="https://wa.me/918333031259" target="_blank" rel="noopener" class="mobile-action-btn mobile-whatsapp">

@@ -115,43 +115,145 @@
             border-radius: var(--radius-lg);
         }
 
-        .fleet-types-grid {
+        .fleet-showcase {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
-            gap: 20px;
+            gap: 24px;
         }
 
-        .fleet-type-card {
+        .fleet-showcase-item {
+            display: grid;
+            grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+            align-items: stretch;
+            overflow: hidden;
             background: #FFFFFF;
             border: 1px solid var(--border-color);
-            border-radius: var(--radius-md);
-            padding: 22px;
+            border-radius: var(--radius-lg);
             box-shadow: var(--shadow-sm);
+            transition: var(--transition);
         }
 
-        .fleet-type-card>i {
+        .fleet-showcase-item:hover {
+            border-color: var(--accent-orange);
+            box-shadow: var(--shadow-md);
+            transform: translateY(-3px);
+        }
+
+        .fleet-showcase-image {
+            width: 100%;
+            height: 100%;
+            min-height: 300px;
+            object-fit: cover;
+        }
+
+        .fleet-showcase-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: clamp(24px, 4vw, 46px);
+        }
+
+        .fleet-showcase-content>i {
+            display: grid;
+            place-items: center;
+            width: 48px;
+            height: 48px;
+            margin-bottom: 18px;
             color: var(--accent-orange);
-            font-size: 1.5rem;
-            margin-bottom: 14px;
+            background: var(--orange-light);
+            border-radius: var(--radius-md);
+            font-size: 1.2rem;
         }
 
-        .fleet-type-card h3 {
-            font-size: 1.08rem;
-            margin-bottom: 8px;
+        .fleet-showcase-content h3 {
+            margin-bottom: 12px;
+            font-size: clamp(1.3rem, 2vw, 1.65rem);
         }
 
-        .fleet-type-card p {
+        .fleet-showcase-content p {
             color: var(--text-muted);
-            font-size: 0.9rem;
+            margin-bottom: 18px;
         }
 
         .fleet-capacity {
-            border-top: 1px solid var(--border-color);
-            padding-top: 12px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--orange-light);
+            border-radius: var(--radius-pill);
+            padding: 8px 13px;
             margin: 0;
             font-size: 0.84rem;
             font-weight: 600;
+            color: var(--primary-navy) !important;
+        }
+
+        .fleet-capacity i {
+            color: var(--accent-orange);
+        }
+
+        .fleet-contact {
+            width: 100%;
+            border-top: 1px solid var(--border-color);
+            padding-top: 14px;
+            margin: 18px 0 0 !important;
+        }
+
+        .fleet-contact strong {
+            display: block;
             color: var(--primary-navy);
+            font-size: 0.88rem;
+            margin-bottom: 8px;
+        }
+
+        .fleet-contact-numbers {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .fleet-contact-numbers a {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            background: var(--orange-light);
+            border-radius: var(--radius-pill);
+            padding: 8px 12px;
+            color: var(--primary-navy);
+            font-weight: 700;
+            font-size: 0.88rem;
+        }
+
+        .fleet-contact-numbers a:hover {
+            color: var(--orange-hover);
+            background: #FFEDD5;
+        }
+
+        .fleet-contact-numbers i {
+            color: var(--accent-orange);
+        }
+
+        .route-coverage-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .route-coverage-list span {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            border: 1px solid var(--border-color);
+            background: #FFFFFF;
+            padding: 10px 14px;
+            border-radius: var(--radius-pill);
+            color: var(--primary-navy);
+            font-weight: 600;
+        }
+
+        .route-coverage-list i {
+            color: var(--accent-orange);
         }
 
         .fleet-stats {
@@ -293,6 +395,15 @@
                 grid-template-columns: 1fr;
             }
 
+            .fleet-showcase-item {
+                grid-template-columns: 1fr;
+            }
+
+            .fleet-showcase-image {
+                height: 260px;
+                min-height: 0;
+            }
+
             .transport-intro {
                 grid-template-columns: 1fr;
                 gap: 24px;
@@ -350,7 +461,7 @@
             <div class="transport-intro-copy">
                 <span class="badge-tag">About Transportation</span>
                 <h2 style="margin: 14px 0;">Planned transport for vehicles, household moves, and business cargo</h2>
-                <p>Annapurna Packers and Movers coordinates pickup, loading, road transport, and delivery across local and intercity routes. The fleet includes sealed container trucks and vehicle-transport options, with route coordination and GPS tracking available for supported journeys.</p>
+                <p>Annapurna Packers and Movers coordinates pickup, loading, road transport, and delivery across local, intercity, and all-India routes. Our transport options include container trucks, mini transport vehicles, and ODC transport, with route coordination for supported journeys.</p>
                 <p>Trained moving teams use suitable packing and load-securing practices. Truck assignment, tracking arrangements, permits, and transit-cover terms are confirmed against each booking.</p>
             </div>
             <img class="transport-intro-image" src="img/transportation-about.png" alt="Sealed container truck used for transportation" loading="lazy" width="700" height="460">
@@ -361,39 +472,75 @@
         <div class="container">
             <div class="section-header">
                 <span class="badge-tag">Fleet Options</span>
-                <h2>Vehicle Types We Transport</h2>
-                <p>Choose a vehicle category to start your request. Final assignment and payload are confirmed for the route and date.</p>
+                <h2>Transport Vehicles Available</h2>
+                <p>Our fleet includes container, mini transport, and ODC vehicles. Confirm vehicle assignment and route availability when booking.</p>
             </div>
-            <div class="fleet-types-grid">
-                <article class="fleet-type-card"><i class="fas fa-truck-pickup"></i>
-                    <h3>Mini Truck</h3>
-                    <p>For smaller local deliveries, compact household loads, and limited-volume moves, subject to availability.</p>
-                    <p class="fleet-capacity">Payload: Confirmed for assigned vehicle</p>
+            <div class="fleet-showcase">
+                <article class="fleet-showcase-item">
+                    <img class="fleet-showcase-image" src="img/container-truck.png" alt="Container truck fleet ready for long-distance cargo transport" loading="lazy" width="900" height="600">
+                    <div class="fleet-showcase-content">
+                        <i class="fas fa-truck-moving" aria-hidden="true"></i>
+                        <h3>Container Trucks</h3>
+                        <p>Covered container transport for household and commercial cargo. Available options include 19 ft, 20 ft, and 32 ft SXL and MXL vehicles.</p>
+                        <p class="fleet-capacity"><i class="fas fa-check-circle" aria-hidden="true"></i> Vehicle size confirmed for your route</p>
+                        <div class="fleet-contact">
+                            <strong>Annapurna Container Service</strong>
+                            <div class="fleet-contact-numbers">
+                                <a href="tel:+919666831259"><i class="fas fa-phone" aria-hidden="true"></i> +91 96668 31259</a>
+                                <a href="tel:+919666321259"><i class="fas fa-phone" aria-hidden="true"></i> +91 96663 21259</a>
+                            </div>
+                        </div>
+                    </div>
                 </article>
-                <article class="fleet-type-card"><i class="fas fa-truck"></i>
-                    <h3>14 ft Container Truck</h3>
-                    <p>For compact household moves and smaller consignments needing an enclosed body.</p>
-                    <p class="fleet-capacity">Payload: Confirmed for assigned vehicle</p>
+                <article class="fleet-showcase-item">
+
+                    <div class="fleet-showcase-content">
+                        <i class="fas fa-truck-pickup" aria-hidden="true"></i>
+                        <h3>Mini Transport</h3>
+                        <p>Compact transport for smaller loads and local deliveries, with DOST and Bolero vehicle options.</p>
+                        <p class="fleet-capacity"><i class="fas fa-check-circle" aria-hidden="true"></i> Vehicle assignment confirmed at booking</p>
+                        <div class="fleet-contact">
+                            <strong>Mini Transport</strong>
+                            <div class="fleet-contact-numbers">
+                                <a href="tel:+918333041259"><i class="fas fa-phone" aria-hidden="true"></i> +91 83330 41259</a>
+                                <a href="tel:+919703931259"><i class="fas fa-phone" aria-hidden="true"></i> +91 97039 31259</a>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="fleet-showcase-image" src="img/mini-cargo-truck.png" alt="Compact moving truck and crew handling a local relocation" loading="lazy" width="900" height="600">
                 </article>
-                <article class="fleet-type-card"><i class="fas fa-truck-moving"></i>
-                    <h3>17 ft Container Truck</h3>
-                    <p>A mid-size option for household or commercial cargo that benefits from covered transit.</p>
-                    <p class="fleet-capacity">Payload: Confirmed for assigned vehicle</p>
+                <article class="fleet-showcase-item">
+                    <img class="fleet-showcase-image" src="img/odc-crane-operation.png" alt="Heavy equipment secured on a flatbed truck for ODC transport" loading="lazy" width="900" height="600">
+                    <div class="fleet-showcase-content">
+                        <i class="fas fa-truck" aria-hidden="true"></i>
+                        <h3>ODC Transport</h3>
+                        <p>Over-dimensional cargo transport for heavy or oversized loads, with suitable loading and route coordination.</p>
+                        <p class="fleet-capacity"><i class="fas fa-check-circle" aria-hidden="true"></i> ODC vehicles available up to 32 ft</p>
+                        <div class="fleet-contact">
+                            <strong>ODC Transport</strong>
+                            <div class="fleet-contact-numbers">
+                                <a href="tel:+919666521259"><i class="fas fa-phone" aria-hidden="true"></i> +91 96665 21259</a>
+                                <a href="tel:+918333051259"><i class="fas fa-phone" aria-hidden="true"></i> +91 83330 51259</a>
+                            </div>
+                        </div>
+                    </div>
                 </article>
-                <article class="fleet-type-card"><i class="fas fa-truck-moving"></i>
-                    <h3>19 ft Container Truck</h3>
-                    <p>For larger consignments requiring an enclosed truck and coordinated loading.</p>
-                    <p class="fleet-capacity">Payload: Confirmed for assigned vehicle</p>
-                </article>
-                <article class="fleet-type-card"><i class="fas fa-truck-moving"></i>
-                    <h3>22 ft / 32 ft Container Trucks</h3>
-                    <p>Higher-volume moves and commercial loads, with size selected after reviewing cargo and access.</p>
-                    <p class="fleet-capacity">Payload: Confirmed for assigned vehicle</p>
-                </article>
-                <article class="fleet-type-card"><i class="fas fa-car-side"></i>
-                    <h3>Enclosed Car Carrier</h3>
-                    <p>For transporting cars between cities with vehicle-specific loading and transit coordination.</p>
-                    <p class="fleet-capacity">Capacity: Vehicle and carrier availability confirmed at booking</p>
+                <article class="fleet-showcase-item">
+
+                    <div class="fleet-showcase-content">
+                        <i class="fas fa-car-side" aria-hidden="true"></i>
+                        <h3>Car Transportation</h3>
+                        <p>Intercity car transport using vehicle-specific loading, secure handling, and delivery coordination.</p>
+                        <p class="fleet-capacity"><i class="fas fa-check-circle" aria-hidden="true"></i> Carrier availability confirmed at booking</p>
+                        <div class="fleet-contact">
+                            <strong>Packers and Movers — Car Transport Enquiries</strong>
+                            <div class="fleet-contact-numbers">
+                                <a href="tel:+918985541259"><i class="fas fa-phone" aria-hidden="true"></i> +91 89855 41259</a>
+                                <a href="tel:+918333031259"><i class="fas fa-phone" aria-hidden="true"></i> +91 83330 31259</a>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="fleet-showcase-image" src="img/car-transportation.png" alt="Cars secured inside an enclosed vehicle carrier" loading="lazy" width="900" height="600">
                 </article>
             </div>
         </div>
@@ -405,21 +552,6 @@
             <div class="fleet-stat"><strong>Vehicle-rated</strong><span>Maximum payload confirmed for assigned truck</span></div>
             <div class="fleet-stat"><strong>GPS tracking</strong><span>Availability and update schedule confirmed per trip</span></div>
             <div class="fleet-stat"><strong>Intercity routes</strong><span>Route coverage confirmed for your locations</span></div>
-        </div>
-    </section>
-
-    <section class="section section-bg-white" id="truck-brands">
-        <div class="container">
-            <div class="section-header">
-                <span class="badge-tag">Fleet Information</span>
-                <h2>Truck Brands We Operate</h2>
-                <p>Manufacturer names are confirmed with the assigned vehicle. We avoid listing unverified make names; ask our team for the available truck details for your booking.</p>
-            </div>
-            <div class="brand-chips" aria-label="Fleet make information">
-                <span class="brand-chip"><i class="fas fa-truck"></i> Make confirmed at assignment</span>
-                <span class="brand-chip"><i class="fas fa-box"></i> Sealed container body</span>
-                <span class="brand-chip"><i class="fas fa-car-side"></i> Carrier option by request</span>
-            </div>
         </div>
     </section>
 
@@ -463,6 +595,35 @@
 
 
     <!-- Locations & Major Routes -->
+    <section class="section section-bg-light" id="service-locations">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge-tag">Route Coverage</span>
+                <h2>Transport Service Locations</h2>
+                <p>Serving the cities and states below, with transport available across India. Contact us to confirm your exact pickup and delivery route.</p>
+            </div>
+            <div class="route-coverage-list" aria-label="Transportation service locations">
+                <span><i class="fas fa-map-marker-alt"></i> Hyderabad</span>
+                <span><i class="fas fa-map-marker-alt"></i> Bangalore (Bengaluru)</span>
+                <span><i class="fas fa-map-marker-alt"></i> Chennai</span>
+                <span><i class="fas fa-map-marker-alt"></i> Coimbatore</span>
+                <span><i class="fas fa-map-marker-alt"></i> Mumbai</span>
+                <span><i class="fas fa-map-marker-alt"></i> Kolkata</span>
+                <span><i class="fas fa-map-marker-alt"></i> Andhra Pradesh</span>
+                <span><i class="fas fa-map-marker-alt"></i> Telangana</span>
+                <span><i class="fas fa-map-marker-alt"></i> Odisha</span>
+                <span><i class="fas fa-map-marker-alt"></i> Gujarat</span>
+                <span><i class="fas fa-map-marker-alt"></i> Tamil Nadu</span>
+                <span><i class="fas fa-map-marker-alt"></i> Kerala</span>
+                <span><i class="fas fa-map-marker-alt"></i> Uttar Pradesh</span>
+                <span><i class="fas fa-map-marker-alt"></i> Madhya Pradesh</span>
+                <span><i class="fas fa-map-marker-alt"></i> Himachal Pradesh</span>
+                <span><i class="fas fa-map-marker-alt"></i> Jammu &amp; Kashmir</span>
+                <span><i class="fas fa-truck"></i> All over India</span>
+            </div>
+        </div>
+    </section>
+
     <section class="section section-bg-light">
         <div class="container">
             <div class="section-header">
@@ -616,11 +777,11 @@
             <div class="final-cta-box">
                 <div>
                     <h2>Ready to Plan Your Transportation?</h2>
-                    <p>Call our team at <a href="tel:+919966031259" style="color: #FFFFFF; font-weight: 700;">+91 99660 31259</a> to check routes, fleet availability, and booking terms.</p>
+                    <p>Call Packers and Movers at <a href="tel:+918985541259" style="color: #FFFFFF; font-weight: 700;">+91 89855 41259</a> to check routes, fleet availability, and booking terms.</p>
                 </div>
                 <div class="final-cta-actions">
                     <button type="button" class="btn btn-primary" onclick="openQuoteModal()"><i class="fas fa-truck"></i> Book Now</button>
-                    <a href="tel:+919966031259" class="btn btn-outline-white"><i class="fas fa-phone"></i> Call Us</a>
+                    <a href="tel:+918985541259" class="btn btn-outline-white"><i class="fas fa-phone"></i> Call Packers &amp; Movers</a>
                 </div>
             </div>
         </div>
